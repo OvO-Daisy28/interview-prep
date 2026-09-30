@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/fault.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>泵组无法启动</techName><infoName>通用故障隔离程序</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <faultIsolation>
+      <faultIsolationProcedure>
+        <fault faultCode="E001">
+        </fault>
+        <faultDescr>
+          <descr>泵组无法启动</descr>
+        </faultDescr>
+        <isolationProcedure>
+          <preliminaryRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+            <reqSupportEquips>
+              <noSupportEquips>
+              </noSupportEquips>
+            </reqSupportEquips>
+            <reqSupplies>
+              <noSupplies>
+              </noSupplies>
+            </reqSupplies>
+            <reqSpares>
+              <noSpares>
+              </noSpares>
+            </reqSpares>
+            <reqSafety>
+              <safetyRqmts>
+                <caution>
+                  <warningAndCautionPara>故障检查及排除时确保人员安全，必要时需要停机处理。</warningAndCautionPara>
+                </caution>
+              </safetyRqmts>
+            </reqSafety>
+          </preliminaryRqmts>
+          <isolationMainProcedure>
+            <?XEditor_SvgFile id="SVG_40572ad2-8fcf-41eb-be30-ca5738f7f5ad.svg" hotspotIDs="shape1 shape2 shape3 shape4 shape7 shape6 shape5"?>
+            <isolationStep id="ID8c3cbcec-ff70-4605-abe1-225425cb6751">
+              <?XEditor_ShapeID id="shape1" ?>
+              <action>​ 检查电源</action>
+              <isolationStepQuestion>是否正常？</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="ideb23f2c2-859c-4c58-b2b4-9eabbeef66ca">
+                    <?XEditor_PathID id="path72ECF755-AE6E-4C94-B3AB-4C8B844A5103" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id099750fc-87a1-4cab-9981-853d3842431a">
+                    <?XEditor_PathID id="path0961481A-D1AD-48DD-998A-C28E2AAEE3A0" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="ideb23f2c2-859c-4c58-b2b4-9eabbeef66ca">
+              <?XEditor_ShapeID id="shape2" ?>
+              <action>检查跳闸相关仪表</action>
+              <isolationStepQuestion>是否正常？</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="idb8649f1a-4b9c-44ab-84d1-52d12b9213e8">
+                    <?XEditor_PathID id="path1811F713-B92D-4D19-BD4F-BBA886FE90BD" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id4d7ec11d-2842-4e83-bbe5-9f71e1e8fdd1">
+                    <?XEditor_PathID id="path6BA48E3E-894D-4567-A2EA-EEA244CAE1CD" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="idb8649f1a-4b9c-44ab-84d1-52d12b9213e8">
+              <?XEditor_ShapeID id="shape3" ?>
+              <action>检查手动盘车</action>
+              <isolationStepQuestion>是否卡滞？</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="ida8579720-fb73-4a25-8771-39ca09dbd3c8">
+                    <?XEditor_PathID id="path23ED256A-36F5-4424-8B2A-76020D10ACD0" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id08e44dc1-9507-412f-92cb-1565d7e503c2">
+                    <?XEditor_PathID id="path864A294C-E893-45FD-83B7-A7DDFCDAB800" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="ida8579720-fb73-4a25-8771-39ca09dbd3c8">
+              <?XEditor_ShapeID id="shape4" ?>
+              <action>脱开联轴器，定位卡死部位并修复</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id08e44dc1-9507-412f-92cb-1565d7e503c2">
+              <?XEditor_ShapeID id="shape7" ?>
+              <action>检查电动机是否失效，必要时维修电动机</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id4d7ec11d-2842-4e83-bbe5-9f71e1e8fdd1">
+              <?XEditor_ShapeID id="shape6" ?>
+              <action>排除跳闸诱因并复位</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id099750fc-87a1-4cab-9981-853d3842431a">
+              <?XEditor_ShapeID id="shape5" ?>
+              <action>修复电源</action>
+            </isolationProcedureEnd>
+          </isolationMainProcedure>
+          <closeRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+          </closeRqmts>
+        </isolationProcedure>
+      </faultIsolationProcedure>
+    </faultIsolation>
+  </content>
+</dmodule>

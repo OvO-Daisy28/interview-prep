@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00016-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00016-A-001-01.PNG" NDATA png>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00011-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00011-A-001-01.PNG" NDATA png>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="G" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="07" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>管道安装及冲洗</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <caution>
+        <warningAndCautionPara>连接与安装前检查管路内部是否有异物，杂质及脱落的零件等。</warningAndCautionPara>
+        <warningAndCautionPara>检查管路中法兰密封面是否划伤或存在油渍，如有，要求处理和更换。</warningAndCautionPara>
+        <warningAndCautionPara>出口管路上应该安装止回阀和闸阀，止回阀应该安装在泵和闸阀之间，防止泵在万一出现故障时产生的回流或从其它运行泵产生的回流对泵产生不良的影响，在泵启动时应使用闸阀控制。</warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title>管路的安装</title>
+        <para>现场机组中所有需安装的管路均要求检查是否清洁，特别是管路介质是进入设备内部的比如轴承冷却水管，机封冷却水管和润滑油管等。安装前的管道冲洗工作详见<internalRef internalRefId="para-001" internalRefTargetType="irtt07" xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple"/>。</para>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>安装在泵组上的的管道（内部管道）</para>
+              <para>橇内辅助管路已经在工厂安装完毕，例如底座区域内的排污管路和疏水管路。内部管路一般不拆卸，直接连接在机组上做好保护成橇发运。现场无须处理，只需要在泵组安装时候注意确保管道口保护垫已经摘除（如有）即可。</para>
+            </listItem>
+            <listItem>
+              <para>主管道的安装要求</para>
+              <para>主管路、阀门等附件不在我们的供应范围内，但在现场安装时需要满足以下建议和要求：</para>
+              <para>
+                <sequentialList>
+                  <listItem>
+                    <para>一般情况下，泵进口管路流速不应超过2m/s，泵出口管路流速不应超过3 m/s；泵的吸入管路内径大于吸入法兰的内径尺寸时吸入性能较好，但不能让泵的吸入口出存在流速突然变化；泵吸入口管路应有5倍以上（含5倍）管径的直管段以保证泵入口流动均匀，避免汽蚀破坏。偏心水平安装示意图如下：<internalRef internalRefId="image-1" internalRefTargetType="irtt01" xlink:actuate="onRequest" xlink:show="replace" xlink:title="偏心水平安装示意图" xlink:type="simple"/>。</para>
+                  </listItem>
+                  <listItem>
+                    <para>在设计管路时，应用适当的方法支撑管路，且管路不能过分拉紧，为防止管路的热变形应在泵进出口管路上安装膨胀节，在膨胀节与泵进出口法兰之间必须安装合适的支撑和管座（因为膨胀节产生的外力远远大于泵的承受范围），以上这些措施主要是为了保证泵法兰受由管重量及热力引起的力和力矩不超过允许范围。</para>
+                  </listItem>
+                  <listItem>
+                    <para>管道配作焊接后不允许管道对泵机组有附加外力，连接管道时需对泵的对中性进行监控，泵进出口附近的焊接管道应消除焊缝的焊接应力。</para>
+                  </listItem>
+                  <listItem>
+                    <para>吸入管道一般要安装闸阀，闸阀应水平或者倾斜向下安装如图所示，以避免存气除了检查、切换外，入口闸阀必须全开。阀门安装示意图：<internalRef internalRefId="image-2" internalRefTargetType="irtt01" xlink:actuate="onRequest" xlink:show="replace" xlink:title="阀门安装示意图" xlink:type="simple"/>。</para>
+                  </listItem>
+                  <listItem>
+                    <para>管道法兰与泵进出口法兰在自由状态下应平行且同心，法兰密封面平行度允许偏差应小于0.3mm，法兰径向位移的允许偏差应小于0.5mm。配对法兰在自由状态下的距离以能顺利放入垫片的最小间距为宜。</para>
+                  </listItem>
+                  <listItem>
+                    <para>管道法兰与泵进出口法兰连接紧固时，在联轴器上用百分表或红外线对中仪监测其径向位移应不超过0.02mm，若超过则需要排除原因，并在原因排除后重新对泵和电机进行对中处理。</para>
+                  </listItem>
+                  <listItem>
+                    <para>在浆料完全硬化和基础地脚螺栓以及电机和泵的固定螺栓拧紧之前，不准许把管道联接到泵上。</para>
+                  </listItem>
+                </sequentialList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>辅助管道的安装要求</para>
+              <para>为确保机组正常运行并方便检修，PTR冷却泵配备了排污管路及疏水管路等辅助管路，安装时需要满足以下建议和要求：</para>
+              <para>
+                <sequentialList>
+                  <listItem>
+                    <para>管子连接时不得采用强力对口、加热管子和加偏心垫等方法消除接口端面的偏差。</para>
+                  </listItem>
+                  <listItem>
+                    <para>管道对接焊口处应使内壁齐平，钢管内壁错边量不应超过壁厚的10%，且不应大于2mm。</para>
+                  </listItem>
+                  <listItem>
+                    <para>焊缝应设置在管子的直管段上不得设置在墙洞、基础内和隐蔽的地方。</para>
+                  </listItem>
+                  <listItem>
+                    <para>焊缝的中心平面至弯曲管处起点的距离不应小于100mm，与支架的距离应大于50mm。</para>
+                  </listItem>
+                  <listItem>
+                    <para>同一管段上两焊缝中心（若有）平面间的距离不应小于管子外径。</para>
+                  </listItem>
+                  <listItem>
+                    <para>接口的焊接及无损检验应按现场要求执行。</para>
+                  </listItem>
+                  <listItem>
+                    <para>严禁用管路作为焊接地线。</para>
+                  </listItem>
+                  <listItem>
+                    <para>现场管路直管段较长时，应设置有支架，支架间距应符合<internalRef internalRefId="excel-1" internalRefTargetType="irtt02" xlink:actuate="onRequest" xlink:show="replace" xlink:title="直管段支架间距（mm）表" xlink:type="simple"/>要求，弯曲段的管道应在起弯点附近增设管道支架。</para>
+                  </listItem>
+                  <listItem>
+                    <para>管子不应直接焊在支架上，不锈钢管道与支架间应垫入不锈钢垫片、不含氯离子的塑料或橡胶垫片；安装时不应用铁制工具直接敲击不锈钢管道。</para>
+                  </listItem>
+                  <listItem>
+                    <para>管子与设备连接时，不应使设备辅助管路承受附加外力并不应使异物进入设备内。</para>
+                  </listItem>
+                </sequentialList>
+              </para>
+            </listItem>
+          </sequentialList>
+        </para>
+      </levelledPara>
+      <levelledPara id="para-001">
+        <title> 管路冲洗</title>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>安装前需冲洗的管道范围</para>
+              <para>橇内大部分辅助管路如排污管路、疏水管路等，已经在厂内焊接之前做过清洗处理措施，内部管路一般不拆卸也不清洗。如需要拆卸散件发货的辅助管道，管道两头都有防尘防水保护措施封堵的，也无须冲洗（没有封堵的需要清洗）。一般需要冲洗的管道为现场配焊的管路。</para>
+            </listItem>
+            <listItem>
+              <para>其余管路冲洗及过滤要求</para>
+              <para>对于未安装永久性进口滤网或过滤器的泵组来说，所有管线（冷却水、冲洗水、泵进口）在机组调试期间都需要增加临时可拆卸的滤网，滤布，保证系统管路中的焊渣，杂质及其他铁锈、灰尘、脱落的漆皮、飞边、铁屑不进入泵体。等待泵组运行1-2天平稳后，系统介质中杂质已经去除，方可取掉临时滤网滤布。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+      </levelledPara>
+      <figure id="image-1">
+        <title>偏心水平安装示意图</title>
+        <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00016-A-001-01" reproductionHeight="75pt" reproductionWidth="112pt" xlink:type="simple">
+        </graphic>
+      </figure>
+      <figure id="image-2">
+        <title>阀门安装示意图</title>
+        <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00011-A-001-01" reproductionHeight="30pt" reproductionWidth="112pt" xlink:type="simple">
+        </graphic>
+      </figure>
+      <table id="excel-1">
+        <title>直管段支架间距（mm）</title>
+        <tgroup cols="6">
+          <colspec colname="c0" colwidth="82*">
+          </colspec>
+          <colspec colname="c1" colwidth="89*">
+          </colspec>
+          <colspec colname="c2" colwidth="96*">
+          </colspec>
+          <colspec colname="c3" colwidth="96*">
+          </colspec>
+          <colspec colname="c4" colwidth="96*">
+          </colspec>
+          <colspec colname="c5" colwidth="96*">
+          </colspec>
+          <thead>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>直管外径</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>≤10</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>＞10 ~25</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>＞25 ~50</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>＞50~80</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>＞80</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>支架间距</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>500～1000</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>1000～1500</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1500～2000</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>2000～3000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>3000～5000</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </description>
+  </content>
+</dmodule>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="H" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>仪器仪表的安装</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef referredFragment="pdf-pidt" xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>附件</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <para>仪器仪表是用来监测压力、温度、振动等信息的设备，对于辅助设备的连接类型、位置、尺寸请参阅总体布置图及<dmRef referredFragment="pdf-pidt" xlink:actuate="onRequest" xlink:title="P&amp;ID图" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef>。下面说明辅助设备的安装建议：</para>
+      <caution>
+        <warningAndCautionPara>应该在精对中后再进行仪器仪表的安装。若设备上已装好仪器仪表，安装时必须做好防护。</warningAndCautionPara>
+        <warningAndCautionPara>不要将辅助设备错误连接。检测仪表（压力传感器、温度传感器）等应安装在泵进、出口管道的直管段部位，减少絮流对检测数据的影响，减小仪表插入部分对水流的扰动，提高仪表的检测精度。</warningAndCautionPara>
+        <warningAndCautionPara>仪表安装需持有相关操作资质的人员进行。</warningAndCautionPara>
+      </caution>
+      <para>
+        <sequentialList>
+          <listItem>
+            <para>压力测量设备</para>
+            <para>压力测量设备必须在启动前安装好，用于监测泵的性能。必须在泵启动前来监控泵的运行。在公用仪表盘上安装压力表并且用一个有表弯连接在泵的出口或邻近的管路，为了维修方便在管路里单独的安装压力表和排气阀。</para>
+          </listItem>
+          <listItem>
+            <para>温度测量设备</para>
+            <para>如果泵操作点接近液体气化点，则需要温度检测液体的温度。必要时还应对轴承或润滑油（脂）的温度进行检测。</para>
+          </listItem>
+          <listItem>
+            <para>振动测量设备</para>
+            <para>振动温度测量设备用于监测泵的振动状态，根据需要安装。</para>
+          </listItem>
+        </sequentialList>
+      </para>
+    </description>
+  </content>
+</dmodule>

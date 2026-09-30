@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="200" infoCodeVariant="I" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>泵转子部件</techName><infoName>拆除及检查</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <procedure>
+      <preliminaryRqmts>
+        <reqCondGroup>
+          <reqCondNoRef>
+            <reqCond>现场要有足够的可操作空间满足泵的拆装；还需备有专门拆装泵的平台。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备力矩扳手、千分表、塞尺。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场备有零部件及工具等的储存设施。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有相应的运输工具及起吊行车，包括具备各种安装、操作资质的专业人员。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备清洁剂、润滑剂。</reqCond>
+          </reqCondNoRef>
+        </reqCondGroup>
+        <reqSupportEquips>
+          <supportEquipDescrGroup>
+            <supportEquipDescr>
+              <name>手动拉拔器</name>
+              <identNumber>
+                <manufacturerCode>QB/T5537（规格CSQ-300）</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+            <supportEquipDescr>
+              <name>勾扳手</name>
+              <identNumber>
+                <manufacturerCode>JB/ZQ4624/(A110-115)</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+            <supportEquipDescr>
+              <name>扳手</name>
+              <identNumber>
+                <manufacturerCode>M16、M20</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+          </supportEquipDescrGroup>
+        </reqSupportEquips>
+        <reqSupplies>
+          <noSupplies>
+          </noSupplies>
+        </reqSupplies>
+        <reqSpares>
+          <spareDescrGroup>
+            <spareDescr>
+              <name>机械密封O形圈</name>
+              <identNumber>
+                <manufacturerCode>见机械密封图纸</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </spareDescr>
+          </spareDescrGroup>
+        </reqSpares>
+        <reqSafety>
+          <safetyRqmts>
+            <warning>
+              <warningAndCautionPara>转子部件动平衡精度不得低于ISO 1940 G2.5级。</warningAndCautionPara>
+              <warningAndCautionPara>动平衡试验合格后才能进行后续操作，否则因动平衡不合格而引起的振动大等，最终导致设备的损坏，CQPI将不负责任。</warningAndCautionPara>
+              <warningAndCautionPara>动平衡合格后必须将动平衡合格时零件的装配状态（位置、方向等）记录下来，以便复原装配。</warningAndCautionPara>
+            </warning>
+            <caution>
+              <warningAndCautionPara>端面密封面不允许有径向划痕或损伤；径向密封面不允许有轴向划痕或损伤,密封件密封部位不允许任何划痕或凹凸。</warningAndCautionPara>
+            </caution>
+          </safetyRqmts>
+        </reqSafety>
+      </preliminaryRqmts>
+      <mainProcedure>
+        <proceduralStep>
+          <title>拆卸</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>松开机械密封定位块螺栓，并用定位块固定机械密封，然后紧固定位块螺栓。</para>
+              </listItem>
+              <listItem>
+                <para>卸下轴承体部件与底座之间的支架连接螺栓。</para>
+              </listItem>
+              <listItem>
+                <para>用吊绳系住泵箱体，拆下泵盖与泵体紧固螺柱、螺母及垫圈，使轴承体及转子部件与泵体分离。</para>
+              </listItem>
+              <listItem>
+                <para>将轴承体及转子部件从泵体中抽出，并放置在垫有木板的支架上，运到检修地点。</para>
+              </listItem>
+              <listItem>
+                <para>对泵体进行防异物保护。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </proceduralStep>
+        <proceduralStep>
+          <title>检查</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>卸下泵侧半联轴器，取下联轴器键。</para>
+              </listItem>
+              <listItem>
+                <para>取下泵盖与泵体之间的O形圈。</para>
+              </listItem>
+              <listItem>
+                <para>测量叶轮密封环与左右壳体密封环配合处径向跳动，要求径向跳动≤0.1mm，将测量结果记入维修报告5.3中。</para>
+              </listItem>
+              <listItem>
+                <para>测量与壳体密封环配合的叶轮密封环外径d1，壳体密封环内径D1，记入维修报告中，计算口环间隙。如果口环间隙、口环内径严重超差，或口环出现严重磨损、变形、腐蚀等缺陷应予以更换。</para>
+              </listItem>
+              <listItem>
+                <para>卸下叶轮螺母、止动垫圈。</para>
+              </listItem>
+              <listItem>
+                <para>拔出叶轮、取下叶轮键。</para>
+              </listItem>
+              <listItem>
+                <para>拆除泵盖和托架之间连接螺栓。</para>
+              </listItem>
+              <listItem>
+                <para>拆除机械密封压盖和泵盖之间联接螺母及垫片。</para>
+              </listItem>
+              <listItem>
+                <para>拆除泵盖。</para>
+              </listItem>
+              <listItem>
+                <para>测量与壳体密封环配合的叶轮口环外径d2，壳体密封环内径 D2，记入维修报告5.3中，计算口环间隙。如果口环间隙、口环内径严重超差，或口环出现严重磨损、变形、腐蚀等缺陷应予以更换。</para>
+              </listItem>
+              <listItem>
+                <para>抽出机械密封，拆除螺柱、螺母、垫圈，取下托架。</para>
+              </listItem>
+              <listItem>
+                <para>拆下非驱动端轴承隔离器和轴承压盖螺栓及垫圈，取出轴承压盖和O形圈。</para>
+              </listItem>
+              <listItem>
+                <para>同样的操作步骤拆卸驱动端轴承隔离器、轴承压盖、O形圈及调整垫。</para>
+              </listItem>
+              <listItem>
+                <para>利用轴承拉拔器对非驱动端轴承外圈及滚珠进行拆卸。</para>
+              </listItem>
+              <listItem>
+                <para>将转子部件从驱动端抽出，并放置检修区域，随后取出甩油环。</para>
+              </listItem>
+              <listItem>
+                <para>拆卸非驱动端轴承内圈。</para>
+              </listItem>
+              <listItem>
+                <para>拆卸驱动端滚动轴承圆螺母及垫圈。</para>
+              </listItem>
+              <listItem>
+                <para>利用轴承拉拔器对驱动端滚动轴承进行拆卸。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </proceduralStep>
+        <table>
+          <title>
+          </title>
+          <tgroup cols="4">
+            <colspec colname="c0" colwidth="76*">
+            </colspec>
+            <colspec colname="c1" colwidth="76*">
+            </colspec>
+            <colspec colname="c2" colwidth="76*">
+            </colspec>
+            <colspec colname="c3" colwidth="76*">
+            </colspec>
+            <thead>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>测试部位</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>设计值（mm）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>允许间隙（mm）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>备注</para>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>机械密封止口与泵盖</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>Φ140H7/f7</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>+0.043~+0.123</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>间隙配合</para>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </mainProcedure>
+      <closeRqmts>
+        <reqCondGroup>
+          <noConds>
+          </noConds>
+        </reqCondGroup>
+      </closeRqmts>
+    </procedure>
+  </content>
+</dmodule>

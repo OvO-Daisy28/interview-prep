@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="130" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="02" issueNumber="001"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>正常运行</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef changeMark="1" changeType="add" referredFragment="pdf-pidt" xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A">
+          </dmCode>
+          <language countryIsoCode="CN" languageIsoCode="zh">
+          </language>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>附件</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025">
+          </issueDate>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <para>运行检查事项</para>
+      <para>
+        <sequentialList>
+          <listItem>
+            <para>对泵常规使用参数（进口压力、运行流量、出口压力、温度、振动数据等）及辅助系统（若有）的相关仪器参数进行检查，保证参数在正常使用区间。</para>
+          </listItem>
+          <listItem>
+            <para>对电机常规运行参数的（电流、转速、温度、振动数据等）检查<changeInline changeType="delete">；</changeInline><changeInline changeType="add">。</changeInline></para>
+          </listItem>
+          <listItem>
+            <para>泵的振动值应符合<changeInline changeType="delete">P&amp;ID图</changeInline><dmRef changeMark="1" changeType="add" referredFragment="pdf-pidt" xlink:actuate="onRequest" xlink:title="P&amp;ID图" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef>或相关标准的规定<changeInline changeType="delete">；</changeInline><changeInline changeType="add">。</changeInline></para>
+          </listItem>
+          <listItem>
+            <para>泵在正常运行过程中，确认泵组各固定连接部位不应松动。</para>
+          </listItem>
+          <listItem>
+            <para>确认转子及运动部件运转正常，不得有异常声响和摩擦现象。</para>
+          </listItem>
+          <listItem>
+            <para>确保机封泄漏量不应超过对应使用说明书的要求。</para>
+          </listItem>
+          <listItem>
+            <para>泵的安全保护和电控装置及各部分仪表均应灵敏、正确、可靠。</para>
+          </listItem>
+          <listItem>
+            <para>泵在正常运行过程中，泵及电机轴承温度、绕组温度应符合<changeInline changeType="delete">P&amp;ID图</changeInline><dmRef changeMark="1" changeType="add" referredFragment="pdf-pidt" xlink:actuate="onRequest" xlink:title="P&amp;ID图" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef>或相关标准的规定。</para>
+          </listItem>
+          <listItem>
+            <para>密封液和冷却水的温度，不得超过技术文件的规定（若有）<changeInline changeType="delete">；</changeInline><changeInline changeType="add">。</changeInline></para>
+          </listItem>
+          <listItem>
+            <para>泵的附属设备（若有）运行正常，应连接牢固无松动、无泄漏<changeInline changeType="delete">；</changeInline><changeInline changeType="add">。</changeInline></para>
+          </listItem>
+        </sequentialList>
+      </para>
+    </description>
+  </content>
+</dmodule>

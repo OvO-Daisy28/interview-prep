@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="028" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="01" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>维护维修概述</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <para>本部分主要内容为泵主体拆装说明，主要包括整泵、转子部件、托架部件等的具体拆装说明。</para>
+      <para>设备内部零部件拆装时请严格按照本说明书执行，由于不遵守本手册的规定而引起的后果，泵制造厂家不承担任何赔偿责任。</para>
+      <para>所有关于设备零部件拆装的工作必须由受过专门培训并且熟悉拆装工作的人员操作。</para>
+      <para>确保维修工程师和受过专门培训的责任人员在泵零部件开始拆装之前已阅读本说明书并详尽理解其内容。</para>
+      <para>所有使用者必须遵守第一部分安全章节所列出的安全说明。</para>
+      <para>本节给出了设备拆卸的通用说明，除了这份说明外在具体拆卸时还需要参考CQPI提供的资料和其它泵组配套件的技术资料，这些资料包括：泵结构图；机组布置图；电动机、联轴器、机械密封、电气仪表控制等相关资料。</para>
+      <caution>
+        <warningAndCautionPara>相关资料应以设备实际配置为准。</warningAndCautionPara>
+        <warningAndCautionPara>配套设备维修按配套设备说明书要求执行。</warningAndCautionPara>
+      </caution>
+      <para>为了尽量缩短检修周期，建议应预先采购好所有必备的备件(易磨损的零部件)。当采购备件时，应向制造厂提供零部件的确切名称、型号、所需的数量以及泵的型号和设备的出厂编号(见铭牌)。</para>
+    </description>
+  </content>
+</dmodule>

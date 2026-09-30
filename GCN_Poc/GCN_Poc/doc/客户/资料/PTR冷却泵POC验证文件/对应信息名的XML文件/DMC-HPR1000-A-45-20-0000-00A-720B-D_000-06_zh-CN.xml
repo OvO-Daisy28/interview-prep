@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="06" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>基础要求及确认</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <levelledPara>
+        <title>基础的要求</title>
+        <para>设备安装基础应符合设计单位提供的土建基础图及相关技术文件的要求。</para>
+        <para>设计院或建造单位设计的设备基础建造结构图应满足PTR冷却泵总体布置图上的要求。安装基础的建造应保证足够的强度和刚度，要求牢固可靠，它将为设备提供永久性的、坚固的支撑。</para>
+        <para>基础的重量应为机械重量的3倍以上。为了水平校正，设备底座（底板）和基础混凝土之间应留有50mm的间隙，基础混凝土的上面不用瓦刀抹平，应照原样保留凹凸不平。基础不得有裂纹、蜂窝、空洞、露筋等缺陷。设备安装前基础应做如下处理：<sequentialList><listItem><para>安装底板前，应对基础表面进行铲平处理(特别是地脚螺栓孔两侧安放成对斜铁处)，基础预留地脚螺栓孔内的碎石、泥土等杂物和积水必须清除干净。</para></listItem><listItem><para>放置基础板的周边约50mm的基础表面应铲平。铲除麻面，麻点深度宜不小于10mm，密度以每平方分米内有3～5个点为宜，表面不应有泥污或疏松层；也可用砸毛率进行评判，砸毛率不小于90%。</para></listItem><listItem><para>在铲平的基础面上预留地脚螺栓孔两侧安装基础板及成对斜铁，成对斜铁应尽量靠近地脚螺栓（相距约两倍螺栓直径），相邻两组成对斜铁的间距应不超过500mm。斜铁表面应平整，无氧化铁皮和飞边等。</para></listItem><listItem><para>要求同基础上成对斜铁相互间直交两方向水平度允许偏差为0.1mm/m，各成对斜铁之间的高度允许偏差为±1mm。</para></listItem><listItem><para>检查底座的加工表面是否有因吊装、运输等因素造成的撞伤或毛刺等缺陷，并用锉刀或砂轮打磨平整。</para></listItem></sequentialList></para>
+      </levelledPara>
+      <caution>
+        <warningAndCautionPara>在基础混凝土浇注两周左右充分固化后，方可安装泵。</warningAndCautionPara>
+        <warningAndCautionPara>在冬季结冰期，地基表面因受冻要降低承载力，因此基础的埋置深度要比该地冻土深度深。</warningAndCautionPara>
+        <warningAndCautionPara>以楼面板作基础时，要注意使基础的中心和梁的中心一致或者使之跨在承重梁上，并且尽可能靠近建筑物的墙壁。</warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title>基础的验收</title>
+        <para>基础允许偏差见下表:</para>
+        <table>
+          <title>基础允许偏差</title>
+          <tgroup cols="3">
+            <colspec colname="c0" colwidth="115*">
+            </colspec>
+            <colspec colname="c1" colwidth="283*">
+            </colspec>
+            <colspec colname="c2" colwidth="173*">
+            </colspec>
+            <thead>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>检查部位</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>检查内容</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>允许偏差（mm）</para>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="center" colname="c0" morerows="1" nameend="c0" namest="c0" valign="middle">
+                  <para>基础台面</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>基础各不同平面的标高</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>±0.5</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>基础平面的水平度：</para>
+                  <para>每米</para>
+                  <para>全长</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>-</para>
+                  <para>2</para>
+                  <para>＜10</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" morerows="2" nameend="c0" namest="c0" valign="middle">
+                  <para>预留地脚螺栓孔</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>孔之间的中心距</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>±10</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>孔深度</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>0~＋20</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>孔与基础中心线的关系尺寸</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>±10</para>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

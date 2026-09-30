@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="200" infoCodeVariant="J" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>承室部件</techName><infoName>组装</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <procedure>
+      <preliminaryRqmts>
+        <reqCondGroup>
+          <reqCondNoRef>
+            <reqCond>现场要有足够的可操作空间满足泵的拆装；还需备有专门拆装泵的平台。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备力矩扳手、千分表、塞尺。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场备有零部件及工具等的储存设施。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有相应的运输工具及起吊行车，包括具备各种安装、操作资质的专业人员。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备清洁剂、润滑剂。</reqCond>
+          </reqCondNoRef>
+        </reqCondGroup>
+        <reqSupportEquips>
+          <supportEquipDescrGroup>
+            <supportEquipDescr>
+              <name>扳手</name>
+              <identNumber>
+                <manufacturerCode>M16、M20</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+          </supportEquipDescrGroup>
+        </reqSupportEquips>
+        <reqSupplies>
+          <noSupplies>
+          </noSupplies>
+        </reqSupplies>
+        <reqSpares>
+          <noSpares>
+          </noSpares>
+        </reqSpares>
+        <reqSafety>
+          <safetyRqmts>
+            <caution>
+              <warningAndCautionPara>轴承安装时必须在干净的环境下完成，即使只有很小的外来颗粒进入轴承也可能使轴承的使用寿命急剧缩短。</warningAndCautionPara>
+              <warningAndCautionPara>轴承装配时，使用油浴或电感应加热器预热轴承（电感应加热器也会对轴承去磁）注意加热温度不要超过120℃。</warningAndCautionPara>
+              <warningAndCautionPara>在使用轴承加热器时需带隔热手套。热的轴承能引起人身伤害。</warningAndCautionPara>
+              <warningAndCautionPara>不得使用火焰加热轴承，也不准用力强制装配轴承。</warningAndCautionPara>
+              <warningAndCautionPara>检查紧固件无损伤、螺纹表面光滑（清洁干净无毛刺），拧紧时转动平稳。</warningAndCautionPara>
+              <warningAndCautionPara>拧紧时力矩必须分3次（或以上）拧紧到位，拧紧时必须对称拧紧完所有螺母后，才能以更大力矩拧紧螺母。</warningAndCautionPara>
+            </caution>
+          </safetyRqmts>
+        </reqSafety>
+      </preliminaryRqmts>
+      <mainProcedure>
+        <proceduralStep>
+          <title>组装</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>用轴承加热器加热非驱动端端轴承内圈（加热温度不要超过120℃），迅速将其装到相应位置上，并压靠到轴肩上，直到冷却到常温为止。</para>
+              </listItem>
+              <listItem>
+                <para>依次加热安装驱动端两个角接触球轴承（加热温度不要超过120℃），注意轴承安装方向正确（背靠背）。</para>
+              </listItem>
+              <listItem>
+                <para>待轴承冷却后安装垫圈轴承圆螺母。</para>
+              </listItem>
+              <listItem>
+                <para>将非驱动端轴承外圈及滚珠安装到轴承座孔中。</para>
+              </listItem>
+              <listItem>
+                <para>将甩油环回装至泵轴上（靠近驱动端轴承处）。</para>
+              </listItem>
+              <listItem>
+                <para>将转子从驱动端向非驱动端穿过轴承体部件。</para>
+              </listItem>
+              <listItem>
+                <para>将非驱动端轴承压盖及O形圈安装至轴承体上，紧固力矩160Nm。</para>
+              </listItem>
+              <listItem>
+                <para>测量驱动端轴承压盖间隙δ。（方法：测量驱动端滚动轴承端面至轴承体端面距离F1，测量轴承压盖内侧凸台端面至压盖止口端面距离F2。选取调整垫片厚度T，要求     δ=F1+T－F2=0.05~0.1mm。）</para>
+              </listItem>
+              <listItem>
+                <para>安装驱动端轴承压盖及O形圈，紧固压盖螺栓，紧固力矩160N.m。</para>
+              </listItem>
+              <listItem>
+                <para>在驱动端与非驱动端轴承端盖位置安装轴承隔离器。</para>
+              </listItem>
+              <listItem>
+                <para>装上联轴器键。</para>
+              </listItem>
+              <listItem>
+                <para>加热泵侧半联轴器（通常为120~250℃），按拆时所作的记号，迅速将泵侧半联轴器安装到相应轴上。</para>
+              </listItem>
+              <listItem>
+                <para>待冷却后，用手盘动泵轴，转动应顺畅。</para>
+              </listItem>
+              <listItem>
+                <para>将托架通过螺柱、螺母、垫圈安装至轴承体部件上，紧固力矩值300Nm。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </proceduralStep>
+      </mainProcedure>
+      <closeRqmts>
+        <reqCondGroup>
+          <noConds>
+          </noConds>
+        </reqCondGroup>
+      </closeRqmts>
+    </procedure>
+  </content>
+</dmodule>

@@ -1,0 +1,12 @@
+--- D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/before/dialog_service.py	2026-06-17 20:04:27.000000000 +0800
++++ D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/after/dialog_service.py	2026-08-04 15:52:49.000000000 +0800
+@@ -737,8 +737,7 @@
+                 kbinfos["chunks"].extend(tav_res["chunks"])
+                 kbinfos["doc_aggs"].extend(tav_res["doc_aggs"])
+             if prompt_config.get("use_kg"):
+-                default_chat_model = get_tenant_default_model_by_type(dialog.tenant_id, LLMType.CHAT)
+-                ck = await settings.kg_retriever.retrieval(" ".join(questions), tenant_ids, dialog.kb_ids, embd_mdl, LLMBundle(dialog.tenant_id, default_chat_model, trace_context=trace_context, langfuse_session_id=session_id))
++                ck = await settings.kg_retriever.retrieval(" ".join(questions), tenant_ids, dialog.kb_ids, embd_mdl, chat_mdl)
+                 if ck["content_with_weight"]:
+                     kbinfos["chunks"].insert(0, ck)
+ 

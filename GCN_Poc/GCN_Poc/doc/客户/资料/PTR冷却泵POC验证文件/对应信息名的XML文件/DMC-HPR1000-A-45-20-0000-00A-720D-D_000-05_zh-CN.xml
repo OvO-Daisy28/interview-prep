@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00003-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00003-A-001-01.PNG" NDATA png>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="D" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>地脚螺栓的要求</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="N" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>机组主要螺栓拧紧力矩</infoName>
+          </dmTitle>
+          <issueDate day="24" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <para>PTR冷却泵所用带锚板的T型地脚螺栓如下图所示，此类地脚螺栓，预先安装一直径大于地脚螺栓至少为2倍的套筒直接浇筑到基础之内。带锚板地脚螺栓安装时，需建一个模板使地脚螺栓的定位配合外形图上的底座的固定孔。模板应该足够结实才能在基础灌浆期间将地脚螺栓组件固定到位。</para>
+      <figure>
+        <title>T型地脚螺栓</title>
+        <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00003-A-001-01" reproductionHeight="80pt" reproductionWidth="112pt" xlink:type="simple">
+        </graphic>
+      </figure>
+      <levelledPara>
+        <title>地脚螺栓的要求</title>
+        <para>放置带锚板的地脚螺栓，应符合下列要求：</para>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>地脚螺栓的光杆部及锚板，应刷防锈漆。</para>
+            </listItem>
+            <listItem>
+              <para>用螺母托着钢制锚板，锚板与螺母之间应焊接固定。</para>
+            </listItem>
+            <listItem>
+              <para>当锚板直接焊在地脚螺栓上时，其角焊缝高度应不小于螺杆直径的1/2。</para>
+            </listItem>
+            <listItem>
+              <para>地脚螺栓的坐标及相互尺寸应符合施工图纸的要求。</para>
+            </listItem>
+            <listItem>
+              <para>地脚螺栓露出基础部分应垂直，设备底座套入地脚螺栓孔后应有调整余量，每个地脚螺栓均不得有卡涩现象。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+      </levelledPara>
+      <levelledPara>
+        <title>地脚螺栓的拧紧力矩</title>
+        <para>地脚螺栓按本手册<dmRef xlink:actuate="onRequest" xlink:title="螺栓力矩表" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="N" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>机组主要螺栓拧紧力矩</infoName></dmTitle><issueDate day="24" month="12" year="2025"/></dmRefAddressItems></dmRef>进行。</para>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

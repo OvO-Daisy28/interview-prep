@@ -1,0 +1,37 @@
+--- D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/before/index.py	2026-08-04 17:25:42.387752600 +0800
++++ D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/after/index.py	2026-08-04 15:33:51.000000000 +0800
+@@ -848,13 +848,16 @@
+             "report": rep,
+             "evidences": "\n".join([f.get("explanation", "") for f in stru["findings"]]),
+         }
+-        # Deterministic id derived from (kb_id, community title) so reruns of
+-        # extract_community produce stable ids.  Combined with insert-then-
+-        # prune below, this means a crash mid-insert leaves the prior set of
+-        # community reports intact -- never the partial-delete state the old
+-        # delete-then-insert order produced.
++        # Community titles are LLM output and are not unique. Derive the stable
++        # id from the actual community membership so repeated titles cannot
++        # overwrite distinct reports.
++        community_identity = {
++            "level": str(stru.get("community_level", "")),
++            "community_id": str(stru.get("community_id", "")),
++            "entities": sorted({str(entity) for entity in stru["entities"]}),
++        }
+         chunk_payload_for_id = {
+-            "content_with_weight": f"community_report::{stru['title']}",
++            "content_with_weight": "community_report::" + json.dumps(community_identity, ensure_ascii=False, sort_keys=True, separators=(",", ":")),
+             "kb_id": kb_id,
+         }
+         chunk = {
+@@ -875,6 +878,11 @@
+         chunks.append(chunk)
+ 
+     new_ids: set[str] = {c["id"] for c in chunks}
++    if len(new_ids) != len(chunks):
++        raise RuntimeError(
++            f"Community report id collision for kb {kb_id}: "
++            f"generated={len(chunks)}, unique_ids={len(new_ids)}"
++        )
+ 
+     # Snapshot existing community_report ids BEFORE inserting so we can
+     # delete exactly the stale set afterwards.  If the search fails we fall

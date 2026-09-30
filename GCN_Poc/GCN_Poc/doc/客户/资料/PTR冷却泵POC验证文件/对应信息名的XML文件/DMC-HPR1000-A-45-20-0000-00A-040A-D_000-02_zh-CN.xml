@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="02" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>设备描述</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <para>PTR系统冷却泵的功能是将乏燃料水池中的水送至换热器进行冷却，PTR系统配置了3列独立冗余的冷却回路（A、B、C列），每列冷却回路配置一台冷却泵，用来冷却乏燃料水池。对三台冷却泵的设计要求相同。</para>
+      <para>在电站正常功率运行期间，乏燃料水池冷却回路三个冷却系列中的一个投入运行，即可满足水池的冷却要求（维持水池平均温度在 50℃以下），另两个系列备用（通常由 A、B 列中一列运行）。对冷却回路的维修也放在电站正常功率运行期间进行，三个系列可以满足一用、一备、一维修。</para>
+      <para>在电站正常换料工况下，乏燃料水池冷却回路三个冷却系列中的两个投入运行（通常由A和B列），可以满足水池的冷却要求（维持水池平均温度在50℃以下），另一个系列备用。</para>
+      <para>在事故工况下，任一列冷却回路投入运行，即可满足水池的冷却要求。</para>
+    </description>
+  </content>
+</dmodule>

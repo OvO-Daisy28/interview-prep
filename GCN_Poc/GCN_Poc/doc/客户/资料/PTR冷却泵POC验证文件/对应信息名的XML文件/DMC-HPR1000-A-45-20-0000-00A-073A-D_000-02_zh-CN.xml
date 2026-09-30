@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="073" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="02" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>备品备件</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <table>
+        <title>.PTR冷却泵正常运行期间易损零件备件清单</title>
+        <tgroup cols="15">
+          <colspec colname="c0" colwidth="155*">
+          </colspec>
+          <colspec colname="c1" colwidth="248*">
+          </colspec>
+          <colspec colname="c2" colwidth="150*">
+          </colspec>
+          <colspec colname="c3" colwidth="58*">
+          </colspec>
+          <colspec colname="c4" colwidth="46*">
+          </colspec>
+          <colspec colname="c5" colwidth="35*">
+          </colspec>
+          <colspec colname="c6" colwidth="35*">
+          </colspec>
+          <colspec colname="c7" colwidth="193*">
+          </colspec>
+          <colspec colname="c8" colwidth="120*">
+          </colspec>
+          <colspec colname="c9" colwidth="151*">
+          </colspec>
+          <colspec colname="c10" colwidth="108*">
+          </colspec>
+          <colspec colname="c11" colwidth="158*">
+          </colspec>
+          <colspec colname="c12" colwidth="204*">
+          </colspec>
+          <colspec colname="c13" colwidth="171*">
+          </colspec>
+          <colspec colname="c14" colwidth="188*">
+          </colspec>
+          <thead>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>序号</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>物项中文描述</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>备件型号</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>材料</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>质保等级</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>图纸编码</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>图项号</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>EOMM手册编码</para>
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>制造厂图号</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>制造厂图项号</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>包装方式</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>储存防止方式</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>储存等级</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>寿期（年）</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>生产厂家</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>壳体密封环</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJ300-400C-103</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" morerows="14" nameend="c5" namest="c5" valign="middle">
+                <para>LFZ45200070X4GA44DD</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" morerows="14" nameend="c7" namest="c7" valign="middle">
+                <para>LFZ42EOM400X4GA45SS</para>
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>HTJ300-400C-103</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈406×7.0</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>GB/T3452.1</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>GB/T3452.1</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>3</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>3</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈265×5.3</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>GB/T3452.1</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>GB/T3452.1</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>9</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>4</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈200×3.1</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>JB/ZQ4224</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>JB/ZQ4224</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>4</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>密封垫30×20.5</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HCB12-2003-D×d-n1</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>HCB12-2003-D×d-n1</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>6</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈180×3.1</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>JB/ZQ4224</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>JB/ZQ4224</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>调整垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJ300-400-408</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>HTJ300-400-408</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>8</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>D-DN250-Class150</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>GB/T4622.2</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>13</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>9</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>D-DN300-Class150</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>GB/T4622.2</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>10</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>D-DN10-PN25</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>GB/T4622.2</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>43</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>11</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>密封垫21×26</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>JB/ZQ4454</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>JB/ZQ4454</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>12</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJS300-400C-5304</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>HTJS300-400C-5304</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>13</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJS300-400C-5304</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>HTJS300-400C-5304</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>重泵</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>14</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>电机指示灯</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>4WG00900-0019</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>4WG00900-0019</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>10</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>佳木斯</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>15</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>电机温控开关</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>20B.050.2023.01</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+              <entry align="center" colname="c8" valign="middle">
+                <para>20B.050.2023.01</para>
+              </entry>
+              <entry align="center" colname="c9" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c10" valign="middle">
+                <para>保持原包装</para>
+              </entry>
+              <entry align="center" colname="c11" valign="middle">
+                <para>平放</para>
+              </entry>
+              <entry align="center" colname="c12" valign="middle">
+                <para>室内</para>
+              </entry>
+              <entry align="center" colname="c13" valign="middle">
+                <para>10</para>
+              </entry>
+              <entry align="center" colname="c14" valign="middle">
+                <para>佳木斯</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table>
+        <tgroup cols="8">
+          <colspec colname="c0" colwidth="97*">
+          </colspec>
+          <colspec colname="c1" colwidth="264*">
+          </colspec>
+          <colspec colname="c2" colwidth="217*">
+          </colspec>
+          <colspec colname="c3" colwidth="236*">
+          </colspec>
+          <colspec colname="c4" colwidth="210*">
+          </colspec>
+          <colspec colname="c5" colwidth="137*">
+          </colspec>
+          <colspec colname="c6" colwidth="155*">
+          </colspec>
+          <colspec colname="c7" colwidth="124*">
+          </colspec>
+          <thead>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>序号</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>备件名称</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>零件代号</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>数量</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>所属部件图号</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>图中序号</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>质保等级</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>备注</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>壳体密封环</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJ300-400C-103</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>2件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400C-000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈406×7.0</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>GB/T3452.1</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400C-000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>4</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>泵体泵盖密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>3</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈265×5.3</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>GB/T3452.1</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400C-000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>23</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>托架泵盖密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>4</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈200×3.1</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>JB/ZQ4224</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400-400</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>11</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>非驱动端轴承盖密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>密封垫30×20.5</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HCB12-2003-D×d-n1</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400-400</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>14</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>轴承体放油塞密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>6</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>O形圈180×3.1</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>JB/ZQ4224</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400-400</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>20</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>驱动端轴承盖密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>7</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>调整垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJ300-400-408</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1套</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400-400</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>21-23</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>轴承游隙调整用</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>8</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>轴承隔离器80×100×12</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>PT-Q-GL</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>2件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJ300-400-400</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>25</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>轴承盖密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>9</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJS300-400C-0003</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJS300-400C-0000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>6</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>进口法兰密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>10</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJS300-400C-0005</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJS300-400C-0000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>14</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>疏水管与泵体密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>11</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJS300-400C-0004</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJS300-400C-0000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>16</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>出口法兰密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>12</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>密封垫21×26</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>JB/ZQ4454</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJS300-400C-0000</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>22</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>排污管与托架密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>13</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJS300-400C-5304</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJS300-400C-5100</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>9</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>排污管配对法兰密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>14</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>金属缠绕垫</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJS300-400C-5304</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>HTJS300-400C-5300</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>8</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>疏水管配对法兰密封件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>15</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>电机指示灯</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>4WG00900-0019</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>电机易损件</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>16</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>电机温控开关</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>20B.050.2023.01</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>1件</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>/</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>QNC</para>
+              </entry>
+              <entry align="center" colname="c7" valign="middle">
+                <para>电机易损件</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </description>
+  </content>
+</dmodule>

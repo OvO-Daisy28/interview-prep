@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="131" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="04" issueNumber="001"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>停机</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <warning>
+        <warningAndCautionPara>确保电机停止后电源隔离，以防意外起动！</warningAndCautionPara>
+      </warning>
+      <caution>
+        <warningAndCautionPara>记录下停机的时间<changeInline changeType="add">。</changeInline></warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title>主机停机</title>
+        <para changeMark="1" changeType="add">
+          <sequentialList>
+            <listItem>
+              <para>关小出水主管阀门至正常开度的50%～70%。</para>
+            </listItem>
+            <listItem>
+              <para>打开旁管路阀门，出水管主阀门缓慢关闭。</para>
+            </listItem>
+            <listItem>
+              <para>关闭驱动机，直到停止。</para>
+            </listItem>
+            <listItem>
+              <para>关闭进水管阀门及旁通阀。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+        <para changeMark="1" changeType="delete">1）关小出水主管阀门至正常开度的50%～70%；</para>
+        <para changeMark="1" changeType="delete">2）打开旁管路阀门，出水管主阀门缓慢关闭；</para>
+        <para changeMark="1" changeType="delete">3）关闭驱动机，直到停止；</para>
+        <para changeMark="1" changeType="delete">4）关闭进水管阀门及旁通阀。</para>
+        <levelledPara>
+          <title>主机停机后辅助系统的操作（若有）</title>
+          <para>泵组完全停机3～5min方可关掉相关辅助系统（如冷却水系统、机封冲洗系统等）。</para>
+          <para>若泵组处于备用状态，冷/暖泵系统、机封辅助系统及冷却水系统等需保持开启。</para>
+        </levelledPara>
+      </levelledPara>
+      <caution>
+        <warningAndCautionPara>对于输送高温或低温介质的泵需要先进行暖泵或冷泵处理的，应该在出口阀位置设置旁通倒暖管线持续通入小流量的输送介质，以保证泵体温度始终处于运行启泵时要求的温度范围。</warningAndCautionPara>
+        <warningAndCautionPara>高温泵停机后，待泵体温度降到40℃以下才能进行排放等操作<changeInline changeType="delete">；</changeInline><changeInline changeType="add">。</changeInline></warningAndCautionPara>
+        <warningAndCautionPara>对输送介质有毒、易燃、易爆的危险品或容易结晶、凝固和沉淀的泵，停泵后需要防止堵塞，及时用清水或其它介质置换冲洗泵和管道，不能有任何介质残留。</warningAndCautionPara>
+        <warningAndCautionPara>当环境温度低于4℃，轴承体、管路、泵体等都应该进行排净处理，并做好相应防冻处理。</warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title>停机后的工作</title>
+        <levelledPara>
+          <title>在线热备用设备停机后的工作</title>
+          <para changeMark="1" changeType="add">
+            <sequentialList>
+              <listItem>
+                <para>若泵组处于备用状态，若有冷/暖泵系统、机封辅助系统及冷却水系统等需保持开启。</para>
+              </listItem>
+              <listItem>
+                <para>对泵组部件做好保护，以防止水和湿气的侵蚀。</para>
+              </listItem>
+              <listItem>
+                <para>每周至少盘车一次，每次转动至少5圈，盘车前后转子相位需差180°。</para>
+              </listItem>
+              <listItem>
+                <para>若系统允许设备短时运行，每个月根据本章启动部分的要求将泵进行运转，运行约10分钟后根据本章停机部分的说明关闭泵，检查泵的转子是否可以平滑地减速直到停止。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+          <para changeMark="1" changeType="delete">1）若泵组处于备用状态，若有冷/暖泵系统、机封辅助系统及冷却水系统等需保持开启。</para>
+          <para changeMark="1" changeType="delete">2）对泵组部件做好保护，以防止水和湿气的侵蚀。</para>
+          <para changeMark="1" changeType="delete">3）每周至少盘车一次，每次转动至少5圈，盘车前后转子相位需差180°。</para>
+          <para changeMark="1" changeType="delete">4）若系统允许设备短时运行，每个月根据本章启动部分的要求将泵进行运转，运行约10分钟后根据本章停机部分的说明关闭泵，检查泵的转子是否可以平滑地减速直到停止。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>长期停运设备停机后的工作</title>
+          <para changeMark="1" changeType="add">
+            <sequentialList>
+              <listItem>
+                <para>关闭泵组所有的阀门，含冷却水系统（若有）的相关阀门。</para>
+              </listItem>
+              <listItem>
+                <para>打开泵组疏水阀排净设备所存留的介质；所有排放的液体按照国家相关法律法规进行收集和处理。</para>
+              </listItem>
+              <listItem>
+                <para>对泵组部件做好保护工作，防止水和湿气的侵蚀。</para>
+              </listItem>
+              <listItem>
+                <para>对泵定期盘车，要求每周至少盘车一次，每次转动至少5圈，盘车前后转子相位需差180°，同时转动转子部件检查转子是否有摩擦，转动是否灵活。</para>
+              </listItem>
+              <listItem>
+                <para>有防冻需要时，向泵中注入比例按1：2的乙二醇和水的混合防冻液，可以防止在-20℃以内受冻，如有必要可按1：1比例的混合加强防冻保护到约-42℃。</para>
+              </listItem>
+              <listItem>
+                <para>泵组润滑油池所存润滑油可不排放。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+          <para changeMark="1" changeType="delete">1）关闭泵组所有的阀门，含冷却水系统（若有）的相关阀门。</para>
+          <para changeMark="1" changeType="delete">2）打开泵组疏水阀排净设备所存留的介质；所有排放的液体按照国家相关法律法规进行收集和处理。</para>
+          <para changeMark="1" changeType="delete">3）对泵组部件做好保护工作，防止水和湿气的侵蚀。</para>
+          <para changeMark="1" changeType="delete">4）对泵定期盘车，要求每周至少盘车一次，每次转动至少5圈，盘车前后转子相位需差180°，同时转动转子部件检查转子是否有摩擦，转动是否灵活。</para>
+          <para changeMark="1" changeType="delete">5）有防冻需要时，向泵中注入比例按1：2的乙二醇和水的混合防冻液，可以防止在-20℃以内受冻，如有必要可按1：1比例的混合加强防冻保护到约-42℃。</para>
+          <para changeMark="1" changeType="delete">6）泵组润滑油池所存润滑油可不排放。</para>
+        </levelledPara>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

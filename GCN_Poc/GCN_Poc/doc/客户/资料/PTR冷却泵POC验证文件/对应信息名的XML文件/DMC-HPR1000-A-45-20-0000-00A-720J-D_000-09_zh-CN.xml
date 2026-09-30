@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00005-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00005-A-001-01.PNG" NDATA png>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00014-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00014-A-001-01.PNG" NDATA png>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00036-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00036-A-001-01.PNG" NDATA png>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00035-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00035-A-001-01.PNG" NDATA png>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="J" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="09" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>冷态对中</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <warning>
+        <warningAndCautionPara>对中时，请确保驱动设备电源处于断开状态。</warningAndCautionPara>
+      </warning>
+      <levelledPara>
+        <title>对中原则</title>
+        <para>PTR冷却泵组的对中通过联轴器找正的方式进行调整，泵和驱动机中心线的偏差控制在允许范围内，原则上以泵轴中心线为基准，调整电机。</para>
+        <para>冷态对中完成，热态跑和后再进行热态对中，热态对中合格才完成最终对中。</para>
+      </levelledPara>
+      <levelledPara>
+        <title>对中方法</title>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>按下图<internalRef internalRefId="image-1" internalRefTargetType="irtt01" xlink:actuate="onRequest" xlink:show="replace" xlink:title="泵机组图" xlink:type="simple"/>所示检查泵及电机轴端联轴器跳动应不大于0.03mm（若对中时采用同步盘车打表的方法，此步可以取消）。</para>
+            </listItem>
+            <listItem>
+              <para>按联轴器图纸（<internalRef internalRefId="image-1" internalRefTargetType="irtt01" xlink:actuate="onRequest" xlink:show="replace" xlink:title="泵机组图" xlink:type="simple"/>）和说明书要求，确定联轴器端面距离。</para>
+            </listItem>
+            <listItem>
+              <para>联轴器对中找正，按常用的“打表找正”方式举例说明：</para>
+              <para>
+                <sequentialList>
+                  <listItem>
+                    <para>按下图<internalRef internalRefId="image-2" internalRefTargetType="irtt01" xlink:actuate="onRequest" xlink:show="replace" xlink:title="固定百分表示意图" xlink:type="simple"/>所示牢固的固定百分表，连接杆不宜太长，必要时须制作专用工具。</para>
+                  </listItem>
+                  <listItem>
+                    <para>百分表所测位置，按垂直（0°、180°）、水平（90°、270°）标记相位。将百分表“调零”，旋转联轴器，记录百分表在4个相位上的读数，并对测得的数值进行校对复核。</para>
+                  </listItem>
+                  <listItem>
+                    <para>比较联轴器外圆、端面各对称相位上百分表数值，外圆数值差值的一半减去冷态预留值（合同产品无专用要求时按<internalRef internalRefId="excel-2" internalRefTargetType="irtt02" xlink:actuate="onRequest" xlink:show="replace" xlink:title="冷态对中预留值表" xlink:type="simple"/>预留）即为径向偏差，端面数值的差值即为联轴器端面张口值，允差应符合<internalRef internalRefId="excel-1" internalRefTargetType="irtt02" xlink:actuate="onRequest" xlink:show="replace" xlink:title="对中允差表" xlink:type="simple"/>规定。</para>
+                  </listItem>
+                  <listItem>
+                    <para>当不符合<internalRef internalRefId="excel-1" internalRefTargetType="irtt02" xlink:actuate="onRequest" xlink:show="replace" xlink:title="对中允差表" xlink:type="simple"/>规定时，允差通过调整螺钉、调整垫片等调整电机的位置进行对中，直到符合要求。</para>
+                  </listItem>
+                  <listItem>
+                    <para>在调整过程中应以泵为基准，泵的脚板下一般不使用垫片，电机与底座间垫片组总厚度一般在3-5mm，每个垫片组中垫片数量不超过5片，垫片面积应大于设备脚板。</para>
+                  </listItem>
+                  <listItem>
+                    <para>紧固电机与公共底座连接的螺柱、螺母。</para>
+                  </listItem>
+                  <listItem>
+                    <para>安装联轴器中间节、联轴器罩、辅助管路。</para>
+                  </listItem>
+                </sequentialList>
+              </para>
+            </listItem>
+          </sequentialList>
+        </para>
+        <figure id="image-1">
+          <title>泵机组图</title>
+          <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00005-A-001-01" reproductionHeight="59pt" reproductionWidth="112pt" xlink:type="simple">
+          </graphic>
+        </figure>
+        <figure id="image-2">
+          <title>固定百分表示意图（A为基准联轴器，B为待找正的联轴器）</title>
+          <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00014-A-001-01" reproductionHeight="66pt" reproductionWidth="112pt" xlink:type="simple">
+          </graphic>
+        </figure>
+        <table id="excel-1">
+          <title>对中允差</title>
+          <tgroup cols="2">
+            <colspec colname="c0" colwidth="174*">
+            </colspec>
+            <colspec colname="c1" colwidth="174*">
+            </colspec>
+            <thead>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>位置</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>允差（mm）</para>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>径向偏差</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>±0.03</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>端面张口</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>0.05</para>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <table id="excel-2">
+          <title>冷态对中预留值</title>
+          <tgroup cols="5">
+            <colspec colname="c0" colwidth="189*">
+            </colspec>
+            <colspec colname="c1" colwidth="73*">
+            </colspec>
+            <colspec colname="c2" colwidth="90*">
+            </colspec>
+            <colspec colname="c3" colwidth="143*">
+            </colspec>
+            <colspec colname="c4" colwidth="269*">
+            </colspec>
+            <tbody>
+              <row>
+                <entry align="center" colname="c0" morerows="0" nameend="c4" namest="c0" valign="middle">
+                  <para>1、径向-水平方向</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>介质温度（℃）</para>
+                </entry>
+                <entry align="center" colname="c1" morerows="0" nameend="c2" namest="c1" valign="middle">
+                  <para>方位</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>预留值（mm）（mm）</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>说明</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>任意</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>径向</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>水平</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>0</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>不需预留</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" morerows="0" nameend="c4" namest="c0" valign="middle">
+                  <para>2、径向-垂直方向</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>介质温度（℃）</para>
+                </entry>
+                <entry align="center" colname="c1" morerows="0" nameend="c2" namest="c1" valign="middle">
+                  <para>方位</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>预留值（mm）</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>说明</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>（-80）～（-60）</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>径向</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>垂直</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>+0.14</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>泵中心高于电机中心</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>（-60）～（-30）</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>+0.12</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>-30～0</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>+0.10</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>0～30</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>+0.08</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>30～60</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>+0.06</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>60～80</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>+0.04</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>80～100</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>+0.02</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" morerows="0" nameend="c4" namest="c0" valign="middle">
+                  <para>
+                    <internalRef internalRefId="image-3" internalRefTargetType="irtt01" xlink:actuate="onRequest" xlink:show="replace" xlink:title="泵中心高于电机中心图" xlink:type="simple">
+                    </internalRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>100～120</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>径向</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>垂直</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>-0.02</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>泵中心低于电机中心</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>120～140</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>-0.06</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>140～160</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>-0.10</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>160～180</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>-0.14</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>180～200</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>-0.18</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" morerows="0" nameend="c4" namest="c0" valign="middle">
+                  <para>
+                    <internalRef internalRefId="image-4" internalRefTargetType="irtt01" xlink:actuate="onRequest" xlink:show="replace" xlink:title="泵中心低于电机中心图" xlink:type="simple">
+                    </internalRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <figure id="image-3">
+          <title>泵中心高于电机中心</title>
+          <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00036-A-001-01" reproductionHeight="30pt" reproductionWidth="112pt" xlink:type="simple">
+          </graphic>
+        </figure>
+        <figure id="image-4">
+          <title>泵中心低于电机中心</title>
+          <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00035-A-001-01" reproductionHeight="37pt" reproductionWidth="112pt" xlink:type="simple">
+          </graphic>
+        </figure>
+      </levelledPara>
+      <caution>
+        <warningAndCautionPara>不要通过松紧固定设备的螺栓来对中。</warningAndCautionPara>
+        <warningAndCautionPara>也不要通过顶丝（调整设备位置的螺钉）来对中，设备调整好后，顶丝应处于松开状态。</warningAndCautionPara>
+        <warningAndCautionPara>上述机组对中是安装过程中最重要的环节，其质量必须符合本说明书要求，需经重泵公司现场指导安装调试人员及现场施工监理检测确认后，才能进入下一阶段的安装施工。</warningAndCautionPara>
+      </caution>
+    </description>
+  </content>
+</dmodule>

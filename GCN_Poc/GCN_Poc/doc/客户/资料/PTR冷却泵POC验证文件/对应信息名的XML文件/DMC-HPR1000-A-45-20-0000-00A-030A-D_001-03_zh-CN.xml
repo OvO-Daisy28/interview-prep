@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="030" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="001"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>设备代码及设备型号</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <levelledPara>
+        <title>设备代码清单
+</title>
+        <table changeMark="1" changeType="modify">
+          <title>设备代码清单</title>
+          <tgroup cols="5">
+            <colspec colname="c0" colwidth="101*">
+            </colspec>
+            <colspec colname="c1" colwidth="189*">
+            </colspec>
+            <colspec colname="c2" colwidth="236*">
+            </colspec>
+            <colspec colname="c3" colwidth="271*">
+            </colspec>
+            <colspec colname="c4" colwidth="153*">
+            </colspec>
+            <thead>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para changeMark="1" changeType="modify">
+                    <changeInline changeType="delete">序</changeInline>
+                    <changeInline changeType="add">序号</changeInline>
+                  </para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>名称</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>型号</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>设备编码</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>生产厂家</para>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>1</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>PTR冷却泵</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>HTJ300-400C</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1130/2130/3130PO</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>重庆水泵厂有限责任公司</para>
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>2</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>HY280M-4</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1130/2130/3130POM</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>佳木斯电气股份有限公司</para>
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>3</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>泵驱动端轴承热电阻（双支四线制）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZGPK（过程接口G1/4，电气接口M20×1.5）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1141/2141/3141MT</para>
+                </entry>
+                <entry align="center" colname="c4" morerows="6" nameend="c4" namest="c4" valign="middle">
+                  <para>常州天利智能控制股份有限公司</para>
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>4</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>泵非驱动端轴承热电阻（双支四线制）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZGPK（过程接口G1/4，电气接口M20×1.5）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1140/2140/3140MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>5</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机轴伸端轴承热电阻（双支四线制）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZPM2（过程接口M10×1，电气接口M36×2）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1135/2135/3135MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>6</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机非轴伸端轴承热电阻（双支四线制）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZPM2（过程接口M10×1，电气接口M36×2）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1136/2136/3136MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>7</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机U相绕组热电阻（双支四线制）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZP2DN（嵌入式，在定子槽内）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1137/2137/3137MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>8</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机V相绕组热电阻（双支四线制）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZP2DN（嵌入式，在定子槽内）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1138/2138/3138MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>9</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机W相绕组热电阻（双支四线制）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZP2DN（嵌入式，在定子槽内）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1139/2139/3139MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>10</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机U相绕组温度热电阻（备用）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZP2DN（嵌入式，在定子槽内）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1147/2147/3147MT</para>
+                </entry>
+                <entry align="center" colname="c4" morerows="2" nameend="c4" namest="c4" valign="middle">
+                  <para>江苏东佳电气有限公司</para>
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>11</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机V相绕组温度热电阻（备用）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZP2DN（嵌入式，在定子槽内）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1148/2148/3148MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>12</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>电机W相绕组温度热电阻（备用）</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>WZP2DN（嵌入式，在定子槽内）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1149/2149/3149MT</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>13</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>泵驱动端垂直方向端振动传感器</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>HVT177230S-06-02（过程接口M8×1.25）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1132/2132/3132MV</para>
+                </entry>
+                <entry align="center" colname="c4" morerows="3" nameend="c4" namest="c4" valign="middle">
+                  <para>常州天利智能控制股份有限公司</para>
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>14</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>泵驱动端水平方向端振动传感器</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>HVT177230S-06-02（过程接口M8×1.25）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1131/2131/3131MV</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>15</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>泵非驱动端垂直方向端振动传感器</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>HVT177230S-06-02（过程接口M8×1.25）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1134/2134/3134MV</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row changeMark="1" changeType="modify">
+                <entry align="center" colname="c0" valign="middle">
+                  <para>16</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>泵非驱动端水平方向端振动传感器</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>HVT177230S-06-02（过程接口M8×1.25）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>5/6PTR1133/2133/3133MV</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </levelledPara>
+      <levelledPara>
+        <title>设备型号</title>
+        <para>Ø  PTR冷却泵</para>
+        <para>◇型号：HTJ300-400C单级单吸悬臂式离心泵</para>
+        <para>◇主要技术参数</para>
+        <para>—   额定流量：640m3/h</para>
+        <para>—   额定扬程： 36m</para>
+        <para>—   额定转速： 1480r/min</para>
+        <para>—   有效汽蚀余量：10.5m</para>
+        <para>—   必须汽蚀余量：5.9 m</para>
+        <para>—   轴功率：77.2kW</para>
+        <para>—   入口压力：0.1~0.21MPa(g)</para>
+        <para>Ø  电机</para>
+        <para>◇型号：HY280M-4</para>
+        <para>◇主要技术参数</para>
+        <para>—   额定电压：380V<changeInline changeType="delete">；</changeInline></para>
+        <para>—   频率：50HZ<changeInline changeType="delete">；</changeInline></para>
+        <para>—   额定功率：90kW<changeInline changeType="delete">；</changeInline></para>
+        <para>—   额定转速：1480r/ min<changeInline changeType="delete">；</changeInline></para>
+        <para>—   防护等级：IP55/IK07<changeInline changeType="delete">；</changeInline></para>
+        <para>—   润滑方式：脂润滑<changeInline changeType="delete">；</changeInline></para>
+        <para>—   润滑脂牌号：LGWA2润滑脂<changeInline changeType="delete">。</changeInline></para>
+        <para>Ø  机封</para>
+        <para>◇型号：CMH1Bn-095-K080B11</para>
+        <para>◇主要技术参数</para>
+        <para>—   密封腔压力：1.0MPa G</para>
+        <para>—   冲洗方案：PLAN01</para>
+        <para>—   允许泄漏量：≤5ml/h</para>
+        <para>Ø  联轴器</para>
+        <para>◇型号：HB6190（75×140-70×100-235）</para>
+        <para>◇主要技术参数</para>
+        <para>—   联轴器总长：475mm</para>
+        <para>联轴器间距：235mm</para>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

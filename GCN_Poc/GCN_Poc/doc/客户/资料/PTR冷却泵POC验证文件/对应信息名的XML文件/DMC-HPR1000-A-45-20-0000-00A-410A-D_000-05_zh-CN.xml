@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="410" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>故障列表</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>泵组无法启动</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="C" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>没有达到额定的流量或压力</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="不出液 - 通用故障隔离程序" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>泵不出液</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="E" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>轴承发热</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="F" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>泵噪声或振动超标</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="G" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>密封寿命短、密封过度泄漏、密封冲洗管线过热</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="H" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>电机过载</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="I" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>轴承迅速磨损</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="J" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>泵过热/卡住</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="K" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>泵短期的腐蚀、侵蚀、点蚀、氧化或材料流失</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="D" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>泵启动后即停止输液</techName>
+            <infoName>通用故障隔离程序</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <table>
+        <title>故障列表</title>
+        <tgroup cols="3">
+          <colspec colname="c0" colwidth="85*">
+          </colspec>
+          <colspec colname="c1" colwidth="346*">
+          </colspec>
+          <colspec colname="c2" colwidth="120*">
+          </colspec>
+          <thead>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>序号
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>故障描述
+</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>故障编码
+</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="泵组无法启动 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>泵组无法启动</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E001</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>2
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title=" 泵不出液 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>泵不出液</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E002</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>3
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="泵没有达到额定的流量或压力 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="C" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>没有达到额定的流量或压力</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E003</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>4
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="D" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>泵启动后即停止输液</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E004</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>5
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="轴承发热 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="E" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>轴承发热</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E005</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>6
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="泵噪声或振动超标 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="F" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>泵噪声或振动超标</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E006</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>7
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="密封寿命短、密封过度泄漏、密封冲洗管线过热 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="G" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>密封寿命短、密封过度泄漏、密封冲洗管线过热</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E007</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>8
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="电机过载 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="H" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>电机过载</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E008</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>9
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="轴承迅速磨损 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="I" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>轴承迅速磨损</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E009</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>10
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="泵过热/卡住 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="J" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>泵过热/卡住</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E010</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>11
+</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>
+                  <dmRef xlink:actuate="onRequest" xlink:title="泵短期的腐蚀、侵蚀、点蚀、氧化或材料流失 - 通用故障隔离程序" xlink:type="simple">
+                    <dmRefIdent>
+                      <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="K" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                      <language countryIsoCode="CN" languageIsoCode="zh"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                        <techName>泵短期的腐蚀、侵蚀、点蚀、氧化或材料流失</techName>
+                        <infoName>通用故障隔离程序</infoName>
+                      </dmTitle>
+                      <issueDate day="22" month="12" year="2025"/>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>E011</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </description>
+  </content>
+</dmodule>

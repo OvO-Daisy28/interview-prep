@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="200" infoCodeVariant="K" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="04" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>机械密封和叶轮</techName><infoName>组装</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <procedure>
+      <preliminaryRqmts>
+        <reqCondGroup>
+          <reqCondNoRef>
+            <reqCond>现场要有足够的可操作空间满足泵的拆装；还需备有专门拆装泵的平台。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备力矩扳手、千分表、塞尺。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场备有零部件及工具等的储存设施。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有相应的运输工具及起吊行车，包括具备各种安装、操作资质的专业人员。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备清洁剂、润滑剂。</reqCond>
+          </reqCondNoRef>
+        </reqCondGroup>
+        <reqSupportEquips>
+          <supportEquipDescrGroup>
+            <supportEquipDescr>
+              <name>手动拉拔器</name>
+              <identNumber>
+                <manufacturerCode>QB/T5537（规格CSQ-300）</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+            <supportEquipDescr>
+              <name>勾扳手</name>
+              <identNumber>
+                <manufacturerCode>JB/ZQ4624/(A110-115)</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+            <supportEquipDescr>
+              <name>扳手</name>
+              <identNumber>
+                <manufacturerCode>M16、M20</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+          </supportEquipDescrGroup>
+        </reqSupportEquips>
+        <reqSupplies>
+          <noSupplies>
+          </noSupplies>
+        </reqSupplies>
+        <reqSpares>
+          <noSpares>
+          </noSpares>
+        </reqSpares>
+        <reqSafety>
+          <safetyRqmts>
+            <caution>
+              <warningAndCautionPara>端面密封面不允许有径向划痕或损伤；径向密封面不允许有轴向划痕或损伤,密封件密封部位不允许任何划痕或凹凸。</warningAndCautionPara>
+              <warningAndCautionPara>检查紧固件无损伤、螺纹表面光滑（清洁干净无毛刺），拧紧时转动平稳。</warningAndCautionPara>
+              <warningAndCautionPara>拧紧时力矩必须分3）拧紧到位，拧紧时必须对称拧紧完所有螺母后，才能以更大力矩拧紧螺母。</warningAndCautionPara>
+            </caution>
+          </safetyRqmts>
+        </reqSafety>
+      </preliminaryRqmts>
+      <mainProcedure>
+        <proceduralStep>
+          <title>组装</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>检查确认新的机械密封组件应无可见缺陷。</para>
+              </listItem>
+              <listItem>
+                <para>通过定位块将机械密封和轴套锁定。</para>
+              </listItem>
+              <listItem>
+                <para>安装O型圈，将机械密封安装至轴上。</para>
+              </listItem>
+              <listItem>
+                <para>安装O形圈，回装泵盖，通过机械密封压盖螺柱、螺母及垫圈装入泵盖上，螺栓紧固力矩240N.m。</para>
+              </listItem>
+              <listItem>
+                <para>拧紧泵盖与托架的紧固螺柱、螺母，紧固力矩300N.m。</para>
+              </listItem>
+              <listItem>
+                <para>安装叶轮键，对准键槽，装入叶轮。</para>
+              </listItem>
+              <listItem>
+                <para>安装止动垫圈及叶轮螺母，紧固力矩值300~350Nm【待补充】。</para>
+              </listItem>
+              <listItem>
+                <para>测量叶轮口环与壳体密封环配合处的径向跳动，要求值≤0.1mm，参考图6.10.4.1示意图执行，记录在维修报告5.3中。</para>
+              </listItem>
+              <listItem>
+                <para>将转子部件装到垫有塑料布的小车上，运到泵安装处。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </proceduralStep>
+      </mainProcedure>
+      <closeRqmts>
+        <reqCondGroup>
+          <noConds>
+          </noConds>
+        </reqCondGroup>
+      </closeRqmts>
+    </procedure>
+  </content>
+</dmodule>

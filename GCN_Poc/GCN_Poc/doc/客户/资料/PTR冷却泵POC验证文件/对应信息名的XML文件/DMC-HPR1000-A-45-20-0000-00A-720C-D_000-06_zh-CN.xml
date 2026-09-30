@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00010-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00010-A-001-01.PNG" NDATA png>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="C" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="06" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>垫铁的安装</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <para>垫铁组的布置应符合下列规定；<sequentialList><listItem><para>在地脚螺栓两侧各放置一组，应使垫铁靠近地脚螺栓，具体参考标准SH/T 3541《石油化工泵组施工及验收规范》。</para></listItem><listItem><para>相邻两垫铁组的间距，可根据设备的重量、底座的结构形式以及载荷分布等具体情况而定，宜为500mm～1000mm。</para></listItem><listItem><para>对于带锚板的地脚螺栓两侧的垫铁组，应放置在预留孔的两侧。</para></listItem><listItem><para>垫铁表面平整、无氧化皮、飞边等。斜垫铁的斜面粗糙度不得大于Ra25um，斜度为1:20。</para></listItem><listItem><para>斜垫铁应配对使用，与平垫铁组成垫铁组时，垫铁的层数宜为三层（即一平二斜），最多不超过四层，薄垫铁厚度不应小于2mm，并放在斜垫铁与厚平垫铁之间。斜垫铁可与同号或者大一号的平垫铁搭配使用。垫铁组的高度宜为30～70mm。</para></listItem><listItem><para>斜铁由施工方提供。</para></listItem><listItem><para>垫铁组直接放在基础上，应整齐平稳、接触良好，接触面积应不小于50%。平垫铁顶面水平度的允许偏差为2mm/m，各垫铁组顶面的标高应与底座底面实际安装高度相符。</para></listItem><listItem><para>机组找平后，垫铁组布置应符合下列要求：</para><para><sequentialList><listItem><para>每一垫铁组应放置整齐平稳，接触良好，并应露出底座10～30m。</para></listItem><listItem><para>地脚螺栓的两侧的垫铁组，每块垫铁伸入机器底座底面的长度，均匀的超过地脚螺栓。</para></listItem><listItem><para>配对斜垫铁的搭接长度不应小于全长的3/4，其相互间的偏斜角应不大于3°。</para></listItem><listItem><para>机组用垫铁找平、找正后，对垫铁组应做如下检查：</para><para><sequentialList><listItem><para>用手锤敲击检查垫铁组的松紧程度，应无松动现象。</para></listItem><listItem><para>用0.05mm的塞尺检查，垫铁之间及垫块与底座底面之间的间隙，在垫铁同一断面处从两侧塞入的长度总和，不应超过垫铁长（宽）度的1/3。</para></listItem></sequentialList></para></listItem><listItem><para>垫铁组检查合格后应在垫铁组的两侧进行层间定位焊焊牢，垫铁与机组底座之间不得焊接。</para></listItem></sequentialList></para></listItem></sequentialList></para>
+      <figure>
+        <title>垫铁组的布置</title>
+        <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00010-A-001-01" reproductionHeight="80pt" reproductionWidth="112pt" xlink:type="simple">
+        </graphic>
+      </figure>
+    </description>
+  </content>
+</dmodule>

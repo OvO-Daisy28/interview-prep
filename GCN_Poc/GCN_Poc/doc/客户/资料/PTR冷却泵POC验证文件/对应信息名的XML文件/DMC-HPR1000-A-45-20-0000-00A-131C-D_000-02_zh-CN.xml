@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="131" infoCodeVariant="C" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="02" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>日常定期检查</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <para>泵组在正常运转时应定时对泵组状态进行检查并做好记录。</para>
+      <para>在日常定期检查时重点检查下列情况：</para>
+      <para>
+        <sequentialList>
+          <listItem>
+            <para>检查各测量仪表的指示情况：</para>
+            <para>
+              <sequentialList>
+                <listItem>
+                  <para>泵的吸入压力、排出压力是否正常，如波动较大时，应查找原因并处理。</para>
+                </listItem>
+                <listItem>
+                  <para>泵及附属设备的各项性能参数等是否异常。</para>
+                </listItem>
+              </sequentialList>
+            </para>
+          </listItem>
+          <listItem>
+            <para>设备各部件有无漏油、漏水、异常噪音等现象。</para>
+          </listItem>
+          <listItem>
+            <para>检查泵组的联接螺栓、轴承体螺栓等有无松动。</para>
+          </listItem>
+          <listItem>
+            <para>油品质量是否符合要求，否则更换润滑油。</para>
+          </listItem>
+        </sequentialList>
+      </para>
+      <caution>
+        <warningAndCautionPara>特别注意泵进口压力及温度。泵吸入压力过低将导致过流部件因汽蚀而损坏，可能引起泵组振动，影响泵的使用寿命。</warningAndCautionPara>
+        <warningAndCautionPara>泵组性能降低时，应及时停机检修。</warningAndCautionPara>
+      </caution>
+      <caution>
+        <warningAndCautionPara>建议换油周期如下：</warningAndCautionPara>
+        <warningAndCautionPara>首次加油运行15天后更换，第二次运行60天后更换一次，以后更换润滑油时间视油品质（润滑特性）而定，一般为半年。</warningAndCautionPara>
+        <warningAndCautionPara>泵运行过程中，应每月抽取润滑油进行检查，当样品润滑特性超出标准的使用范围时，应立即更换。</warningAndCautionPara>
+      </caution>
+    </description>
+  </content>
+</dmodule>

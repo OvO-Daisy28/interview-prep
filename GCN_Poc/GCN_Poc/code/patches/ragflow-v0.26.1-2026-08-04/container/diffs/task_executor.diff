@@ -1,0 +1,11 @@
+--- D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/before/task_executor.py	2026-08-04 17:18:07.304904200 +0800
++++ D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/after/task_executor.py	2026-08-04 15:52:05.000000000 +0800
+@@ -1506,8 +1506,6 @@
+         graphrag_conf = kb_parser_config.get("graphrag", {})
+         start_ts = timer()
+         chat_model_config = get_model_config_from_provider_instance(task_tenant_id, LLMType.CHAT, kb_task_llm_id)
+-        chat_model_config["api_key"] = "<REDACTED>"  # [GCN_Poc] override; redacted in local archive
+-        chat_model_config["llm_name"] = "deepreasoning-ds-v4pro"  # [GCN_Poc] override
+         chat_model = LLMBundle(task_tenant_id, chat_model_config, lang=task_language)
+         with_resolution = graphrag_conf.get("resolution", False)
+         with_community = graphrag_conf.get("community", False)

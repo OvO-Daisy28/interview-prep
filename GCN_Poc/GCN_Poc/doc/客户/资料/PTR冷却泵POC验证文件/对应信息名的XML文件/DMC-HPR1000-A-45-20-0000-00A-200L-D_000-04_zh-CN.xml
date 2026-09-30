@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="200" infoCodeVariant="L" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="04" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>联轴器</techName><infoName>对中找正及润滑</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <procedure>
+      <preliminaryRqmts>
+        <reqCondGroup>
+          <reqCondNoRef>
+            <reqCond>现场要有足够的可操作空间满足泵的拆装；还需备有专门拆装泵的平台。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备力矩扳手、千分表、塞尺。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场备有零部件及工具等的储存设施。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有相应的运输工具及起吊行车，包括具备各种安装、操作资质的专业人员。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备清洁剂、润滑剂。</reqCond>
+          </reqCondNoRef>
+        </reqCondGroup>
+        <reqSupportEquips>
+          <supportEquipDescrGroup>
+            <supportEquipDescr>
+              <name>百分表</name>
+              <identNumber>
+                <manufacturerCode>0-10mm</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+            <supportEquipDescr>
+              <name>扳手</name>
+              <identNumber>
+                <manufacturerCode>建立按周期图纸</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+          </supportEquipDescrGroup>
+        </reqSupportEquips>
+        <reqSupplies>
+          <noSupplies>
+          </noSupplies>
+        </reqSupplies>
+        <reqSpares>
+          <noSpares>
+          </noSpares>
+        </reqSpares>
+        <reqSafety>
+          <safetyRqmts>
+            <warning>
+              <warningAndCautionPara>对中时，请确保驱动设备电源处于断开状态。</warningAndCautionPara>
+            </warning>
+            <caution>
+              <warningAndCautionPara>安装前请仔细阅读联轴器制造商提供的说明书和图纸，而且只能在泵组对中完成后才能进行中间节（两轴端法兰盘）的连接。</warningAndCautionPara>
+            </caution>
+          </safetyRqmts>
+        </reqSafety>
+      </preliminaryRqmts>
+      <mainProcedure>
+        <proceduralStep>
+          <title>对中找正及润滑</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>将O形圈安装到泵盖上。</para>
+              </listItem>
+              <listItem>
+                <para>再次检查泵壳内应无异物。</para>
+              </listItem>
+              <listItem>
+                <para>对准泵体螺栓将泵整体安装到泵体上，安装时要小心，注意不要损坏O形圈。用240N.m 力矩把紧螺栓及垫圈。</para>
+              </listItem>
+              <listItem>
+                <para>安装轴承体部件与底座之间的支架连接螺栓，紧固力矩值120N.m。</para>
+              </listItem>
+              <listItem>
+                <para>回装机械密封引漏管线。</para>
+              </listItem>
+              <listItem>
+                <para>紧固机封抱轴器紧固螺栓，力矩值14Nm。</para>
+              </listItem>
+              <listItem>
+                <para>松开机封定位块。</para>
+              </listItem>
+              <listItem>
+                <para>重新装上泵壳排水螺塞和轴承体部件排油螺塞及密封垫。</para>
+              </listItem>
+              <listItem>
+                <para>核对润滑油十字码，确认无误后，使用润滑油对泵轴承室进行冲洗。</para>
+              </listItem>
+              <listItem>
+                <para>对泵轴承室加油，正常油位以游标三分之一至二分之一为准。</para>
+              </listItem>
+              <listItem>
+                <para>用手盘动泵轴，应转动顺畅。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </proceduralStep>
+      </mainProcedure>
+      <closeRqmts>
+        <reqCondGroup>
+          <noConds>
+          </noConds>
+        </reqCondGroup>
+      </closeRqmts>
+    </procedure>
+  </content>
+</dmodule>

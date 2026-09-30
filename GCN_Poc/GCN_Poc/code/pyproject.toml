@@ -1,0 +1,32 @@
+[project]
+name = "gcn-poc-tools"
+version = "0.1.0"
+description = "Reproducible RAGFlow PTR demo, operations, and validation tools"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "requests>=2.32.5,<3",
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.30,<1",
+  "python-docx>=1.2.0",
+  "xxhash>=4.0.1",
+  "pymysql>=1.2.0",
+  "python-multipart>=0.0.32",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4.2,<9",
+  "httpx>=0.27,<1",
+]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["../test"]
+addopts = "-q"

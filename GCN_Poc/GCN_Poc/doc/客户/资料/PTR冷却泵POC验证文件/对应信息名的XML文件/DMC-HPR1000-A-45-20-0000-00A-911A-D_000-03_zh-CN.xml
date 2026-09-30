@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>图纸和文件</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef referredFragment="pdf-bzwxt" xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>附件</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <levelledPara>
+        <title>总图和详图</title>
+        <para>本手册对应的PTR冷却泵图纸信息见表1。</para>
+        <table>
+          <title>PTR冷却泵总图和详图文件清单</title>
+          <tgroup cols="4">
+            <colspec colname="c0" colwidth="51*">
+            </colspec>
+            <colspec colname="c1" colwidth="179*">
+            </colspec>
+            <colspec colname="c2" colwidth="197*">
+            </colspec>
+            <colspec colname="c3" colwidth="123*">
+            </colspec>
+            <thead>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>序号
+</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>文件编码
+</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>文件标题
+</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>备注
+</para>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>1</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200018X4GA44DD</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-bzwxt" xlink:actuate="onRequest" xlink:title="PTR冷却泵 泵组外形图" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>含基础图</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>2</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200026X4GA44DD</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-bmt" xlink:actuate="onRequest" xlink:title="PTR冷却泵剖面图" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>3</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200070X4GA44DD</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-zylbjtz" xlink:actuate="onRequest" xlink:title="PTR冷却泵主要零部件图" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>4</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ53200493X4GA44DD</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>PTR冷却泵 吊装示意图</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>5</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200034X4GA44DD</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-pidt" xlink:actuate="onRequest" xlink:title="PTR冷却泵P&amp;ID图" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>6</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200055X4GA44DS</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-sjxnqx" xlink:actuate="onRequest" xlink:title="PTR冷却泵性能曲线" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>7</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ53200097X4GA44DD</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-djwxt" xlink:actuate="onRequest" xlink:title="PTR冷却泵电机外形图" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>8</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ53200091X4GA44DS</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>PTR冷却泵电机扭矩特性曲线</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>9</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ53200077X4GA44DD</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-djjxt" xlink:actuate="onRequest" xlink:title="PTR冷却泵电机接线图" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <para>注：以上图纸文件均以最新版为准。</para>
+      </levelledPara>
+      <levelledPara>
+        <title>部件清单</title>
+        <para>PTR冷却泵部件清单见表2。</para>
+        <table>
+          <title>PTR冷却泵部件图纸清单</title>
+          <tgroup cols="5">
+            <colspec colname="c0" colwidth="50*">
+            </colspec>
+            <colspec colname="c1" colwidth="151*">
+            </colspec>
+            <colspec colname="c2" colwidth="163*">
+            </colspec>
+            <colspec colname="c3" colwidth="51*">
+            </colspec>
+            <colspec colname="c4" colwidth="194*">
+            </colspec>
+            <thead>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>序号</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>零部件编号</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>零部件名称</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>数量</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>备注</para>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>1</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HTJS300-400C-0000</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>PTR冷却泵机组（1/21130/2130/3130PO）</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" morerows="2" nameend="c4" namest="c4" valign="middle">
+                  <para>见<dmRef referredFragment="pdf-zylbjtz" xlink:actuate="onRequest" xlink:title="LFZ45200070X4GA44DD《PTR冷却泵主要零部件图》" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef></para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>2</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HTJS300-400C -5100</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>排污管部件</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>3</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HTJS300-400C -5300</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>疏水管部件</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>4</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HTJ300-400C-000</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>PTR冷却泵</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>见<dmRef referredFragment="pdf-bmt" xlink:actuate="onRequest" xlink:title="LFZ45200026X4GA44DD《PTR冷却泵剖面图》" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef></para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>5</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HTJ300-400C-200</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>转子部件</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" morerows="1" nameend="c4" namest="c4" valign="middle">
+                  <para>见<dmRef referredFragment="pdf-zylbjtz" xlink:actuate="onRequest" xlink:title="LFZ45200070X4GA44DD《PTR冷却泵主要零部件图》" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef></para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>6</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HTJ300-400-400</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>托架部件</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>7</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>CMH1B-095-K080B11</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>机械密封</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>见<dmRef referredFragment="pdf-1jxmft" xlink:actuate="onRequest" xlink:title="附件1" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef></para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>8</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HB6190(75×140-70×100-235)</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>膜片联轴器</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>见<dmRef referredFragment="pdf-2lzqt" xlink:actuate="onRequest" xlink:title="附件2" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef></para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>9</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HTJS300-400C-1100</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>公用底板</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1套</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>/</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>10</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>HY280M-4</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>电机</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>1台</para>
+                </entry>
+                <entry align="center" colname="c4" valign="middle">
+                  <para>90KW/380V见<dmRef referredFragment="pdf-3djyxwhsc" xlink:actuate="onRequest" xlink:title="附件3" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef></para>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </levelledPara>
+      <levelledPara>
+        <title>技术数据表</title>
+        <para>PTR冷却泵技术数据表清单见表3。</para>
+        <table>
+          <title>PTR冷却泵技术数据表清单</title>
+          <tgroup cols="4">
+            <colspec colname="c0" colwidth="45*">
+            </colspec>
+            <colspec colname="c1" colwidth="170*">
+            </colspec>
+            <colspec colname="c2" colwidth="198*">
+            </colspec>
+            <colspec colname="c3" colwidth="186*">
+            </colspec>
+            <thead>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>序号</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>文件编码</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>文件标题</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>备注</para>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>1</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200063X4GA44DS</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-sjb" xlink:actuate="onRequest" xlink:title="PTR冷却泵数据表" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>2</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ53200084X4GA44DS</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>
+                    <dmRef referredFragment="pdf-djsjb" xlink:actuate="onRequest" xlink:title="PTR冷却泵电机数据表" xlink:type="simple">
+                      <dmRefIdent>
+                        <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+                        <language countryIsoCode="CN" languageIsoCode="zh"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                          <techName>PTR冷却泵</techName>
+                          <infoName>附件</infoName>
+                        </dmTitle>
+                        <issueDate day="22" month="12" year="2025"/>
+                      </dmRefAddressItems>
+                    </dmRef>
+                  </para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>3</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200394X4GA44GN</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>PTR冷却泵备品备件清单</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                  <para>含电机、机封、联轴器备品备件</para>
+                </entry>
+              </row>
+              <row>
+                <entry align="center" colname="c0" valign="middle">
+                  <para>4</para>
+                </entry>
+                <entry align="center" colname="c1" valign="middle">
+                  <para>LFZ45200394X4GA44GN</para>
+                </entry>
+                <entry align="center" colname="c2" valign="middle">
+                  <para>PTR冷却泵专用工具清单</para>
+                </entry>
+                <entry align="center" colname="c3" valign="middle">
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <para>注：以上文件均以最新版为准。</para>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

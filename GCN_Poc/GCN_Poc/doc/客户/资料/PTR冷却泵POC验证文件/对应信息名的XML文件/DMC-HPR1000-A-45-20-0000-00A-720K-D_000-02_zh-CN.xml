@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="K" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="02" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>热态对中</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="130" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A">
+          </dmCode>
+          <language countryIsoCode="CN" languageIsoCode="zh">
+          </language>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>正常运行</infoName>
+          </dmTitle>
+          <issueDate day="13" month="12" year="2025">
+          </issueDate>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="131" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A">
+          </dmCode>
+          <language countryIsoCode="CN" languageIsoCode="zh">
+          </language>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>首次启动及检修后启动</infoName>
+          </dmTitle>
+          <issueDate day="13" month="12" year="2025">
+          </issueDate>
+        </dmRefAddressItems>
+      </dmRef>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="131" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A">
+          </dmCode>
+          <language countryIsoCode="CN" languageIsoCode="zh">
+          </language>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>停机</infoName>
+          </dmTitle>
+          <issueDate day="13" month="12" year="2025">
+          </issueDate>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <caution>
+        <warningAndCautionPara>泵组热试车调试应复核热态对中数据，并据此完成最终对中，否则重泵公司不承担由于热对中不好出现故障的相关责任。</warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title>对中原则</title>
+        <para>冷态对中的预留值是按理论计算、参考现场经验得出的，由于设备、运行环境、运行状态等差异，设备热态运行后可能存在不对中的情况，这就需要根据热态实测值，完成热对中，才能确保泵组的长期稳定运行。</para>
+      </levelledPara>
+      <warning>
+        <warningAndCautionPara>对中时，请确保驱动设备电源处于断开状态。</warningAndCautionPara>
+      </warning>
+      <caution>
+        <warningAndCautionPara>热态对中时，设备表面温度较高或较低，应防止烫伤、冻伤。</warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title>对中方法</title>
+        <para>按照本手册第四章内容<dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="130" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>正常运行</infoName></dmTitle><issueDate day="13" month="12" year="2025"/></dmRefAddressItems></dmRef>与<dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="131" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>首次启动及检修后启动</infoName></dmTitle><issueDate day="13" month="12" year="2025"/></dmRefAddressItems></dmRef>，泵组保持运行直至达到稳定状态，稳定状态主要指设备的运行温度稳定且不低于4小时，如泵的轴承温度不再上升，电机的轴承、绕组温度不再上升。</para>
+        <para>泵组运行达到稳定状态后，根据现场情况，按本手册第二章“停车”部分内容<dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="131" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>停机</infoName></dmTitle><issueDate day="13" month="12" year="2025"/></dmRefAddressItems></dmRef>进行停机，切断动力源保证安全，并有禁止合闸等安全警示标志，拆除联轴器中间节，进行热对中检查，整个过程时间尽可能缩短（尽量少于10min，以免影响精度），记录相关数据，并判断是否符合允差要求。</para>
+        <para>若热对中复核不符合允差，待机组的温度降至室温后，再次复查机组冷态对中值是否与原始的冷态对中值相符。</para>
+        <para>若热态超差、冷态相符，需要根据实测的热对中数据对冷态预留值进行修正，重新对中。</para>
+        <para>若热态超差、冷态也不相符，说明设备已移动，应落实原因（常见原因如机组设备螺栓松动，管道附加力矩过大等），进行整改后再进行对中。</para>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

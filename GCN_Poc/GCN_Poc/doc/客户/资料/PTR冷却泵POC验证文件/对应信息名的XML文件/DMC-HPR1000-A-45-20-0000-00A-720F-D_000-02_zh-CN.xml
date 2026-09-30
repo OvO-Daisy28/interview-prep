@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00015-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00015-A-001-01.PNG" NDATA png>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="F" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="02" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>初步对中</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <para>
+        <sequentialList>
+          <listItem>
+            <para>确认两半联轴器牢固地安装到泵和电机轴上。以泵轴端为基点，测量泵轴端与电机轴端的距离，按照联轴器图纸上的尺寸，通过调整电机将两轴端距离初调合格。</para>
+          </listItem>
+          <listItem>
+            <para>确认间距合格后，使用百分表初步检查泵半联轴器安装盘与电机半联轴器安装盘角度和平行的对中，保证外圆跳动值≤0.03mm，端面跳动值≤0.05mm。</para>
+          </listItem>
+        </sequentialList>
+      </para>
+      <figure>
+        <title>联轴器轴端距离示意图</title>
+        <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00015-A-001-01" reproductionHeight="66pt" reproductionWidth="112pt" xlink:type="simple">
+        </graphic>
+      </figure>
+    </description>
+  </content>
+</dmodule>

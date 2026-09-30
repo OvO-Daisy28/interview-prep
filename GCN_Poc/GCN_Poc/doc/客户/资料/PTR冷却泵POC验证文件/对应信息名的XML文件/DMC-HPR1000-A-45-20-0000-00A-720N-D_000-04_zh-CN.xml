@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="N" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="04" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>机组主要螺栓拧紧力矩</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef referredFragment="pdf-bmt" xlink:actuate="onRequest" xlink:title="LFZ45200026X4GA44DD《PTR冷却泵剖面图》" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>附件</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <table>
+        <title>机组主要螺栓拧紧力矩</title>
+        <tgroup cols="4">
+          <colspec colname="c0" colwidth="76*">
+          </colspec>
+          <colspec colname="c1" colwidth="76*">
+          </colspec>
+          <colspec colname="c2" colwidth="76*">
+          </colspec>
+          <colspec colname="c3" colwidth="76*">
+          </colspec>
+          <thead>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>序号</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>位置</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>规格</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>拧紧力矩(N·m)</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>泵出口配对法兰连接螺柱</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>M24</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>500</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>泵进口配对法兰连接螺柱</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>M24</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>500</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>3</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>排污、疏水管配对法兰连接螺栓</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>M14</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>90</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>4</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>电机与底板连接螺柱</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>M20</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>300</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>5</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>泵与底板连接螺柱</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>M24</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>500</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>6</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>地脚螺栓</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>M30</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>980</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" morerows="0" nameend="c3" namest="c0" valign="middle">
+                <para>注:1、泵进、出口法兰连接螺栓分三次拧紧,第一次对称拧紧,力矩为50%～60%;第二次对称拧紧,力矩为70%～90%;第三次按顺时针方向依次拧紧,力矩为100%。</para>
+                <para>2、地脚螺栓应先用80%的力矩拧紧下面的螺母,再用100%的力矩拧紧上面的螺母。</para>
+                <para>3、泵组各部件中的紧固件拧紧力矩详见<dmRef referredFragment="pdf-bmt" xlink:actuate="onRequest" xlink:title="LFZ45200026X4GA44DD《PTR冷却泵剖面图》" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef>及<dmRef referredFragment="pdf-zylbjtz" xlink:actuate="onRequest" xlink:title="LFZ45200070X4GA44DD《PTR冷却泵主要零部件图》" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef>。</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </description>
+  </content>
+</dmodule>

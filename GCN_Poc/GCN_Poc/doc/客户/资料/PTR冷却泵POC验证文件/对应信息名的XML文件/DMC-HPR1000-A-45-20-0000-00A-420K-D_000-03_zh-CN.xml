@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/fault.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="K" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>泵短期的腐蚀、侵蚀、点蚀、氧化或材料流失</techName><infoName>通用故障隔离程序</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <faultIsolation>
+      <faultIsolationProcedure>
+        <fault faultCode="E011">
+        </fault>
+        <faultDescr>
+          <descr>泵短期的腐蚀、侵蚀、点蚀、氧化或材料流失</descr>
+        </faultDescr>
+        <isolationProcedure>
+          <preliminaryRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+            <reqSupportEquips>
+              <noSupportEquips>
+              </noSupportEquips>
+            </reqSupportEquips>
+            <reqSupplies>
+              <noSupplies>
+              </noSupplies>
+            </reqSupplies>
+            <reqSpares>
+              <noSpares>
+              </noSpares>
+            </reqSpares>
+            <reqSafety>
+              <safetyRqmts>
+                <caution>
+                  <warningAndCautionPara>故障检查及排除时确保人员安全，必要时需要停机处理。</warningAndCautionPara>
+                </caution>
+              </safetyRqmts>
+            </reqSafety>
+          </preliminaryRqmts>
+          <isolationMainProcedure>
+            <?XEditor_SvgFile id="SVG_2a88d008-6db6-4751-a231-fdc608d1d809.svg" hotspotIDs="shape1 shape2 shape5 shape3 shape6 shape7 shape4"?>
+            <isolationStep id="ID578e4d57-1258-4202-9053-efbd7df28e2e">
+              <?XEditor_ShapeID id="shape1" ?>
+              <action>检查泵材料</action>
+              <isolationStepQuestion>是否适配介质</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id1e4b897b-9933-4ba0-9dd6-3c0eaa9802ae">
+                    <?XEditor_PathID id="pathCB778FAA-6B24-417F-BF1A-ABD142E6DBEF" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id2f48d281-8780-4e99-8d50-9dec122e12a6">
+                    <?XEditor_PathID id="pathB1B3B62D-46EC-4317-A7C5-584A65300E23" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="id1e4b897b-9933-4ba0-9dd6-3c0eaa9802ae">
+              <?XEditor_ShapeID id="shape2" ?>
+              <action>检查介质</action>
+              <isolationStepQuestion>是否夹带磨蚀材料</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="idc555a68d-7dea-4a8b-97f6-3ae2b637230b">
+                    <?XEditor_PathID id="pathAD313CB3-3B5B-4957-878D-260A8019F0A8" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="idcb0b4ffe-33be-4d2f-9e2e-65382d67b238">
+                    <?XEditor_PathID id="path3FE70B78-D860-4FB0-9E2F-C2967F8FF19E" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="idc555a68d-7dea-4a8b-97f6-3ae2b637230b">
+              <?XEditor_ShapeID id="shape5" ?>
+              <action>优化介质、过滤，更换耐磨零件</action>
+            </isolationProcedureEnd>
+            <isolationStep id="idcb0b4ffe-33be-4d2f-9e2e-65382d67b238">
+              <?XEditor_ShapeID id="shape3" ?>
+              <action>检查入口压力是否充足</action>
+              <isolationStepQuestion>是否夹带气体</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id69c53b53-0ca4-45f5-9019-a276bbab0ff1">
+                    <?XEditor_PathID id="pathE84C558B-1F43-4D32-9DBC-A839485E9BBB" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id9971ed0a-be1d-4d49-a53c-835503325e81">
+                    <?XEditor_PathID id="path72CBF94A-B61C-4983-BF0B-2249BC1C36C6" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id69c53b53-0ca4-45f5-9019-a276bbab0ff1">
+              <?XEditor_ShapeID id="shape6" ?>
+              <action>提升入口压力，消除气体</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id9971ed0a-be1d-4d49-a53c-835503325e81">
+              <?XEditor_ShapeID id="shape7" ?>
+              <action> 排查电解作用诱因，采取防腐措施</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id2f48d281-8780-4e99-8d50-9dec122e12a6">
+              <?XEditor_ShapeID id="shape4" ?>
+              <action>联系厂家调整设计，更换适配材料</action>
+            </isolationProcedureEnd>
+          </isolationMainProcedure>
+          <closeRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+          </closeRqmts>
+        </isolationProcedure>
+      </faultIsolationProcedure>
+    </faultIsolation>
+  </content>
+</dmodule>

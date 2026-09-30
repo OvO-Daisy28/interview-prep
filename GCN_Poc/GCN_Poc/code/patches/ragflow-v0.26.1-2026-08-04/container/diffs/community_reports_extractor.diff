@@ -1,0 +1,20 @@
+--- D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/before/community_reports_extractor.py	2026-08-04 17:25:42.319164600 +0800
++++ D:/lxt/learn/Best_Practices/GCN_Poc/code/patches/ragflow-v0.26.1-2026-08-04/container/after/community_reports_extractor.py	2026-08-04 15:33:51.000000000 +0800
+@@ -91,6 +91,8 @@
+                 response = checkpoint.get("structured_output")
+                 output = checkpoint.get("output")
+                 if isinstance(response, dict) and isinstance(output, str):
++                    response["community_level"] = str(level)
++                    response["community_id"] = str(cm_id)
+                     add_community_info2graph(graph, response.get("entities", ents), response.get("title", ""))
+                     res_str.append(output)
+                     res_dict.append(response)
+@@ -153,6 +155,8 @@
+                 return
+             response["weight"] = weight
+             response["entities"] = ents
++            response["community_level"] = str(level)
++            response["community_id"] = str(cm_id)
+             add_community_info2graph(graph, ents, response["title"])
+             output = self._get_text_output(response)
+             if save_checkpoint:

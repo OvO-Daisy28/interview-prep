@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="M" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>安装确认</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <para>泵机组安装施工完成后，用户单位、施工单位和泵制造厂相关人员应在检测记录表中签署合格或不合格意见。检测记录表中的数据应保持清晰整洁，无涂改痕迹。</para>
+      <para>对于没有泵制造厂现场指导安装调试人员参与的泵机组安装施工，其施工过程应严格遵循本规范的相关要求，施工质量须经第三方现场施工监理对施工各阶段的检测数据予以确认，检测记录表中的数据可作为分析泵质量问题的参考依据。</para>
+      <table>
+        <title> 安装对中检测记录表</title>
+        <tgroup cols="5">
+          <colspec colname="c0" colwidth="75*">
+          </colspec>
+          <colspec colname="c1" colwidth="104*">
+          </colspec>
+          <colspec colname="c2" colwidth="227*">
+          </colspec>
+          <colspec colname="c3" colwidth="113*">
+          </colspec>
+          <colspec colname="c4" colwidth="67*">
+          </colspec>
+          <thead>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>阶段</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>检查部位</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>检查内容</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>允许偏差(mm)</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>检测值(mm)</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center" colname="c0" morerows="8" nameend="c0" namest="c0" valign="middle">
+                <para>基础修整及底座水平度调整阶段</para>
+              </entry>
+              <entry align="center" colname="c1" morerows="1" nameend="c1" namest="c1" valign="middle">
+                <para>基础台面</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>基础各不同平面的标高</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>±0.5</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>基础平面水平度</para>
+                <para>每米</para>
+                <para>全长</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>-</para>
+                <para>2</para>
+                <para>＜10</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" morerows="3" nameend="c1" namest="c1" valign="middle">
+                <para>预留地脚螺栓孔</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>孔之间的中心距</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>±10</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>孔深度</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>0～＋20</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>孔倒锥度</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>±1°</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>孔与基础中心线的关系尺寸</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>±10</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" morerows="2" nameend="c1" namest="c1" valign="middle">
+                <para>底座加工面</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>中心线方向的水平度</para>
+              </entry>
+              <entry align="center" colname="c3" morerows="2" nameend="c3" namest="c3" valign="middle">
+                <para>0.05mm/m</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>垂直方向的水平度</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>对角方向的水平度</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" morerows="4" nameend="c0" namest="c0" valign="middle">
+                <para>泵机组的对中调整阶段</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>轴端间距离</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>尺寸偏差</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>+0.5</para>
+                <para>+0.8</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" morerows="3" nameend="c1" namest="c1" valign="middle">
+                <para>泵与联轴器对中调整</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>水平径向偏差</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>±0.03</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>垂直径向偏差(泵高)</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>0.06~0.08</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>水平方向端面张口偏差</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>&lt;0.05</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>垂直方向端面张口偏差</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>&lt;0.05</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" morerows="1" nameend="c0" namest="c0" valign="middle">
+                <para>泵机组安装的完工阶段</para>
+              </entry>
+              <entry align="center" colname="c1" morerows="1" nameend="c1" namest="c1" valign="middle">
+                <para>管道与泵连接</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>法兰面平行度</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>&lt;0.3</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>法兰径向位移</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>&lt;0.5</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </description>
+  </content>
+</dmodule>

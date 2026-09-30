@@ -1,0 +1,13 @@
+[Unit]
+Description=GCN demo port forward (host :9800 -> RAGFlow container :9800)
+After=docker.service
+Wants=docker.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/gcn/demo_forward.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

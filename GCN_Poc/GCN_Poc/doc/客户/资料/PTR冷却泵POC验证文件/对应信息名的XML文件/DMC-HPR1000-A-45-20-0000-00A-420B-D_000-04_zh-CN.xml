@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/fault.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="04" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>泵不出液</techName><infoName>通用故障隔离程序</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <faultIsolation>
+      <faultIsolationProcedure>
+        <fault faultCode="E002">
+        </fault>
+        <faultDescr>
+          <descr>泵不出液</descr>
+        </faultDescr>
+        <isolationProcedure>
+          <preliminaryRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+            <reqSupportEquips>
+              <noSupportEquips>
+              </noSupportEquips>
+            </reqSupportEquips>
+            <reqSupplies>
+              <noSupplies>
+              </noSupplies>
+            </reqSupplies>
+            <reqSpares>
+              <noSpares>
+              </noSpares>
+            </reqSpares>
+            <reqSafety>
+              <safetyRqmts>
+                <caution>
+                  <warningAndCautionPara>故障检查及排除时确保人员安全，必要时需要停机处理。</warningAndCautionPara>
+                </caution>
+              </safetyRqmts>
+            </reqSafety>
+          </preliminaryRqmts>
+          <isolationMainProcedure>
+            <?XEditor_SvgFile id="SVG_c7573ca2-bd87-400d-8036-d5a0044eb83d.svg" hotspotIDs="shape1 shape2 shape10 shape4 shape6 shape12 shape7 shape15 shape8 shape5 shape16 shape13 shape14 shape11 shape9"?>
+            <isolationStep id="IDfa78733d-c0da-4fca-8d22-a3a10b120503">
+              <?XEditor_ShapeID id="shape1" ?>
+              <action>检查吸入管线​液体</action>
+              <isolationStepQuestion>是否灌满？</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id6c2ab49f-7cbc-4620-987c-0f94423db574">
+                    <?XEditor_PathID id="pathF6701D78-225D-40C7-A5D4-F6A2A03A60E8" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id51b237a2-9792-4175-b292-67d3e1d8cda9">
+                    <?XEditor_PathID id="path92554A59-EF05-437F-BACB-5E813837D246" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="id6c2ab49f-7cbc-4620-987c-0f94423db574">
+              <?XEditor_ShapeID id="shape2" ?>
+              <action>检查吸入管线</action>
+              <isolationStepQuestion>是否堵塞</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id50a1c54b-2dd3-459e-8e78-39a1dc6cd3c5">
+                    <?XEditor_PathID id="pathE2DB003A-47D4-496C-B36B-9193D87A2F9D" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id708a2e4d-15ff-45e6-be33-0144fc6620b6">
+                    <?XEditor_PathID id="path3DF94D02-01B2-4BF4-A85E-93573E82A4DA" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id50a1c54b-2dd3-459e-8e78-39a1dc6cd3c5">
+              <?XEditor_ShapeID id="shape10" ?>
+              <action>清除堵塞物</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id708a2e4d-15ff-45e6-be33-0144fc6620b6">
+              <?XEditor_ShapeID id="shape4" ?>
+              <action>转动方向</action>
+              <isolationStepQuestion>是否正确</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id20c12260-d98b-412e-b484-372bdb20330d">
+                    <?XEditor_PathID id="pathA71AE25A-DF51-4704-8147-5A54BA3C89AA" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id61e9dafb-4940-4366-a2b2-7945a10e0ae2">
+                    <?XEditor_PathID id="pathF82B1A36-8F30-4FFD-811B-3919FEB5DB5A" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="id20c12260-d98b-412e-b484-372bdb20330d">
+              <?XEditor_ShapeID id="shape6" ?>
+              <action>检查吸入管线</action>
+              <isolationStepQuestion>是否有空气、蒸汽？</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id18c84b05-b2c4-4945-9243-75c8e8822c5b">
+                    <?XEditor_PathID id="pathC0E22556-5E13-45FA-9348-353C34782775" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id5c4c462d-6fa2-4d35-87fa-d51b161589b5">
+                    <?XEditor_PathID id="pathC442291A-5C8B-4861-A8FE-39EEBB9DE883" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id18c84b05-b2c4-4945-9243-75c8e8822c5b">
+              <?XEditor_ShapeID id="shape12" ?>
+              <action>放空管线内空气、蒸汽</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id5c4c462d-6fa2-4d35-87fa-d51b161589b5">
+              <?XEditor_ShapeID id="shape7" ?>
+              <action>检查叶轮是否堵塞</action>
+              <isolationStepQuestion>是否堵塞？</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id2e00dc69-8db5-477c-93a5-0629a9e17d54">
+                    <?XEditor_PathID id="pathA91B109D-888A-4D42-90AE-03FE3E9E265C" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id1bd2af8e-2b66-477a-94ab-4c447b1e3618">
+                    <?XEditor_PathID id="pathECD9FFFD-6383-4422-A977-5F270B5F6E5F" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id2e00dc69-8db5-477c-93a5-0629a9e17d54">
+              <?XEditor_ShapeID id="shape15" ?>
+              <action>逆向冲洗泵，清洁叶轮</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id1bd2af8e-2b66-477a-94ab-4c447b1e3618">
+              <?XEditor_ShapeID id="shape8" ?>
+              <action>检查装置NPSH​</action>
+              <isolationStepQuestion>是否足够</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id4fc549d7-12fb-4225-9b7f-504e0e8ea20a">
+                    <?XEditor_PathID id="path3DE0E21E-1910-445C-91BB-4304A523FCC3" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="ida829344f-a5c3-4e05-bcf9-569ff5712e09">
+                    <?XEditor_PathID id="path23FD1D5D-F632-4AF7-A047-C7227FA1D63C" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="id4fc549d7-12fb-4225-9b7f-504e0e8ea20a">
+              <?XEditor_ShapeID id="shape5" ?>
+              <action>检查泵转速</action>
+              <isolationStepQuestion>是否达标</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id1736bb30-64b6-4c99-8b4d-9fe3a8cc607d">
+                    <?XEditor_PathID id="pathBC0B9812-FBE3-41D1-94B2-B2765E5D0053" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="idbb17142c-3ae2-4549-88ca-98deb139253e">
+                    <?XEditor_PathID id="pathD234AF58-FB29-42E2-8B26-51DA3DE9F78C" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id1736bb30-64b6-4c99-8b4d-9fe3a8cc607d">
+              <?XEditor_ShapeID id="shape16" ?>
+              <action>减少系统阻力，降低系统压头</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="idbb17142c-3ae2-4549-88ca-98deb139253e">
+              <?XEditor_ShapeID id="shape13" ?>
+              <action>提升至额定转速</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="ida829344f-a5c3-4e05-bcf9-569ff5712e09">
+              <?XEditor_ShapeID id="shape14" ?>
+              <action>增加装置NPSH</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id61e9dafb-4940-4366-a2b2-7945a10e0ae2">
+              <?XEditor_ShapeID id="shape11" ?>
+              <action>调整为正确转动方向</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id51b237a2-9792-4175-b292-67d3e1d8cda9">
+              <?XEditor_ShapeID id="shape9" ?>
+              <action>重新灌泵，确保管线充满液体</action>
+            </isolationProcedureEnd>
+          </isolationMainProcedure>
+          <closeRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+          </closeRqmts>
+        </isolationProcedure>
+      </faultIsolationProcedure>
+    </faultIsolation>
+  </content>
+</dmodule>

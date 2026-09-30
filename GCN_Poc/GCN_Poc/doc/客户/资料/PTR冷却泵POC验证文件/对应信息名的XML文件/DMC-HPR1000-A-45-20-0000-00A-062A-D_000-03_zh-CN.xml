@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="062" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>专用工具</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <table>
+        <title>PTR冷却泵专用工具清单</title>
+        <tgroup cols="7">
+          <colspec colname="c0" colwidth="80*">
+          </colspec>
+          <colspec colname="c1" colwidth="39*">
+          </colspec>
+          <colspec colname="c2" colwidth="114*">
+          </colspec>
+          <colspec colname="c3" colwidth="104*">
+          </colspec>
+          <colspec colname="c4" colwidth="61*">
+          </colspec>
+          <colspec colname="c5" colwidth="61*">
+          </colspec>
+          <colspec colname="c6" colwidth="138*">
+          </colspec>
+          <thead>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>序号</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>工具名称</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>型号/规格</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>供货、制造商</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>数量</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>单位</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>用途及使用方法（列出文件名或附件号）</para>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>手动拉拔器</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>QB/T5537（规格CSQ-300）</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>重泵</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>件</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>轴承、联轴器拆卸工具</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>2</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>勾扳手</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>JB/ZQ4624/(A110-115)</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>重泵</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>件</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>轴承锁紧螺母M85×2(左)的装拆</para>
+              </entry>
+            </row>
+            <row>
+              <entry align="center" colname="c0" valign="middle">
+                <para>3</para>
+              </entry>
+              <entry align="center" colname="c1" valign="middle">
+                <para>套筒</para>
+              </entry>
+              <entry align="center" colname="c2" valign="middle">
+                <para>HTJ300-400-YJ-200F1</para>
+              </entry>
+              <entry align="center" colname="c3" valign="middle">
+                <para>重泵</para>
+              </entry>
+              <entry align="center" colname="c4" valign="middle">
+                <para>1</para>
+              </entry>
+              <entry align="center" colname="c5" valign="middle">
+                <para>件</para>
+              </entry>
+              <entry align="center" colname="c6" valign="middle">
+                <para>叶轮螺母拆卸工具</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </description>
+  </content>
+</dmodule>

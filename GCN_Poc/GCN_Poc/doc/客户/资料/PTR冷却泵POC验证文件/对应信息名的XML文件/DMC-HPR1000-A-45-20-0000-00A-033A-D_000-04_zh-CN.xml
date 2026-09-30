@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="033" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="04" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>一般数据</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <levelledPara>
+        <title>供电和流体特性</title>
+        <levelledPara>
+          <title>电源特性</title>
+          <para>电动机供电电源的电压等级为380V，频率为50Hz，三相交流电源。详细供电条件见 LFZ53200001DEDQ44DS《核岛低压感应式电动机技术规格书》。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>输送流体的化学特性</title>
+          <table>
+            <title>输送流体化学特性</title>
+            <tgroup cols="4">
+              <colspec colname="c0" colwidth="59*">
+              </colspec>
+              <colspec colname="c1" colwidth="142*">
+              </colspec>
+              <colspec colname="c2" colwidth="293*">
+              </colspec>
+              <colspec colname="c3" colwidth="96*">
+              </colspec>
+              <thead>
+                <row>
+                  <entry align="center" colname="c0" valign="middle">
+                    <para>序号
+</para>
+                  </entry>
+                  <entry align="center" colname="c1" valign="middle">
+                    <para>项目
+</para>
+                  </entry>
+                  <entry align="center" colname="c2" valign="middle">
+                    <para>参数
+</para>
+                  </entry>
+                  <entry align="center" colname="c3" valign="middle">
+                    <para>单位
+</para>
+                  </entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry align="center" colname="c0" valign="middle">
+                    <para>1</para>
+                  </entry>
+                  <entry align="center" colname="c1" valign="middle">
+                    <para>工作介质</para>
+                  </entry>
+                  <entry align="center" colname="c2" valign="middle">
+                    <para>含硼水</para>
+                  </entry>
+                  <entry align="center" colname="c3" valign="middle">
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center" colname="c0" morerows="3" nameend="c0" namest="c0" valign="middle">
+                    <para>2</para>
+                  </entry>
+                  <entry align="center" colname="c1" valign="middle">
+                    <para>添加剂</para>
+                  </entry>
+                  <entry align="center" colname="c2" valign="middle">
+                    <para>PH：4.7~5.5（25℃）</para>
+                    <para>硼（mg B/kg）： 1300~1400</para>
+                    <para>氯化物（mg/kg）：&lt;0.05</para>
+                    <para>氟化物（mg/kg）：&lt;0.05</para>
+                    <para>硫酸盐（mg/kg）：&lt;0.05</para>
+                    <para>钠、钙、铝、镁（mg/kg）：分别&lt;0.01</para>
+                    <para>总硅(mg SiO<subScript>2</subScript>/kg)：&lt;0.60</para>
+                  </entry>
+                  <entry align="center" colname="c3" valign="middle">
+                    <para>——</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center" colname="c0" valign="middle">
+                  </entry>
+                  <entry align="center" colname="c1" valign="middle">
+                    <para>固体成分</para>
+                  </entry>
+                  <entry align="center" colname="c2" valign="middle">
+                  </entry>
+                  <entry align="center" colname="c3" valign="middle">
+                    <para>——</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center" colname="c0" valign="middle">
+                  </entry>
+                  <entry align="center" colname="c1" valign="middle">
+                    <para>固体成分尺寸</para>
+                  </entry>
+                  <entry align="center" colname="c2" valign="middle">
+                  </entry>
+                  <entry align="center" colname="c3" valign="middle">
+                    <para>mm</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center" colname="c0" valign="middle">
+                  </entry>
+                  <entry align="center" colname="c1" valign="middle">
+                    <para>固体成分含</para>
+                  </entry>
+                  <entry align="center" colname="c2" valign="middle">
+                  </entry>
+                  <entry align="center" colname="c3" valign="middle">
+                    <para>Ppm</para>
+                  </entry>
+                </row>
+                <row>
+                  <entry align="center" colname="c0" valign="middle">
+                    <para>3</para>
+                  </entry>
+                  <entry align="center" colname="c1" valign="middle">
+                    <para>密度</para>
+                  </entry>
+                  <entry align="center" colname="c2" valign="middle">
+                    <para>1002.3（10℃）</para>
+                  </entry>
+                  <entry align="center" colname="c3" valign="middle">
+                    <para>kg/m<superScript>3</superScript></para>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </levelledPara>
+      </levelledPara>
+      <levelledPara>
+        <title>主要安装特征</title>
+        <para>PTR冷却泵为整体可移动设备，即在需要时可从存放地点通过已有交通工具（如汽车）将其运至工作现场，与系统的充、排水管道相连接从而实现系统的充、排水作业，其主要安装特征如下：</para>
+        <levelledPara>
+          <title>机组外形尺寸</title>
+          <para>
+            <randomList>
+              <listItem>
+                <para>长×宽×高：2410mm×900mm×1150mm</para>
+              </listItem>
+            </randomList>
+          </para>
+        </levelledPara>
+        <levelledPara>
+          <title>机组重量</title>
+          <para>
+            <randomList>
+              <listItem>
+                <para>机组重量：2300kg（干重）/2500kg（湿重）</para>
+              </listItem>
+              <listItem>
+                <para>泵重量：600kg（干重）/800kg（湿重）</para>
+              </listItem>
+              <listItem>
+                <para>电机重量：800kg</para>
+              </listItem>
+              <listItem>
+                <para>公共底座重量：900kg</para>
+              </listItem>
+            </randomList>
+          </para>
+        </levelledPara>
+        <levelledPara>
+          <title>接口规格</title>
+          <para>
+            <randomList>
+              <listItem>
+                <para>泵组进口：φ323.8×4.57（外径×壁厚）</para>
+              </listItem>
+              <listItem>
+                <para>泵组出口：φ323.8×4.57（外径×壁厚）</para>
+              </listItem>
+              <listItem>
+                <para>泵组疏水口：φ33.4×2.77（外径×壁厚）</para>
+              </listItem>
+              <listItem>
+                <para>泵组排污口：φ33.4×2.77（外径×壁厚）</para>
+              </listItem>
+            </randomList>
+          </para>
+        </levelledPara>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

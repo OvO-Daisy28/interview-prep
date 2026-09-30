@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>批量导入规模验证汇报 · 2026-09-07</title>
+<style>
+  :root {
+    --bg:#0f1115; --panel:#171a21; --line:#262a33; --text:#e6e8eb;
+    --muted:#9aa3ad; --accent:#4c8dff; --ok:#35c56a; --warn:#f5a623; --err:#ff5f56;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:14px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:32px 28px 80px; }
+  h1 { font-size:24px; font-weight:600; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:28px; }
+  h2 { font-size:17px; font-weight:600; margin:34px 0 14px;
+       padding-bottom:8px; border-bottom:1px solid var(--line); }
+  h3 { font-size:14.5px; font-weight:600; margin:20px 0 8px; color:var(--accent); }
+  .panel { background:var(--panel); border:1px solid var(--line);
+           border-radius:8px; padding:18px 20px; margin:14px 0; }
+  .panel.tldr { border-left:3px solid var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:13px; margin:8px 0; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line);
+           vertical-align:middle; }
+  th { color:var(--muted); font-weight:500; font-size:12px; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .tag { display:inline-block; padding:2px 9px; border-radius:11px;
+         font-size:11.5px; border:1px solid; }
+  .tag.ok { color:var(--ok); border-color:var(--ok); }
+  .tag.warn { color:var(--warn); border-color:var(--warn); }
+  .tag.err { color:var(--err); border-color:var(--err); }
+  .tag.acc { color:var(--accent); border-color:var(--accent); }
+  .big { font-size:28px; font-weight:600; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:14px 0; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+          padding:16px 14px; text-align:center; }
+  .stat b { display:block; font-size:26px; font-weight:600; }
+  .stat small { color:var(--muted); font-size:11.5px; }
+  .stat.warn b { color:var(--warn); }
+  .stat.err b { color:var(--err); }
+  .stat.ok b { color:var(--ok); }
+  .bar-wrap { background:#0d1016; border-radius:4px; height:22px; position:relative;
+              overflow:hidden; margin:6px 0; }
+  .bar { height:100%; border-radius:4px; display:flex; align-items:center;
+         justify-content:flex-end; padding-right:8px; font-size:11px; color:#fff;
+         font-variant-numeric:tabular-nums; }
+  .caveat { background:#2a2016; border-left:3px solid var(--warn); padding:12px 16px;
+            border-radius:0 6px 6px 0; font-size:13px; color:#f0d9b5; margin:14px 0; }
+  .note { background:#0d1016; border-radius:6px; padding:10px 14px; font-size:12.5px;
+          color:#93a4b8; margin:10px 0; }
+  ul { margin:6px 0; padding-left:20px; }
+  li { margin:5px 0; }
+  code { background:#0d1016; padding:1.5px 6px; border-radius:4px; font-size:12px;
+         color:#b9c6d8; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+         padding:14px 20px; margin:20px 0; }
+  .toc a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .toc a:hover { text-decoration:underline; }
+  .footer { color:var(--muted); font-size:12px; margin-top:40px;
+            padding-top:16px; border-top:1px solid var(--line); }
+
+  #topnav { position:fixed; top:0; left:0; right:0; height:44px; z-index:9999;
+            background:#0b0d12; border-bottom:1px solid #262a33;
+            display:flex; align-items:center; padding:0 20px; gap:4px;
+            font:13px/1.4 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  #topnav a { color:#9aa3ad; text-decoration:none; padding:6px 12px; border-radius:6px;
+              white-space:nowrap; }
+  #topnav a:hover { background:#171a21; color:#e6e8eb; }
+  #topnav a.active { color:#4c8dff; background:#111620; }
+  #topnav .brand { font-weight:600; color:#e6e8eb; margin-right:12px;
+                   padding-right:12px; border-right:1px solid #262a33; }
+  body { padding-top:44px !important; }
+  body > .wrap { margin-top:20px; }
+
+</style>
+</head>
+<body>
+<div id="topnav"><span class="brand">批量上传测试</span><a href="批量上传测试总索引_20260908.html">总索引</a><a href="RAGFlow原生批量上传测试_20260908.html">方案A测试</a><a href="方案B并发压测_20260908.html">方案B并发压测</a><a href="RAGFlow原生局限与mentor方案结论_20260908.html">结论报告</a><a href="批量导入规模验证_20260907.html" class="active">千份baseline</a><a href="万份稳定性压测_20260911.html">万份压测</a></div>
+<div class="wrap">
+
+<h1>批量导入规模验证汇报</h1>
+<p class="sub">GCN 采购文件活化项目 · 项目经理第 1 点（批量上传）<br>
+执行人：小zhu · 日期：2026-09-07 · 环境：131 服务器（RAGFlow v0.26.1）</p>
+
+<div class="toc">
+<b>目录</b><br>
+<a href="#tldr">一、一句话结论</a> ·
+<a href="#done">二、已做的事</a> ·
+<a href="#scale">三、规模数据</a> ·
+<a href="#stage">四、每阶段耗时</a> ·
+<a href="#fail">五、失败归因</a> ·
+<a href="#arch">六、关于"是否体现RAGFlow能力"</a> ·
+<a href="#next">七、下一步</a>
+</div>
+
+<!-- ========== 一、TL;DR ========== -->
+<h2 id="tldr">一、一句话结论</h2>
+<div class="panel tldr">
+<p>mentor 的批量导入服务<strong>恢复运行并在千份级真实数据上跑通</strong>。
+功能层（上传/排队/暂停/重试/每阶段计时/失败隔离）全部可用；
+千份级吞吐稳定线性、失败 100% 定位到文件名 + 原因；
+<strong>瓶颈集中在共享 CPU embedding 服务（占单份耗时 96%），
+失败 93% 是数据源 .doc 老格式问题，系统零 bug。</strong></p>
+</div>
+
+<div class="grid4">
+  <div class="stat ok"><b>796</b><small>千份级成功数</small></div>
+  <div class="stat warn"><b>0.25</b><small>份/秒 吞吐(线性)</small></div>
+  <div class="stat err"><b>20.4%</b><small>失败率(数据源问题)</small></div>
+  <div class="stat"><b>0</b><small>系统bug</small></div>
+</div>
+
+<!-- ========== 二、已做的事 ========== -->
+<h2 id="done">二、已做的事（时间线）</h2>
+<div class="panel">
+<table>
+<thead><tr><th style="width:8%">步骤</th><th>动作</th><th style="width:22%">结果</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>排查 131 ingest 服务状态</td>
+    <td><span class="tag err">未运行</span> 容器缺 ingest 代码 + 依赖</td></tr>
+<tr><td>2</td><td>把 <code>code/ingest/</code>（22 py）传进容器 <code>/ragflow/ingest/</code></td>
+    <td><span class="tag ok">代码就位</span></td></tr>
+<tr><td>3</td><td>用 uv 往容器 venv 装 fastapi/python-docx/python-multipart</td>
+    <td><span class="tag ok">依赖就位</span></td></tr>
+<tr><td>4</td><td>keepalive 自动拉起服务，端口转发恢复</td>
+    <td><span class="tag ok">服务运行</span> <code>http://10.126.2.131:9800/demo</code></td></tr>
+<tr><td>5</td><td>前端 demo 页上传 161 份 law_data 文档</td>
+    <td><span class="tag ok">159成功 / 2失败</span></td></tr>
+<tr><td>6</td><td>前端 demo 页上传 1000 份 law_data 文档</td>
+    <td><span class="tag warn">796成功 / 204失败</span></td></tr>
+<tr><td>7</td><td>查 MySQL <code>gcn_ingest</code> 库，分析耗时与失败</td>
+    <td><span class="tag acc">完整 baseline</span></td></tr>
+</tbody>
+</table>
+<p class="note">服务原本是 mentor 8月部署的，容器重建后 <code>/ragflow/ingest/</code> 代码丢失、依赖未持久化，
+keepalive 一直撞 <code>No module named 'ingest'</code>。本次恢复了代码与依赖，服务重新跑通。</p>
+</div>
+
+<!-- ========== 三、规模数据 ========== -->
+<h2 id="scale">三、规模数据：吞吐线性稳定</h2>
+
+<div class="panel">
+<h3>两个批次的对比</h3>
+<table>
+<thead><tr>
+  <th>批次</th><th class="num">文档数</th><th class="num">成功</th><th class="num">失败</th>
+  <th class="num">墙钟</th><th class="num">吞吐(份/秒)</th><th>说明</th>
+</tr></thead>
+<tbody>
+<tr><td>job 35</td><td class="num">161</td><td class="num">159</td><td class="num">2</td>
+    <td class="num">658s (11分)</td><td class="num">0.24</td><td>百份级</td></tr>
+<tr style="background:#12291b"><td><b>job 37</b></td><td class="num">1000</td><td class="num">796</td><td class="num">204</td>
+    <td class="num"><b>3192s (53分)</b></td><td class="num"><b>0.25</b></td><td>千份级</td></tr>
+</tbody>
+</table>
+<p><strong>关键结论：吞吐几乎不变（0.24 → 0.25 份/秒）。</strong>
+说明并发 3 + embedding 服务在百份→千份之间是<strong>稳态线性</strong>，
+没有随规模恶化。按此推算，1 万份约需 <strong>11 小时</strong>。</p>
+</div>
+
+<!-- ========== 四、每阶段耗时 ========== -->
+<h2 id="stage">四、每阶段耗时：embed 是绝对瓶颈</h2>
+
+<div class="panel">
+<h3>千份级每阶段统计（job 37，796 份成功，单位：秒）</h3>
+<table>
+<thead><tr>
+  <th>阶段</th><th class="num">平均</th><th class="num">最长</th><th class="num">最短</th>
+  <th class="num">占总耗时</th><th>可视化占比</th>
+</tr></thead>
+<tbody>
+<tr><td>parse 解析</td><td class="num">0.09</td><td class="num">1.28</td><td class="num">0.02</td>
+    <td class="num">1.1%</td>
+    <td><div class="bar-wrap"><div class="bar" style="width:1.5%;background:#35c56a"></div></div></td></tr>
+<tr><td>chunk 切块</td><td class="num">0.02</td><td class="num">0.72</td><td class="num">0.01</td>
+    <td class="num">0.3%</td>
+    <td><div class="bar-wrap"><div class="bar" style="width:0.5%;background:#35c56a"></div></div></td></tr>
+<tr><td><b>embed 向量化</b></td><td class="num"><b>7.67</b></td><td class="num" style="color:var(--err)"><b>36.66</b></td><td class="num">0.27</td>
+    <td class="num"><b>96%</b></td>
+    <td><div class="bar-wrap"><div class="bar" style="width:96%;background:#ff5f56">96%</div></div></td></tr>
+<tr><td>index 索引</td><td class="num">0.29</td><td class="num">0.90</td><td class="num">0.07</td>
+    <td class="num">3.6%</td>
+    <td><div class="bar-wrap"><div class="bar" style="width:3.5%;background:#f5a623"></div></div></td></tr>
+</tbody>
+</table>
+
+<h3>长尾根因：embed 最慢 36.66s 是最快的 135 倍</h3>
+<table>
+<thead><tr><th>task_id</th><th>文档名</th><th class="num">总耗时</th><th class="num">embed</th><th class="num">parse</th></tr></thead>
+<tbody>
+<tr><td>432</td><td>浙江省土地监察条例.docx</td><td class="num">37.0s</td><td class="num" style="color:var(--err)">36.66s</td><td class="num">0.05s</td></tr>
+<tr><td>430</td><td>上海人大议事规则.docx</td><td class="num">36.8s</td><td class="num" style="color:var(--err)">36.22s</td><td class="num">0.06s</td></tr>
+<tr><td>1140</td><td>长春市房屋登记条例.docx</td><td class="num">28.4s</td><td class="num" style="color:var(--warn)">27.75s</td><td class="num">0.10s</td></tr>
+</tbody>
+</table>
+<p class="note">50 份最慢文档全部呈现同一特征：<strong>embed 列 ≈ 总耗时列，parse 都在 0.1s 以内</strong>。
+文档本身很小，36s 不是"算得久"，是<strong>共享 embedding 服务在忙别的活，请求在排队</strong>。
+131 跑着 34 个容器（OpenSPG×4、DB-GPT、MinerU、WeKnora 等），CPU 被抢是长尾根因。</p>
+</div>
+
+<div class="caveat">
+<b>瓶颈性质判断</b>：embedding 占 96% 且最长是最短的 135 倍，
+这是<strong>共享 CPU 推理服务的固有特征</strong>，不是编排层代码问题。
+parse+chunk+index 三阶段加起来才 0.4s（占 4%），编排层已无优化空间。
+<strong>提速的正解是给 embedding 配 GPU 或独立部署，不是继续加并发</strong>（并发 6 实测比并发 1 还慢 58%）。
+</div>
+
+<!-- ========== 五、失败归因 ========== -->
+<h2 id="fail">五、失败归因：100% 数据源问题，系统零 bug</h2>
+
+<div class="panel">
+<h3>204 份失败精确分类</h3>
+<table>
+<thead><tr><th>类别</th><th class="num">数量</th><th class="num">占比</th><th>根因</th><th>是否系统bug</th></tr></thead>
+<tbody>
+<tr><td>.doc 老格式 (Package not found)</td><td class="num">119</td><td class="num">58%</td>
+    <td>扩展名 .docx 实为 .doc 二进制(OLE)，python-docx 当 zip 打开失败</td>
+    <td><span class="tag ok">否·数据</span></td></tr>
+<tr><td>.doc 老格式 (not a Word file)</td><td class="num">71</td><td class="num">35%</td>
+    <td>同上，python-docx 检测到不是合法 Word</td>
+    <td><span class="tag ok">否·数据</span></td></tr>
+<tr><td>非标 docx (WPS/老Office)</td><td class="num">10</td><td class="num">5%</td>
+    <td>OOXML 但关系定义缺失，WPS/老 Office 生成</td>
+    <td><span class="tag ok">否·数据</span></td></tr>
+<tr><td>空内容 (扫描件/加密)</td><td class="num">4</td><td class="num">2%</td>
+    <td>chunk 阶段提取不出文本</td>
+    <td><span class="tag ok">否·数据</span></td></tr>
+<tr><td><b>合计</b></td><td class="num"><b>204</b></td><td class="num"><b>100%</b></td>
+    <td>全部数据源问题</td>
+    <td><span class="tag ok">系统零bug</span></td></tr>
+</tbody>
+</table>
+
+<p><strong>关键结论</strong>：
+<ul>
+<li>失败率 20.4%，<strong>93% 是 .doc 老格式被改名 .docx</strong>——law_data 数据集本身的脏数据，不是系统 bug。</li>
+<li>系统<strong>失败隔离生效</strong>：204 份失败没拖累其余 796 份成功，每份失败都精确定位到文件名 + 原因（PM 第 1 点"定位错误"已验证）。</li>
+<li>这 20% 失败率对真实核电数据有预警价值：30 万份里 .doc/WPS/扫描件占比只会更高。</li>
+</ul></p>
+</div>
+
+<!-- ========== 六、架构澄清 ========== -->
+<h2 id="arch">六、关于"是否体现 RAGFlow 能力"</h2>
+
+<div class="panel">
+<p>一个合理的疑问：demo 走的是<strong>方案 B（自建解析流水线）</strong>，没调 RAGFlow 的解析 API，
+是否回避了 RAGFlow 的真实能力？</p>
+
+<h3>答：用了 RAGFlow 该用的部分，替换了它不够好的部分</h3>
+<table>
+<thead><tr><th>RAGFlow 的能力</th><th>用没用</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>MinIO 对象存储</td><td><span class="tag ok">用</span></td>
+    <td>原文件写进同一个桶，下游能读到</td></tr>
+<tr><td>Elasticsearch 索引</td><td><span class="tag ok">用</span></td>
+    <td>切块+向量写进同一个 ES，14 字段格式一致</td></tr>
+<tr><td>embedding 模型服务 (bge-base)</td><td><span class="tag ok">用</span></td>
+    <td>同一个服务，向量与 RAGFlow 完全一致</td></tr>
+<tr><td>中文分词器</td><td><span class="tag ok">用</span></td>
+    <td>同一套 <code>rag.nlp.rag_tokenizer</code>，检索匹配一致</td></tr>
+<tr><td>GraphRAG 建图</td><td><span class="tag ok">用</span></td>
+    <td>从 ES 读数据建图，不关心数据谁写——mentor 已实测 36 实体/33 关系/8 社区</td></tr>
+<tr><td>检索</td><td><span class="tag ok">用</span></td>
+    <td>写入的数据 RAGFlow 照常检索，实测命中 sim=0.476</td></tr>
+<tr><td style="color:var(--muted)">解析引擎 (task_executor)</td><td><span class="tag warn">绕过</span></td>
+    <td style="color:var(--muted)">单 worker、进度只给单浮点、无暂停、无重试——PM 要的"每阶段计时/随时暂停重试/读写队列"它全不支持，所以才自建</td></tr>
+</tbody>
+</table>
+
+<p><strong>检索效果不打折</strong>：因为 embedding/分词/ES 格式/建图全部复用 RAGFlow 同一套，
+检索能力 = RAGFlow 原生检索能力。
+唯一可能有差距的是<strong>解析质量</strong>（mentor 的 docx 解析较简单，复杂版面/嵌套表格可能不如 RAGFlow deepdoc），
+对纯文本法规影响不大，对核电手册含图复杂表格需后续验证。</p>
+
+<p class="note"><b>为什么不调 RAGFlow 解析 API？</b>
+mentor 第一版就是调它的，接真实服务器撞了 4 个问题（进度只能猜、无暂停、无重试、性能不由己控），
+详见 <code>doc/design/progress-board.md</code>。PM 要的可管理批量上传，<strong>只有自建编排能实现</strong>。</p>
+</div>
+
+<!-- ========== 七、下一步 ========== -->
+<h2 id="next">七、下一步建议</h2>
+
+<div class="panel">
+<table>
+<thead><tr><th style="width:8%">优先</th><th style="width:30%">事项</th><th>理由</th><th style="width:14%">对应PM</th></tr></thead>
+<tbody>
+<tr><td><span class="tag warn">高</span></td>
+    <td>加 .doc 解析支持（LibreOffice headless 或 anydoc）</td>
+    <td>救回 93% 失败文档，成功率 80%→95%+。改动集中在 <code>parse_file</code> 两个函数。
+        PM 原话点名 anydoc，统一转 md 顺带解决 PDF/扫描件/非标 docx</td>
+    <td>第1点 定位错误</td></tr>
+<tr><td><span class="tag warn">高</span></td>
+    <td>embedding 瓶颈：独立部署或配 GPU</td>
+    <td>96% 耗时在此。131 共享 CPU 是长尾根源，需新机器/新硬件，对应 PM 第4点</td>
+    <td>第2点 最快</td></tr>
+<tr><td><span class="tag acc">中</span></td>
+    <td>依赖持久化：把 fastapi 等写入容器镜像或 keepalive 自动安装</td>
+    <td>本次容器重建丢依赖，每次重建都要手动装。生产化前必须固化</td>
+    <td>运维</td></tr>
+<tr><td><span class="tag acc">中</span></td>
+    <td>1 万份阶梯压测</td>
+    <td>当前到千份，万份预估 11h，需真实数据支撑容量承诺。
+        长尾在万份级会被放大，队列单实例限制可能显现</td>
+    <td>第1点 万份</td></tr>
+<tr><td><span class="tag">低</span></td>
+    <td>错误信息友好化</td>
+    <td>把 <code>Package not found</code> 包装成"旧版 .doc 格式，建议转换"</td>
+    <td>体验</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="footer">
+数据来源：MySQL <code>gcn_ingest</code> 库 <code>ingest_job/ingest_task/ingest_step</code> 三表，
+DBeaver 直连 5455 端口查询。所有耗时为 mentor 自跑流水线上报的真实测量值，非估算。
+原始证据：job 35（161份）、job 37（1000份）。
+</div>
+
+</div>
+</body>
+</html>

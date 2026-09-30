@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>批量上传测试总索引 · 2026-09-08</title><style>
+  :root {
+    --bg:#0f1115; --panel:#171a21; --line:#262a33; --text:#e6e8eb;
+    --muted:#9aa3ad; --accent:#4c8dff; --ok:#35c56a; --warn:#f5a623; --err:#ff5f56;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:14px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:32px 28px 80px; }
+  h1 { font-size:26px; font-weight:600; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:28px; }
+  h2 { font-size:18px; font-weight:600; margin:34px 0 14px;
+       padding-bottom:8px; border-bottom:1px solid var(--line); }
+  h3 { font-size:15px; font-weight:600; margin:20px 0 8px; color:var(--accent); }
+  .panel { background:var(--panel); border:1px solid var(--line);
+           border-radius:8px; padding:18px 20px; margin:14px 0; }
+  .panel.tldr { border-left:3px solid var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:13px; margin:8px 0; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line);
+           vertical-align:middle; }
+  th { color:var(--muted); font-weight:500; font-size:12px; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .tag { display:inline-block; padding:2px 9px; border-radius:11px;
+         font-size:11.5px; border:1px solid; text-decoration:none; }
+  .tag.ok { color:var(--ok); border-color:var(--ok); }
+  .tag.warn { color:var(--warn); border-color:var(--warn); }
+  .tag.err { color:var(--err); border-color:var(--err); }
+  .tag.acc { color:var(--accent); border-color:var(--accent); }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:14px 0; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+          padding:16px 14px; text-align:center; }
+  .stat b { display:block; font-size:24px; font-weight:600; }
+  .stat small { color:var(--muted); font-size:11.5px; }
+  .stat.warn b { color:var(--warn); }
+  .stat.err b { color:var(--err); }
+  .stat.ok b { color:var(--ok); }
+  .caveat { background:#2a2016; border-left:3px solid var(--warn); padding:12px 16px;
+            border-radius:0 6px 6px 0; font-size:13px; color:#f0d9b5; margin:14px 0; }
+  .note { background:#0d1016; border-radius:6px; padding:10px 14px; font-size:12.5px;
+          color:#93a4b8; margin:10px 0; }
+  code { background:#0d1016; padding:1.5px 6px; border-radius:4px; font-size:12px;
+         color:#b9c6d8; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+         padding:14px 20px; margin:20px 0; }
+  .toc a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .toc a:hover { text-decoration:underline; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+          padding:16px 20px; margin:12px 0; transition:border-color 0.2s; }
+  .card:hover { border-color:var(--accent); }
+  .card h3 { margin-top:0; }
+  .card .meta { color:var(--muted); font-size:12px; margin-bottom:8px; }
+  .card .link { margin-top:10px; }
+  .card .link a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .card .link a:hover { text-decoration:underline; }
+  .timeline { position:relative; padding-left:24px; }
+  .timeline::before { content:''; position:absolute; left:8px; top:0; bottom:0;
+                       width:2px; background:var(--line); }
+  .tl-item { position:relative; margin-bottom:20px; }
+  .tl-item::before { content:''; position:absolute; left:-20px; top:6px;
+                      width:10px; height:10px; border-radius:50%; background:var(--accent); }
+  .tl-item.err::before { background:var(--err); }
+  .tl-item.ok::before { background:var(--ok); }
+  .tl-item.warn::before { background:var(--warn); }
+  .tl-time { color:var(--muted); font-size:12px; }
+  .footer { color:var(--muted); font-size:12px; margin-top:40px;
+            padding-top:16px; border-top:1px solid var(--line); }
+  .badge { display:inline-block; padding:1px 7px; border-radius:4px;
+           font-size:11px; margin-left:6px; }
+  .badge.done { background:#1a3a1a; color:var(--ok); }
+  .badge.run { background:#3a2f0a; color:var(--warn); }
+  .badge.todo { background:#2a2a33; color:var(--muted); }
+
+  #topnav { position:fixed; top:0; left:0; right:0; height:44px; z-index:9999;
+            background:#0b0d12; border-bottom:1px solid #262a33;
+            display:flex; align-items:center; padding:0 20px; gap:4px;
+            font:13px/1.4 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  #topnav a { color:#9aa3ad; text-decoration:none; padding:6px 12px; border-radius:6px;
+              white-space:nowrap; }
+  #topnav a:hover { background:#171a21; color:#e6e8eb; }
+  #topnav a.active { color:#4c8dff; background:#111620; }
+  #topnav .brand { font-weight:600; color:#e6e8eb; margin-right:12px;
+                   padding-right:12px; border-right:1px solid #262a33; }
+  body { padding-top:44px !important; }
+  body > .wrap { margin-top:20px; }
+
+</style></head><body>
+<div id="topnav"><span class="brand">批量上传测试</span><a href="批量上传测试总索引_20260908.html" class="active">总索引</a><a href="RAGFlow原生批量上传测试_20260908.html">方案A测试</a><a href="方案B并发压测_20260908.html">方案B并发压测</a><a href="RAGFlow原生局限与mentor方案结论_20260908.html">结论报告</a><a href="批量导入规模验证_20260907.html">千份baseline</a><a href="万份稳定性压测_20260911.html">万份压测</a></div>
+<div class='wrap'>
+<h1>批量上传测试总索引</h1>
+<p class='sub'>GCN 采购文件活化项目 · 2026-09-07~09-08 两天测试全过程汇总<br>执行人：小zhu · 环境：131 服务器 RAGFlow v0.26.1 · 测试数据：law_data 法律法规 .docx</p>
+<div class='toc'><b>导航</b><br><a href='#tldr'>一、一句话结论</a> · <a href='#timeline'>二、测试时间线</a> · <a href='#reports'>三、子报告索引</a> · <a href='#data'>四、关键数据汇总</a> · <a href='#bugs'>五、发现的问题</a> · <a href='#next'>六、后续行动</a></div>
+<h2 id='tldr'>一、一句话结论</h2>
+<div class='panel tldr'><p>用 5 份可点击的子报告覆盖了 PM 第 1 点（批量上传可管理）的完整验证：<b>RAGFlow 原生接口能完成文档上传与解析，但不可管</b>（进度只能猜、取消不生效、无暂停/重试，满足 PM 5 项需求中的 1 项）；<b>mentor 方案 B 自建编排解决了全部局限</b>（每阶段计时/暂停/重试/失败隔离全有），并发 3 最优（吞吐 0.18 份/s）；<b>1 万份稳定性测试已完成</b>——吞吐降至 0.046 份/s（比百份降 74%），根因是 embedding 长尾（max 556s）堵塞并发槽，墙钟 69% 在等长尾；<b>4090 GPU 压测已完成对照</b>——GPU 吞吐 1.029 份/s（快 5.7×），embed 长尾 max 8.9s（根治），index 成新瓶颈。</p></div>
+<div class='grid4'>
+<div class="stat"><b>5</b><small>份子报告</small></div>
+<div class="stat ok"><b>0.046</b><small>万份吞吐(份/s)</small></div>
+<div class="stat err"><b>0/5</b><small>方案A满足PM需求</small></div>
+<div class="stat acc"><b>1.029</b><small>4090 GPU吞吐(份/s)</small></div>
+</div>
+<h2 id='timeline'>二、测试时间线（2026-09-07 ~ 09-11）</h2>
+<div class="panel"><div class="timeline">
+<div class="tl-item ok"><div class="tl-time">09-07</div><h3>方案B千份 baseline</h3><p>mentor 已跑的 job 37：1000 份 law_data，796 成功/204 失败（.doc 脏数据），墙钟 3192s，吞吐 0.25 份/s，embedding 占 96%。<a href='批量导入规模验证_20260907.html' class='tag acc'>查看报告</a></p></div>
+<div class="tl-item ok"><div class="tl-time">09-08</div><h3>方案A纯原生测试（100份）</h3><p>直接调 RAGFlow HTTP API（POST /documents + /chunks + GET /documents 轮询），不走 mentor 编排。100 份全成功，墙钟 1104s，吞吐 0.091 份/s。进度可见性弱（progress_msg 只有 4 种排队文本）。<a href='RAGFlow原生批量上传测试_20260908.html' class='tag acc'>查看报告</a></p></div>
+<div class="tl-item err"><div class="tl-time">09-08</div><h3>方案A取消能力实测</h3><p>跑到 30% 时发 DELETE /chunks，最终 0 份变 CANCEL、100 份全 DONE。RAGFlow 原生取消在文档多的串行场景下不彻底，无 pause/resume。</p></div>
+<div class="tl-item ok"><div class="tl-time">09-08</div><h3>方案B并发压测（1/3/6 × 50份）</h3><p>embedding 清理重置后重新标定并发数。并发3 吞吐 0.180 份/s（最优），并发6 与并发3 持平但单份 embed 翻倍（15s→30s）、长尾暴涨（73s→118s）。结论：并发3 甜点区未变。<a href='方案B并发压测_20260908.html' class='tag acc'>查看报告</a></p></div>
+<div class="tl-item err"><div class="tl-time">09-08</div><h3>发现方案B MySQL 持久化并发 bug</h3><p>用 --persist（MySQLRepository）跑 1 万份，task 全失败（'NoneType' has no attribute 'status'）。根因：threading.local 连接在 ThreadPoolExecutor 并发下断开。退回 InMemory 跑。值得反馈 mentor。</p></div>
+<div class="tl-item warn"><div class="tl-time">09-08</div><h3>1万份稳定性测试启动</h3><p>InMemory 模式后台跑 1 万份 × 并发3。embedding 在 131 共享 CPU 上推理，预计 16-22 小时跑完。<span class='badge run'>已启动</span></p></div>
+<div class="tl-item err"><div class="tl-time">09-11</div><h3>1万份跑完：吞吐崩塌 74%</h3><p>9994/10000 成功（失败 6，全是 embedding read timeout），墙钟 215054s（59.7h），吞吐 <b>0.046 份/s</b>（比百份 0.180 降 74%）。根因：embedding 长尾 max 556s（9.3 分钟）堵塞并发槽，墙钟 69% 在等长尾，不是单份变慢（单份只慢 21%）。<a href='万份稳定性压测_20260911.html' class='tag acc'>查看报告</a></p></div>
+<div class="tl-item ok"><div class="tl-time">09-11</div><h3>4090 GPU 压测对照</h3><p>4090 GPU bge-base（cuda:0）100 份并发3：吞吐 <b>1.029 份/s</b>（快 5.7×），embed avg 1.46s（快 10.5×），embed max 8.9s（长尾根治）。GPU 把 embedding 从绝对瓶颈（93.6%）拉到 51.2%，<b>index 写入成新瓶颈（42.7%）</b>。<a href='../4090_测试/4090_GPU压测_20260911.md' class='tag acc'>查看报告</a></p></div>
+</div></div>
+<h2 id='reports'>三、子报告索引（点击查看详情）</h2>
+<div class="card"><div class="meta">方案B千份 baseline（09-07） <span class="badge done">已完成</span></div><p>mentor 自建方案 B 跑 1000 份 law_data 的规模验证。吞吐 0.25 份/s 线性稳定，embedding 占 96%，失败 100% 是 .doc 脏数据（系统零 bug）。</p><div><span class="tag acc">吞吐线性稳定</span> <span class="tag acc">失败归因</span> <span class="tag acc">每阶段耗时</span> <span class="tag acc">长尾分析</span> </div><div class="link"><a href="批量导入规模验证_20260907.html">点击查看 →</a></div></div>
+<div class="card"><div class="meta">方案A纯原生测试（09-08） <span class="badge done">已完成</span></div><p>直接调 RAGFlow HTTP API 跑 100 份纯真 .docx。100% 成功，墙钟 1104s，吞吐 0.091 份/s。progress_msg 只有排队文本，取消实测 0/70 生效。</p><div><span class="tag acc">KPI 指标</span> <span class="tag acc">进度爬升轨迹</span> <span class="tag acc">进度可见性</span> <span class="tag acc">取消能力实测</span> <span class="tag acc">与方案B对比</span> </div><div class="link"><a href="RAGFlow原生批量上传测试_20260908.html">点击查看 →</a></div></div>
+<div class="card"><div class="meta">方案B并发压测（09-08） <span class="badge done">已完成</span></div><p>embedding 清理后重新标定并发数。1/3/6 三档 × 50 份。并发3 最优（0.180 份/s），并发6 无收益（争抢开销）。</p><div><span class="tag acc">三档对比</span> <span class="tag acc">每阶段耗时</span> <span class="tag acc">embedding 长尾</span> <span class="tag acc">最优并发结论</span> </div><div class="link"><a href="方案B并发压测_20260908.html">点击查看 →</a></div></div>
+<div class="card"><div class="meta">结论报告（09-08） <span class="badge done">已完成</span></div><p>三重证据（源码+文档+实测）整合。RAGFlow 原生六大局限 + mentor 方案B解决了什么 + 边界与风险 + 选型建议。</p><div><span class="tag acc">六大局限</span> <span class="tag acc">方案B解决矩阵</span> <span class="tag acc">边界风险</span> <span class="tag acc">选型建议</span> </div><div class="link"><a href="RAGFlow原生局限与mentor方案结论_20260908.html">点击查看 →</a></div></div>
+<div class="card"><div class="meta">1万份稳定性测试（09-11） <span class="badge done">已完成</span></div><p>InMemory 跑 1 万份 × 并发3。9994 成功/6 失败，墙钟 59.7h，吞吐 0.046 份/s（降 74%）。根因：embedding 长尾 max 556s 堵塞并发槽，墙钟 69% 在等长尾。</p><div><span class="tag acc">万份吞吐曲线</span> <span class="tag acc">长尾根因分析</span> <span class="tag err">吞吐崩塌74%</span> <span class="tag acc">MySQL bug 记录</span> </div><div class="link"><a href="万份稳定性压测_20260911.html">点击查看 →</a></div></div>
+<div class="card"><div class="meta">4090 GPU 压测对照（09-11） <span class="badge done">已完成</span></div><p>4090 GPU bge-base 100 份并发3：吞吐 1.029 份/s（快 5.7×），embed max 8.9s（长尾根治），index 成新瓶颈 42.7%。含 mentor 服务 vs 脚本对比（服务层 -24%）。</p><div><span class="tag acc">GPU vs CPU 对比</span> <span class="tag acc">瓶颈转移</span> <span class="tag acc">Amdahl 验证</span> <span class="tag acc">服务层开销</span> </div><div class="link"><a href="../4090_测试/4090_GPU压测_20260911.md">点击查看 →</a></div></div>
+<h2 id='data'>四、关键数据汇总</h2>
+<div class="panel"><h3>所有测试批次对比</h3><table><thead><tr><th>批次</th><th>方案</th><th class="num">文档数</th><th class="num">墙钟</th><th class="num">吞吐</th><th class="num">成功率</th><th>说明</th></tr></thead><tbody><tr><td>job 35</td><td>B</td><td class="num">161</td><td class="num">658s</td><td class="num">0.24</td><td class="num">98.8%</td><td>百份级</td></tr><tr><td>job 37</td><td>B</td><td class="num">1000</td><td class="num">3192s</td><td class="num">0.25</td><td class="num">79.6%</td><td>千份级（含 .doc 脏数据）</td></tr><tr><td>本次</td><td>A 原生</td><td class="num">100</td><td class="num">1104s</td><td class="num">0.091</td><td class="num">100%</td><td>纯原生 API，数据预筛</td></tr><tr><td>c1</td><td>B</td><td class="num">50</td><td class="num">594s</td><td class="num">0.084</td><td class="num">100%</td><td>并发1 串行基线</td></tr><tr><td>c3</td><td>B</td><td class="num">50</td><td class="num">278s</td><td class="num">0.180</td><td class="num">100%</td><td>并发3 最优</td></tr><tr><td>c6</td><td>B</td><td class="num">50</td><td class="num">275s</td><td class="num">0.182</td><td class="num">100%</td><td>并发6 无收益</td></tr><tr><td>10k</td><td>B</td><td class="num">10000</td><td class="num">59.7h</td><td class="num">0.046</td><td class="num">99.94%</td><td>降74% 长尾堵塞 <span class="badge done">完成</span></td></tr></tbody></table></div>
+<h2 id='bugs'>五、发现的问题</h2>
+<div class="panel"><h3>1. RAGFlow 原生取消不生效（方案A硬伤）</h3><p>DELETE /chunks 在文档多的串行场景下取消不彻底——实测跑到 30% 时取消，最终 0 份变 CANCEL，100 份全部正常 DONE。RAGFlow 的取消是软取消（Redis 标志 + worker 阶段边界检查），但串行 embedding 下检查点之间文档已被处理完。</p><div class="note">影响：方案A 无法满足 PM"随时暂停/重试"需求。</div></div>
+<div class="panel"><h3>2. 方案B MySQL 持久化并发 bug（反馈 mentor）</h3><p>MySQLRepository 用 threading.local() 每线程一个连接，在 Scheduler 的 ThreadPoolExecutor 并发下连接断开，get_task 返回 None 导致 task 全失败（<code>'NoneType' object has no attribute 'status'</code>）。</p><div class="note">复现：--persist --concurrency 3，10000 份 7 份成功后全卡死。InMemory 模式不受影响（50 份 c1/c3/c6 全成功）。<br>建议 mentor：MySQLRepository 加连接 ping 检查/自动重连机制。</div></div>
+<div class="panel"><h3>3. embedding 长尾（两方案共性瓶颈）</h3><p>bge-base 在 131 共享 CPU 上推理，单份 embed avg 11s（并发1）→ 30s（并发6），max 47s→118s。并发越高长尾越严重。提速正解是 GPU/独立部署，不是加并发。</p><div class="note">131 是 34 容器混跑、load 22、无 GPU、embedding 服务跑 36 天。</div></div>
+<h2 id='next'>六、后续行动</h2>
+<div class="panel"><ul><li><b>1万份已完成</b>：吞吐 0.046 份/s（降74%），根因 embedding 长尾堵塞，报告已生成 <span class="badge done">完成</span></li><li><b>4090 GPU 对照已完成</b>：吞吐 1.029 份/s（快5.7×），embed 长尾根治，index 成新瓶颈 <span class="badge done">完成</span></li><li><b>反馈 mentor</b>：MySQL 并发 bug + 万份稳定性结论 + GPU 对照数据 <span class="badge todo">待做</span></li><li><b>4090 万份实测</b>：验证 GPU 长跑下吞吐是否退化（131 从 0.180 退到 0.046） <span class="badge todo">待跑</span></li><li><b>embedding 提速</b>：GPU 已证明快 500×，万份实测待跑 <span class="badge todo">PM关注</span></li><li><b>复杂版面解析</b>：方案B 的 docx 解析较简单，核电手册含图复杂表格需对比 RAGFlow DeepDOC <span class="badge todo">待验证</span></li></ul></div>
+<div class="panel"><h3>本索引涉及的文件</h3><table><thead><tr><th>文件</th><th>说明</th></tr></thead><tbody><tr><td><code>RAGFlow原生批量上传测试_20260908.html</code></td><td>方案A 100份测试详情</td></tr><tr><td><code>方案B并发压测_20260908.html</code></td><td>方案B 并发1/3/6 压测详情</td></tr><tr><td><code>RAGFlow原生局限与mentor方案结论_20260908.html</code></td><td>结论报告（六大局限+方案B解决矩阵）</td></tr><tr><td><code>批量导入规模验证_20260907.html</code></td><td>方案B 千份 baseline（mentor 前序工作）</td></tr><tr><td><code>万份稳定性压测_20260911.html</code></td><td>1万份稳定性测试（吞吐崩塌根因分析）</td></tr><tr><td><code>../4090_测试/4090_GPU压测_20260911.md</code></td><td>4090 GPU 压测对照报告</td></tr><tr><td><code>批量上传测试总索引_20260908.html</code></td><td>本页（总索引）</td></tr></tbody></table><p class="note">所有 HTML 在同一目录（doc/design/131_测试/），点击链接即可在浏览器打开；4090 报告在上级 4090_测试/ 目录。</p></div>
+<div class='footer'>生成于 2026-09-08 · index_report.py · 2026-09-11 更新（万份完成 + 4090 GPU 对照）· 小zhu 测试汇总（2026-09-07~11）</div>
+</div></body></html>

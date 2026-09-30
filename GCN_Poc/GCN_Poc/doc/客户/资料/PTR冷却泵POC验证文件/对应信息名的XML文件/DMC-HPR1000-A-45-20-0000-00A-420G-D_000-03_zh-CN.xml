@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/fault.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="G" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>密封寿命短、密封过度泄漏、密封冲洗管线过热</techName><infoName>通用故障隔离程序</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <faultIsolation>
+      <faultIsolationProcedure>
+        <fault faultCode="E007">
+        </fault>
+        <faultDescr>
+          <descr>密封寿命短、密封过度泄漏、密封冲洗管线过热</descr>
+        </faultDescr>
+        <isolationProcedure>
+          <preliminaryRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+            <reqSupportEquips>
+              <noSupportEquips>
+              </noSupportEquips>
+            </reqSupportEquips>
+            <reqSupplies>
+              <noSupplies>
+              </noSupplies>
+            </reqSupplies>
+            <reqSpares>
+              <noSpares>
+              </noSpares>
+            </reqSpares>
+            <reqSafety>
+              <safetyRqmts>
+                <caution>
+                  <warningAndCautionPara>故障检查及排除时确保人员安全，必要时需要停机处理。</warningAndCautionPara>
+                </caution>
+              </safetyRqmts>
+            </reqSafety>
+          </preliminaryRqmts>
+          <isolationMainProcedure>
+            <?XEditor_SvgFile id="SVG_3602858d-dbac-47c4-8462-dd4da5a0d7bb.svg" hotspotIDs="shape1 shape2 shape7 shape3 shape4 shape9 shape5 shape10 shape11 shape8 shape6"?>
+            <isolationStep id="ID3031189e-9c6c-4ebc-9566-eecd075714f6">
+              <?XEditor_ShapeID id="shape1" ?>
+              <action>检查联轴器</action>
+              <isolationStepQuestion>是否对中</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id0a1d0d3c-2a21-4b65-b7e7-672618839b5f">
+                    <?XEditor_PathID id="path6389EEDE-531F-401F-BE12-A35A9B98D203" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id3b3eb9e0-cb7f-4c2c-866c-8ac66ab9e238">
+                    <?XEditor_PathID id="pathA9DA96CC-295C-456F-AE24-34283D92739E" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="id0a1d0d3c-2a21-4b65-b7e7-672618839b5f">
+              <?XEditor_ShapeID id="shape2" ?>
+              <action>检查泵轴</action>
+              <isolationStepQuestion>是否弯曲有划痕</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id95968922-47d6-41b5-bba6-fc2e796cd022">
+                    <?XEditor_PathID id="path80E33CF8-FFB8-485A-B365-DE6190E412A2" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id35366364-7b5f-43c4-b979-7ba3b7ec1569">
+                    <?XEditor_PathID id="path387CC33F-6C68-44CD-87DF-C6C27C59F64E" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id95968922-47d6-41b5-bba6-fc2e796cd022">
+              <?XEditor_ShapeID id="shape7" ?>
+              <action>校直/更换轴</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id35366364-7b5f-43c4-b979-7ba3b7ec1569">
+              <?XEditor_ShapeID id="shape3" ?>
+              <action>检查冲洗流量</action>
+              <isolationStepQuestion>是否充分</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id96edaaa2-0d93-499c-b36d-b8197e816de0">
+                    <?XEditor_PathID id="pathA9AB7706-D8ED-4943-91B8-851B2FB61950" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id0e706c5b-bfb6-4fd8-830e-a43be1d4709f">
+                    <?XEditor_PathID id="path23CE775E-44B4-493D-A2B7-0EF9E0E0FDE0" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="id96edaaa2-0d93-499c-b36d-b8197e816de0">
+              <?XEditor_ShapeID id="shape4" ?>
+              <action>检查冲洗流速</action>
+              <isolationStepQuestion>是否过快</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="idff9259a1-9516-4b3e-a3d6-adfa81511f68">
+                    <?XEditor_PathID id="pathE670A7E4-FBB9-4FCC-B6DD-E5829E6FC13C" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="idd8aa2ce5-dd3c-4c70-aaae-9009eaeec99a">
+                    <?XEditor_PathID id="pathB24D6B74-05E7-44C0-9A02-A048F3B0421E" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="idff9259a1-9516-4b3e-a3d6-adfa81511f68">
+              <?XEditor_ShapeID id="shape9" ?>
+              <action>添加堵塞</action>
+            </isolationProcedureEnd>
+            <isolationStep id="idd8aa2ce5-dd3c-4c70-aaae-9009eaeec99a">
+              <?XEditor_ShapeID id="shape5" ?>
+              <action>检查冲洗管路</action>
+              <isolationStepQuestion>是否颗粒阴塞</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id1e053fbc-036a-4c0b-b8c8-7664771e9e81">
+                    <?XEditor_PathID id="pathE65EE17E-5ABA-49C8-930B-CFA669588718" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id831f5fd1-3856-44a6-a1f5-7d2bc1a3b6ba">
+                    <?XEditor_PathID id="pathFA62CC35-76A9-4B71-B239-551705655B74" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id1e053fbc-036a-4c0b-b8c8-7664771e9e81">
+              <?XEditor_ShapeID id="shape10" ?>
+              <action>检查密封组件，清除异物</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id831f5fd1-3856-44a6-a1f5-7d2bc1a3b6ba">
+              <?XEditor_ShapeID id="shape11" ?>
+              <action>更换磨损密封零件</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id0e706c5b-bfb6-4fd8-830e-a43be1d4709f">
+              <?XEditor_ShapeID id="shape8" ?>
+              <action>打开排气孔排气</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id3b3eb9e0-cb7f-4c2c-866c-8ac66ab9e238">
+              <?XEditor_ShapeID id="shape6" ?>
+              <action>重新对中</action>
+            </isolationProcedureEnd>
+          </isolationMainProcedure>
+          <closeRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+          </closeRqmts>
+        </isolationProcedure>
+      </faultIsolationProcedure>
+    </faultIsolation>
+  </content>
+</dmodule>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00039-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00039-A-001-01.HTM" NDATA htm>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="200" infoCodeVariant="F" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>泵体泵盖</techName><infoName>拆除</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <procedure>
+      <preliminaryRqmts>
+        <reqCondGroup>
+          <reqCondNoRef>
+            <reqCond>关闭泵进口前和泵出口后所有控制流量的阀门。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>排尽管道中的液体，如有必要应冲洗干净泵内介质。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>拆卸影响移走泵芯部件的所有辅助管道和设备。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>拆卸并取走膜片联轴器部件上的螺栓、间隔轴、叠片组件。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有足够的可操作空间满足泵的拆装；还需备有专门拆装泵的平台。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备力矩扳手、千分表、塞尺。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场备有零部件及工具等的储存设施。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有相应的运输工具及起吊行车，包括具备各种安装、操作资质的专业人员。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备清洁剂、润滑剂。</reqCond>
+          </reqCondNoRef>
+        </reqCondGroup>
+        <reqSupportEquips>
+          <supportEquipDescrGroup>
+            <supportEquipDescr>
+              <name>扳手</name>
+              <identNumber>
+                <manufacturerCode>M20</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+          </supportEquipDescrGroup>
+        </reqSupportEquips>
+        <reqSupplies>
+          <noSupplies>
+          </noSupplies>
+        </reqSupplies>
+        <reqSpares>
+          <spareDescrGroup>
+            <spareDescr>
+              <name>O形圈</name>
+              <identNumber>
+                <manufacturerCode>JB/ZQ4224 406 X7</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </spareDescr>
+          </spareDescrGroup>
+        </reqSpares>
+        <reqSafety>
+          <safetyRqmts>
+            <caution>
+              <warningAndCautionPara>拆卸时应合理的选用工具和设备，当拆解遇到困难时要先查明原因，采取适当方法解决，不允许猛打乱敲,防止损坏零件和工具。</warningAndCautionPara>
+            </caution>
+          </safetyRqmts>
+        </reqSafety>
+      </preliminaryRqmts>
+      <mainProcedure>
+        <proceduralStep>
+          <title>拆除</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>松开并拆卸泵体与泵盖的连接螺柱、螺母。</para>
+              </listItem>
+              <listItem>
+                <para>拆卸拆解泵盖、泵体。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </proceduralStep>
+        <figure>
+          <title>002冷却泵维修</title>
+          <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00039-A-001-01" reproductionHeight="112pt" reproductionWidth="112pt" xlink:type="simple">
+          </graphic>
+        </figure>
+      </mainProcedure>
+      <closeRqmts>
+        <reqCondGroup>
+          <noConds>
+          </noConds>
+        </reqCondGroup>
+      </closeRqmts>
+    </procedure>
+  </content>
+</dmodule>

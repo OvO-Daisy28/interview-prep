@@ -1,0 +1,246 @@
+{
+  "docs": [
+    {"id": "D-001", "name": "PTR冷却泵设备运行与维修手册.docx", "type": "Word", "equipment": "PTR冷却泵", "manufacturer": "重庆水泵厂(CQPI)", "pages": 86, "status": "解析完成", "progress": 100, "ocr": null},
+    {"id": "D-002", "name": "RRI冷却泵设备运行与维修手册.docx", "type": "Word", "equipment": "RRI冷却泵", "manufacturer": "重庆水泵厂(CQPI)", "pages": 79, "status": "解析中", "progress": 62, "ocr": null},
+    {"id": "D-003", "name": "CEF补水泵运行维修手册(扫描版).pdf", "type": "PDF扫描件", "equipment": "CEF补水泵", "manufacturer": "上海凯泉", "pages": 64, "status": "OCR识别完成", "progress": 100, "ocr": 98.6},
+    {"id": "D-004", "name": "ASG辅助给水泵维修手册.pdf", "type": "PDF", "equipment": "ASG辅助给水泵", "manufacturer": "沈阳鼓风机集团", "pages": 112, "status": "待解析", "progress": 0, "ocr": null},
+    {"id": "D-005", "name": "RCV上充泵设备运行与维修手册.docx", "type": "Word", "equipment": "RCV上充泵", "manufacturer": " Flowserve", "pages": 95, "status": "导入失败·可重试", "progress": 34, "ocr": null}
+  ],
+  "parseTasks": [
+    {"id": "T-001", "doc": "PTR冷却泵设备运行与维修手册.docx",
+     "engines": [{"name": "传统程序解析", "desc": "标题提取/段落边界/表格定位", "status": "done"},
+                 {"name": "LLM语义提取", "desc": "非标章节推断/复合参数拆分/内容块切分", "status": "done"},
+                 {"name": "知识标注关联", "desc": "实体识别/知识库标注/DMC编码挂接", "status": "done"}],
+     "result": "解析内容块 128 个、参数 42 条、表格 12 张，12 条待人工复核"},
+    {"id": "T-002", "doc": "RRI冷却泵设备运行与维修手册.docx",
+     "engines": [{"name": "传统程序解析", "desc": "标题提取/段落边界/表格定位", "status": "done"},
+                 {"name": "LLM语义提取", "desc": "非标章节推断/复合参数拆分/内容块切分", "status": "running"},
+                 {"name": "知识标注关联", "desc": "实体识别/知识库标注/DMC编码挂接", "status": "waiting"}],
+     "result": null}
+  ],
+  "todo": [
+    {"text": "PTR手册 AI 提取结果 12 条待复核", "page": "parse", "level": "warning"},
+    {"text": "术语检测：发现 3 处非标准术语待确认", "page": "govern", "level": "info"},
+    {"text": "通用内容块 CB-0021 被修改，影响 3 份已生成手册", "page": "govern", "level": "danger"},
+    {"text": "《核级设备EOMM模板》V2.1 待评审发布", "page": "generate", "level": "info"}
+  ],
+  "knowledgeTree": [
+    {"label": "设备知识", "children": [{"label": "PTR冷却泵"}, {"label": "RRI冷却泵"}, {"label": "CEF补水泵"}, {"label": "设备分类: 核级离心泵"}]},
+    {"label": "参数知识", "children": [{"label": "额定流量(定义/取值范围)"}, {"label": "额定扬程"}, {"label": "额定转速"}, {"label": "单位换算: m³/h ↔ L/s"}]},
+    {"label": "操作知识", "children": [{"label": "首次启动标准流程"}, {"label": "冷态/热态对中"}, {"label": "大修安全注意事项"}]},
+    {"label": "故障知识", "children": [{"label": "泵不出液(原因/处理)"}, {"label": "轴承发热"}, {"label": "振动噪声超标"}, {"label": "机封泄漏"}]},
+    {"label": "部件知识", "children": [{"label": "机械密封(PLAN01冲洗)"}, {"label": "膜片联轴器"}, {"label": "轴承体(托架)"}, {"label": "备件: 易损件清单"}]},
+    {"label": "标准知识", "children": [{"label": "核安全分级规范"}, {"label": "质保等级QA要求"}, {"label": "SNS编码规范"}]}
+  ],
+  "graph": {
+    "entityColors": {"设备": "#1B4F9C", "部件": "#2E8B57", "参数": "#B8860B", "操作": "#6A5ACD", "故障": "#C0392B", "标准": "#7F8C8D"},
+    "nodes": [
+      {"id": "E1", "name": "PTR冷却泵", "type": "设备", "phase": "运行", "props": {"核安全等级": "3级", "质保等级": "QA1", "厂家": "重庆水泵厂"}},
+      {"id": "P1", "name": "泵体", "type": "部件", "phase": "制造", "props": {"材料": "不锈钢铸件"}},
+      {"id": "P2", "name": "叶轮", "type": "部件", "phase": "制造", "props": {"形式": "闭式单吸"}},
+      {"id": "P3", "name": "机械密封", "type": "部件", "phase": "运行", "props": {"形式": "集装式", "冲洗方案": "PLAN01"}},
+      {"id": "P4", "name": "膜片联轴器", "type": "部件", "phase": "安装调试", "props": {"类型": "叠片挠性", "总长": "475mm"}},
+      {"id": "P5", "name": "轴承体(托架)", "type": "部件", "phase": "运行", "props": {"润滑": "油浴润滑"}},
+      {"id": "P6", "name": "电机", "type": "部件", "phase": "制造", "props": {"极数": "4极", "防护": "IP55"}},
+      {"id": "P7", "name": "泵盖", "type": "部件", "phase": "制造", "props": {}},
+      {"id": "P8", "name": "公共底座", "type": "部件", "phase": "安装调试", "props": {}},
+      {"id": "PR1", "name": "额定流量 640m³/h", "type": "参数", "phase": "设计", "props": {"分类": "性能参数"}},
+      {"id": "PR2", "name": "额定扬程 36m", "type": "参数", "phase": "设计", "props": {"分类": "性能参数"}},
+      {"id": "PR3", "name": "额定转速 1480r/min", "type": "参数", "phase": "设计", "props": {}},
+      {"id": "PR4", "name": "电机功率 90kW", "type": "参数", "phase": "设计", "props": {"分类": "电气参数"}},
+      {"id": "PR5", "name": "有效汽蚀余量 10.5m", "type": "参数", "phase": "设计", "props": {}},
+      {"id": "PR6", "name": "额定电压 380V", "type": "参数", "phase": "设计", "props": {"分类": "电气参数"}},
+      {"id": "O1", "name": "首次启动", "type": "操作", "phase": "安装调试", "props": {"章节": "2.1"}},
+      {"id": "O2", "name": "冷态对中", "type": "操作", "phase": "安装调试", "props": {"章节": "1.5.10"}},
+      {"id": "O3", "name": "热态对中", "type": "操作", "phase": "安装调试", "props": {"章节": "1.5.11"}},
+      {"id": "O4", "name": "大修", "type": "操作", "phase": "运行", "props": {"章节": "3.2"}},
+      {"id": "O5", "name": "回装", "type": "操作", "phase": "运行", "props": {"章节": "3.7"}},
+      {"id": "O6", "name": "日常巡检", "type": "操作", "phase": "运行", "props": {"章节": "2.2"}},
+      {"id": "F1", "name": "泵组无法启动", "type": "故障", "phase": "运行", "props": {"DMC": "...-420A-D"}},
+      {"id": "F2", "name": "泵不出液", "type": "故障", "phase": "运行", "props": {"DMC": "...-420B-D"}},
+      {"id": "F3", "name": "未达额定流量或压力", "type": "故障", "phase": "运行", "props": {"DMC": "...-420C-D"}},
+      {"id": "F4", "name": "轴承发热", "type": "故障", "phase": "运行", "props": {"DMC": "...-420E-D"}},
+      {"id": "F5", "name": "振动噪声超标", "type": "故障", "phase": "运行", "props": {"DMC": "...-420F-D"}},
+      {"id": "F6", "name": "机封泄漏", "type": "故障", "phase": "运行", "props": {}},
+      {"id": "S1", "name": "核安全分级规范 HAF", "type": "标准", "phase": "设计", "props": {"级别": "国家法规"}},
+      {"id": "S2", "name": "RCC-M 设计建造规则", "type": "标准", "phase": "设计", "props": {"级别": "行业规范"}},
+      {"id": "S3", "name": "GB/T 5656 离心泵技术条件", "type": "标准", "phase": "设计", "props": {"级别": "国家标准"}},
+      {"id": "S4", "name": "SNS结构化编码规范", "type": "标准", "phase": "设计", "props": {"级别": "企业标准"}}
+    ],
+    "edges": [
+      {"from": "E1", "to": "P1", "rel": "组成"}, {"from": "E1", "to": "P2", "rel": "组成"},
+      {"from": "E1", "to": "P3", "rel": "组成"}, {"from": "E1", "to": "P4", "rel": "组成"},
+      {"from": "E1", "to": "P5", "rel": "组成"}, {"from": "E1", "to": "P6", "rel": "组成"},
+      {"from": "E1", "to": "P7", "rel": "组成"}, {"from": "E1", "to": "P8", "rel": "组成"},
+      {"from": "E1", "to": "PR1", "rel": "特性"}, {"from": "E1", "to": "PR2", "rel": "特性"},
+      {"from": "E1", "to": "PR3", "rel": "特性"}, {"from": "P6", "to": "PR4", "rel": "特性"},
+      {"from": "E1", "to": "PR5", "rel": "特性"}, {"from": "P6", "to": "PR6", "rel": "特性"},
+      {"from": "P3", "to": "F6", "rel": "易损"}, {"from": "P5", "to": "F4", "rel": "易损"},
+      {"from": "P2", "to": "F2", "rel": "易损"}, {"from": "P2", "to": "F3", "rel": "易损"},
+      {"from": "P4", "to": "F5", "rel": "易损"}, {"from": "P5", "to": "F5", "rel": "易损"},
+      {"from": "P6", "to": "F1", "rel": "易损"},
+      {"from": "O1", "to": "E1", "rel": "适用"}, {"from": "O2", "to": "E1", "rel": "适用"},
+      {"from": "O3", "to": "E1", "rel": "适用"}, {"from": "O4", "to": "E1", "rel": "适用"},
+      {"from": "O5", "to": "E1", "rel": "适用"}, {"from": "O6", "to": "E1", "rel": "适用"},
+      {"from": "F1", "to": "O1", "rel": "解决"}, {"from": "F2", "to": "O6", "rel": "解决"},
+      {"from": "F4", "to": "O4", "rel": "解决"}, {"from": "F5", "to": "O2", "rel": "解决"},
+      {"from": "F6", "to": "O4", "rel": "解决"}, {"from": "F3", "to": "O6", "rel": "解决"},
+      {"from": "S1", "to": "E1", "rel": "引用"}, {"from": "S2", "to": "E1", "rel": "引用"},
+      {"from": "S3", "to": "E1", "rel": "引用"}, {"from": "S4", "to": "E1", "rel": "引用"},
+      {"from": "O2", "to": "P4", "rel": "组成"}, {"from": "O5", "to": "P3", "rel": "组成"}
+    ]
+  },
+  "semanticQA": [
+    {"q": "轴承发热怎么处理？",
+     "mode": "局部检索 · GraphRAG Local",
+     "answer": "根据知识图谱推理，【轴承发热】(F4) 与部件【轴承体/托架】(P5) 存在易损关系，推荐处理操作：【大修】(O4) 解体检查轴承，若磨损不正常应排除原因后更换；运行中应监视轴承温度，超过规定值时停机检查润滑状况。装配时力矩须分3次以上对称拧紧。",
+     "evidence": [
+       {"text": "轴承发热故障处理三元组", "source": "PTR冷却泵手册 2.3故障处理", "conf": 0.96, "phase": "运行"},
+       {"text": "轴承清洗干净；若轴承有磨损应检查引起损坏的原因", "source": "PTR冷却泵手册 3.5.2检查及维修", "conf": 0.93, "phase": "运行"},
+       {"text": "轴承温度应保持监视，其值应不超过相关规定值", "source": "PTR冷却泵手册 2.2.1运行检查事项", "conf": 0.91, "phase": "运行"}]},
+    {"q": "PTR冷却泵的主要性能参数有哪些？",
+     "mode": "局部检索 · GraphRAG Local",
+     "answer": "PTR冷却泵(E1) 特性关系检索结果：额定流量 640m³/h、额定扬程 36m、额定转速 1480r/min、有效汽蚀余量 10.5m；配套电机：功率 90kW、电压 380V、频率 50Hz、4极、同步转速 1500r/min。",
+     "evidence": [
+       {"text": "额定流量640m³/h，额定扬程36m", "source": "PTR冷却泵手册 1.1一般数据", "conf": 0.99, "phase": "设计"},
+       {"text": "1.1.1 供电和流体特性参数表", "source": "PTR冷却泵手册 第1章", "conf": 0.97, "phase": "设计"}]},
+    {"q": "对比一下全厂泵类设备的常见故障模式",
+     "mode": "全局检索 · GraphRAG Global(社区发现)",
+     "answer": "基于社区发现算法对图谱 3 个设备社区跨章节汇总：泵类设备高频故障聚为 4 类 —— ① 水力性能类(不出液/流量不足，占 31%)；② 轴承类(发热/磨损，占 26%)；③ 密封类(机封泄漏，占 22%)；④ 振动噪声类(占 21%，多与对中不良相关)。通用处置路径均指向定期检查与大修程序，建议将四类通用故障隔离程序标记为通用内容块跨手册复用。",
+     "evidence": [
+       {"text": "社区1: PTR冷却泵故障子图(6实体/9关系)", "source": "知识图谱·运行阶段", "conf": 0.90, "phase": "运行"},
+       {"text": "社区2: RRI冷却泵故障子图(5实体/8关系)", "source": "知识图谱·运行阶段", "conf": 0.88, "phase": "运行"},
+       {"text": "跨社区通用模式汇总(Leiden算法, 分辨率1.0)", "source": "GraphRAG全局索引", "conf": 0.86, "phase": "运行"}]}
+  ],
+  "terms": [
+    {"std": "机械密封", "syn": ["机封", "轴封"], "status": "已发布"},
+    {"std": "联轴器", "syn": ["联轴节"], "status": "已发布"},
+    {"std": "膜片联轴器", "syn": ["叠片挠性联轴器", "金属膜片联轴器"], "status": "已发布"},
+    {"std": "轴承体", "syn": ["托架", "轴承托架"], "status": "已发布"},
+    {"std": "额定流量", "syn": ["设计流量", "名义流量"], "status": "已发布"},
+    {"std": "有效汽蚀余量", "syn": ["NPSHa", "装置汽蚀余量"], "status": "已发布"},
+    {"std": "备品备件", "syn": ["备件", "备品"], "status": "已发布"},
+    {"std": "大修", "syn": ["解体维修", "全面检修"], "status": "评审中"},
+    {"std": "对中", "syn": ["找正", "同心度调整"], "status": "已发布"},
+    {"std": "吐出管路", "syn": ["排出管路", "出口管路"], "status": "评审中"},
+    {"std": "含硼水", "syn": ["硼酸溶液"], "status": "已发布"},
+    {"std": "有效页", "syn": ["有效页清单"], "status": "已发布"}
+  ],
+  "termDetections": [
+    {"found": "机封", "std": "机械密封", "location": "CB-0037 · 3.7回装", "action": "pending"},
+    {"found": "联轴节", "std": "联轴器", "location": "RRI手册 1.2.4", "action": "pending"},
+    {"found": "托架", "std": "轴承体", "location": "CB-0102 · 3.5清洁检查", "action": "pending"}
+  ],
+  "qualityRules": [
+    {"name": "完整性检查", "desc": "必填字段是否缺失(设备编码/参数单位等)", "enabled": true},
+    {"name": "一致性检查", "desc": "同一设备在不同内容块中引用的参数值是否一致", "enabled": true},
+    {"name": "合理性检查", "desc": "参数值是否在合理范围(如额定流量不应为负数)", "enabled": true},
+    {"name": "关联完整性检查", "desc": "引用的备件/图纸等关联对象是否存在于数据库", "enabled": true}
+  ],
+  "qualityReport": {
+    "time": "2026-07-31 09:30", "scope": "PTR冷却泵 · 全部入库数据",
+    "issues": [
+      {"rule": "完整性检查", "level": "警告", "desc": "参数 P-0017「入口压力」缺少单位字段", "target": "技术参数表"},
+      {"rule": "一致性检查", "level": "错误", "desc": "额定流量在 CB-0005(640m³/h) 与 CB-0089(630m³/h) 中取值不一致", "target": "内容块"},
+      {"rule": "合理性检查", "level": "提示", "desc": "轴承温度限值 95℃ 高于同类设备常见限值(80℃)，建议复核", "target": "技术参数表"},
+      {"rule": "关联完整性检查", "level": "错误", "desc": "CB-0112 引用的图纸 LFZ42200394X4GA45 在图纸信息表中不存在", "target": "内容块"}
+    ]
+  },
+  "changeImpact": {
+    "block": {"id": "CB-0021", "title": "安全操作说明(通用)", "isCommon": true},
+    "affected": [
+      {"manual": "PTR冷却泵EOMM(已生成·V1.2)", "chapters": ["0.4安全", "2.1启动前检查"], "status": "需重新生成"},
+      {"manual": "RRI冷却泵EOMM(在编)", "chapters": ["0.4安全"], "status": "自动同步"},
+      {"manual": "CEF补水泵EOMM(已生成·V1.0)", "chapters": ["0.4安全", "3.3检修准备"], "status": "需重新生成"}
+    ]
+  },
+  "templates": [
+    {"id": "TPL-01", "name": "核级设备EOMM模板", "version": "V2.1", "deviceType": "核级泵类",
+     "chapters": [
+       {"no": "1", "title": "概述", "required": true, "condition": null,
+        "slots": [{"type": "描述说明", "source": "关于本说明书/设备概述"}, {"type": "技术要求", "source": "安全与保证"}, {"type": "表格", "source": "设备代码清单"}, {"type": "参数", "source": "核安全等级/质保等级/抗震类别", "condition": "nuclear"}]},
+       {"no": "2", "title": "设备描述", "required": true, "condition": null,
+        "slots": [{"type": "参数", "source": "一般数据(主要性能参数)"}, {"type": "描述说明", "source": "详细描述/主要部件"}, {"type": "表格", "source": "设备供货边界"}]},
+       {"no": "3", "title": "安装调试", "required": true, "condition": null,
+        "slots": [{"type": "操作步骤", "source": "运输/接收/存储"}, {"type": "操作步骤", "source": "安装/对中"}, {"type": "表格", "source": "螺栓力矩表"}]},
+       {"no": "4", "title": "运行细则", "required": true, "condition": null,
+        "slots": [{"type": "操作步骤", "source": "首次启动/正常运行/停机"}, {"type": "注意事项", "source": "运行安全注意"}]},
+       {"no": "5", "title": "故障处理", "required": true, "condition": null,
+        "slots": [{"type": "表格", "source": "故障诊断表(现象-原因-措施)"}]},
+       {"no": "6", "title": "维护维修", "required": true, "condition": null,
+        "slots": [{"type": "操作步骤", "source": "日常/定期/预防性维护"}, {"type": "操作步骤", "source": "拆卸/回装"}, {"type": "表格", "source": "备件清单"}]},
+       {"no": "7", "title": "图纸和文件", "required": true, "condition": null,
+        "slots": [{"type": "表格", "source": "部件清单/图纸清单"}]},
+       {"no": "8", "title": "附件", "required": false, "condition": "nuclear",
+        "slots": [{"type": "描述说明", "source": "配套设备资料清单"}]}
+     ]},
+    {"id": "TPL-02", "name": "非核级设备简化模板", "version": "V1.0", "deviceType": "常规岛泵类",
+     "chapters": [
+       {"no": "1", "title": "概述", "required": true, "condition": null, "slots": [{"type": "描述说明", "source": "设备概述"}]},
+       {"no": "2", "title": "设备描述", "required": true, "condition": null, "slots": [{"type": "参数", "source": "主要性能参数"}, {"type": "描述说明", "source": "主要部件"}]},
+       {"no": "3", "title": "运行与维护", "required": true, "condition": null, "slots": [{"type": "操作步骤", "source": "启停/巡检/维护"}]},
+       {"no": "4", "title": "故障与备件", "required": true, "condition": null, "slots": [{"type": "表格", "source": "故障诊断表"}, {"type": "表格", "source": "备件清单"}]}
+     ]}
+  ],
+  "compareDevices": [
+    {"code": "PTR-001", "name": "PTR冷却泵", "params": {"额定流量": "640 m³/h", "额定扬程": "36 m", "额定转速": "1480 r/min", "电机功率": "90 kW", "有效汽蚀余量": "10.5 m", "额定电压": "380 V"}},
+    {"code": "RRI-002", "name": "RRI冷却泵", "params": {"额定流量": "850 m³/h", "额定扬程": "42 m", "额定转速": "1480 r/min", "电机功率": "132 kW", "有效汽蚀余量": "9.8 m", "额定电压": "380 V"}},
+    {"code": "CEF-003", "name": "CEF补水泵", "params": {"额定流量": "320 m³/h", "额定扬程": "55 m", "额定转速": "2900 r/min", "电机功率": "75 kW", "有效汽蚀余量": "6.2 m", "额定电压": "380 V"}}
+  ],
+  "rulesData": {
+    "clusters": [
+      {"name": "核级泵类EOMM(17份)", "frame": "概述→设备描述→安装调试→运行细则→故障处理→维护维修→图纸文件", "sim": 0.92},
+      {"name": "常规岛泵类EOMM(9份)", "frame": "概述→设备描述→运行维护→故障与备件", "sim": 0.88},
+      {"name": "阀门类手册(6份)", "frame": "概述→结构描述→操作→维护→备件", "sim": 0.81}
+    ],
+    "similarityTop": [
+      {"content": "人员资格培训要求(安全通用)", "count": 28, "sim": 0.97},
+      {"content": "起吊作业安全注意事项", "count": 24, "sim": 0.94},
+      {"content": "设备存储环境要求(温湿度)", "count": 21, "sim": 0.91},
+      {"content": "联轴器对中通用说明", "count": 17, "sim": 0.88},
+      {"content": "备件订购信息提供要求", "count": 15, "sim": 0.86}
+    ],
+    "termFreq": [
+      {"term": "机械密封", "count": 156}, {"term": "联轴器", "count": 141},
+      {"term": "轴承", "count": 128}, {"term": "对中", "count": 96},
+      {"term": "额定流量", "count": 87}, {"term": "叶轮", "count": 82},
+      {"term": "力矩", "count": 76}, {"term": "汽蚀", "count": 43}
+    ],
+    "granularity": [
+      {"type": "操作步骤", "avgLen": "60~120字", "density": "单指令/段", "suggest": "按单一操作指令切分"},
+      {"type": "注意事项", "avgLen": "30~80字", "density": "单警示/段", "suggest": "按单条警示切分"},
+      {"type": "技术要求", "avgLen": "40~100字", "density": "1~2要素/段", "suggest": "按条款切分"},
+      {"type": "描述说明", "avgLen": "100~300字", "density": "多要素/段", "suggest": "按语义主题切分"}
+    ]
+  },
+  "versionDemo": {
+    "blockId": "CB-0005", "title": "首次启动前的准备事项",
+    "versions": [
+      {"v": 1, "time": "2026-07-20 14:02", "user": "王工", "reason": "初始解析入库",
+       "content": "启动前检查泵进口压力、温度数据是否在允许启动的范围内，确认各阀门处于正确位置。"},
+      {"v": 2, "time": "2026-07-28 10:15", "user": "李工", "reason": "按审查意见补充润滑检查要求",
+       "content": "启动前检查泵进口压力、温度数据是否在允许启动的范围内，确认各阀门处于正确位置。检查轴承润滑油位及油质，确认油位在正常刻度范围内。检查冷却水温度、水压、水量及流量计流动状态。"}
+    ]
+  },
+  "aiAssist": {
+    "editorText": "回装前应对所有零部件进行清洁和检查。将轴承体与轴承和轴进行装配，然后安装机封和叶轮。装配完成后检查转子部件中叶轮密封环的径向跳动，力矩按 45N·m 分次拧紧。",
+    "suggestions": [
+      {"type": "术语标准化", "icon": "Collection", "level": "warning",
+       "title": "非标准术语：机封",
+       "detail": "文中「机封」为标准术语「机械密封」的同义词，建议替换以保持一致性。",
+       "action": "replace", "from": "机封", "to": "机械密封"},
+      {"type": "参数合理性", "icon": "DataAnalysis", "level": "danger",
+       "title": "力矩值可能偏低",
+       "detail": "知识库中同类设备(PTR/RRI)轴承体连接螺栓常见力矩范围为 55~70 N·m，当前 45N·m 低于下限，建议复核。",
+       "action": "mark", "from": "45N·m", "to": null},
+      {"type": "完整性提示", "icon": "Warning", "level": "warning",
+       "title": "缺少安全注意事项引用",
+       "detail": "该操作步骤涉及装配作业，知识图谱显示 96% 的同类操作块引用了安全注意事项，建议引用 CB-0021「安全操作说明」。",
+       "action": "cite", "from": null, "to": "CB-0021"},
+      {"type": "知识召回", "icon": "Connection", "level": "info",
+       "title": "相关知识：叶轮密封环跳动检查",
+       "detail": "召回相似内容：3.5.2节「转子部件装配完成后按3.5.2节要求检查叶轮密封环径向跳动，允差0.05mm」；PTR故障库中「振动噪声超标」的 34% 案例与跳动超差相关。",
+       "action": "insert", "from": null, "to": "（插入引用）"}
+    ]
+  }
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/fault.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="I" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>轴承迅速磨损</techName><infoName>通用故障隔离程序</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <faultIsolation>
+      <faultIsolationProcedure>
+        <fault faultCode="E009">
+        </fault>
+        <faultDescr>
+          <descr>轴承迅速磨损</descr>
+        </faultDescr>
+        <isolationProcedure>
+          <preliminaryRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+            <reqSupportEquips>
+              <noSupportEquips>
+              </noSupportEquips>
+            </reqSupportEquips>
+            <reqSupplies>
+              <noSupplies>
+              </noSupplies>
+            </reqSupplies>
+            <reqSpares>
+              <noSpares>
+              </noSpares>
+            </reqSpares>
+            <reqSafety>
+              <safetyRqmts>
+                <caution>
+                  <warningAndCautionPara>故障检查及排除时确保人员安全，必要时需要停机处理。</warningAndCautionPara>
+                </caution>
+              </safetyRqmts>
+            </reqSafety>
+          </preliminaryRqmts>
+          <isolationMainProcedure>
+            <?XEditor_SvgFile id="SVG_f54a0e44-d24a-44c6-87fc-496a34c5007d.svg" hotspotIDs="shape1 shape2 shape7 shape3 shape8 shape4 shape9 shape5 shape11 shape10 shape6"?>
+            <isolationStep id="ID17bfb478-e9c8-4005-84df-d646be01092c">
+              <?XEditor_ShapeID id="shape1" ?>
+              <action>检查驱动器</action>
+              <isolationStepQuestion>是否对中</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id92398dfe-2d3f-4b1c-bda6-31648d3bc843">
+                    <?XEditor_PathID id="pathFEFA4F1D-534F-42D4-98FB-C10992422477" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id1b1b89ea-0abd-48ea-87c5-454dfdd4cf99">
+                    <?XEditor_PathID id="path89EAF2C3-2E30-4428-A611-81D856944EDA" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationStep id="id92398dfe-2d3f-4b1c-bda6-31648d3bc843">
+              <?XEditor_ShapeID id="shape2" ?>
+              <action>检查轴</action>
+              <isolationStepQuestion>是否弯曲</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id844d71c8-a94f-4165-b727-3281bbf18057">
+                    <?XEditor_PathID id="path28AC1206-35F0-4C0D-A70E-F6C6B49DC389" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="idd8901116-007a-48dd-b5a8-c784307dab09">
+                    <?XEditor_PathID id="path9ECF70D0-E428-4F9B-A486-C405AA693864" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id844d71c8-a94f-4165-b727-3281bbf18057">
+              <?XEditor_ShapeID id="shape7" ?>
+              <action>校直/更换轴</action>
+            </isolationProcedureEnd>
+            <isolationStep id="idd8901116-007a-48dd-b5a8-c784307dab09">
+              <?XEditor_ShapeID id="shape3" ?>
+              <action>检查</action>
+              <isolationStepQuestion>是否存在振动</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id6c5d1f7c-020e-4b6c-bb00-23233b0337ce">
+                    <?XEditor_PathID id="path1746B8B8-A3F8-4121-B622-2D4BCD142EF6" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id481a89b6-604b-4fe3-89e0-980c3dd8b8a5">
+                    <?XEditor_PathID id="path408569CB-2492-47AD-A5FB-024FCAEDB519" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id6c5d1f7c-020e-4b6c-bb00-23233b0337ce">
+              <?XEditor_ShapeID id="shape8" ?>
+              <action>纠正振动诱因</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id481a89b6-604b-4fe3-89e0-980c3dd8b8a5">
+              <?XEditor_ShapeID id="shape4" ?>
+              <action>检查</action>
+              <isolationStepQuestion>是否推力增大</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="idd1c30dc0-ea08-41c2-a6b8-34c41f9dc33e">
+                    <?XEditor_PathID id="path19F64E74-A183-4858-8F79-432D8B928F3E" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id4100c105-73b7-4953-a6c5-c0702eb14e4c">
+                    <?XEditor_PathID id="pathC5061777-66EF-4E34-9F42-EB6DBE3228AC" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="idd1c30dc0-ea08-41c2-a6b8-34c41f9dc33e">
+              <?XEditor_ShapeID id="shape9" ?>
+              <action>检查推力增大原因并降低推力</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id4100c105-73b7-4953-a6c5-c0702eb14e4c">
+              <?XEditor_ShapeID id="shape5" ?>
+              <action>检查</action>
+              <isolationStepQuestion>润滑是否正确</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id44195dcd-b8b3-4839-97a5-4dc80d7e599c">
+                    <?XEditor_PathID id="pathA27742B5-C155-43B7-9029-60B2155FBA79" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="idcbadfd7a-4f66-41ec-9a5e-096251e908cc">
+                    <?XEditor_PathID id="path3DFCBDD1-F29D-452B-90C5-E9D4E21CED56" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id44195dcd-b8b3-4839-97a5-4dc80d7e599c">
+              <?XEditor_ShapeID id="shape11" ?>
+              <action>重新安装轴承，检查配合尺寸</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="idcbadfd7a-4f66-41ec-9a5e-096251e908cc">
+              <?XEditor_ShapeID id="shape10" ?>
+              <action>检查润滑剂适配性/油位/质量</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id1b1b89ea-0abd-48ea-87c5-454dfdd4cf99">
+              <?XEditor_ShapeID id="shape6" ?>
+              <action>重新对中</action>
+            </isolationProcedureEnd>
+          </isolationMainProcedure>
+          <closeRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+          </closeRqmts>
+        </isolationProcedure>
+      </faultIsolationProcedure>
+    </faultIsolation>
+  </content>
+</dmodule>

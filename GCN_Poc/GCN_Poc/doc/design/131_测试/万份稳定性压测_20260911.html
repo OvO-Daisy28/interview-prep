@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>万份稳定性压测 · 2026-09-11</title><style>
+  :root {
+    --bg:#0f1115; --panel:#171a21; --line:#262a33; --text:#e6e8eb;
+    --muted:#9aa3ad; --accent:#4c8dff; --ok:#35c56a; --warn:#f5a623; --err:#ff5f56;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:14px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:32px 28px 80px; }
+  h1 { font-size:24px; font-weight:600; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:28px; }
+  h2 { font-size:17px; font-weight:600; margin:34px 0 14px;
+       padding-bottom:8px; border-bottom:1px solid var(--line); }
+  h3 { font-size:14.5px; font-weight:600; margin:20px 0 8px; color:var(--accent); }
+  .panel { background:var(--panel); border:1px solid var(--line);
+           border-radius:8px; padding:18px 20px; margin:14px 0; }
+  .panel.tldr { border-left:3px solid var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:13px; margin:8px 0; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line);
+           vertical-align:middle; }
+  th { color:var(--muted); font-weight:500; font-size:12px; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .tag { display:inline-block; padding:2px 9px; border-radius:11px;
+         font-size:11.5px; border:1px solid; }
+  .tag.ok { color:var(--ok); border-color:var(--ok); }
+  .tag.warn { color:var(--warn); border-color:var(--warn); }
+  .tag.err { color:var(--err); border-color:var(--err); }
+  .tag.acc { color:var(--accent); border-color:var(--accent); }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:14px 0; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+          padding:16px 14px; text-align:center; }
+  .stat b { display:block; font-size:26px; font-weight:600; }
+  .stat small { color:var(--muted); font-size:11.5px; }
+  .stat.warn b { color:var(--warn); }
+  .stat.err b { color:var(--err); }
+  .stat.ok b { color:var(--ok); }
+  .stat.acc b { color:var(--accent); }
+  .bar-wrap { background:#0d1016; border-radius:4px; height:22px; position:relative;
+              overflow:hidden; margin:6px 0; }
+  .bar { height:100%; border-radius:4px; display:flex; align-items:center;
+         justify-content:flex-end; padding-right:8px; font-size:11px; color:#fff;
+         font-variant-numeric:tabular-nums; }
+  .bar.parse { background:#4c8dff; } .bar.chunk { background:#4c8dff; }
+  .bar.embed { background:#35c56a; } .bar.index { background:#f5a623; }
+  .caveat { background:#2a2016; border-left:3px solid var(--warn); padding:12px 16px;
+            border-radius:0 6px 6px 0; font-size:13px; color:#f0d9b5; margin:14px 0; }
+  .note { background:#0d1016; border-radius:6px; padding:10px 14px; font-size:12.5px;
+          color:#93a4b8; margin:10px 0; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+         padding:14px 20px; margin:20px 0; }
+  .toc a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .toc a:hover { text-decoration:underline; }
+  .footer { color:var(--muted); font-size:12px; margin-top:40px;
+            padding-top:16px; border-top:1px solid var(--line); }
+
+  #topnav { position:fixed; top:0; left:0; right:0; height:44px; z-index:9999;
+            background:#0b0d12; border-bottom:1px solid #262a33;
+            display:flex; align-items:center; padding:0 20px; gap:4px;
+            font:13px/1.4 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  #topnav a { color:#9aa3ad; text-decoration:none; padding:6px 12px; border-radius:6px;
+              white-space:nowrap; }
+  #topnav a:hover { background:#171a21; color:#e6e8eb; }
+  #topnav a.active { color:#4c8dff; background:#111620; }
+  #topnav .brand { font-weight:600; color:#e6e8eb; margin-right:12px;
+                   padding-right:12px; border-right:1px solid #262a33; }
+  body { padding-top:44px !important; }
+  body > .wrap { margin-top:20px; }
+
+</style></head><body>
+<div id="topnav"><span class="brand">批量上传测试</span><a href="批量上传测试总索引_20260908.html">总索引</a><a href="RAGFlow原生批量上传测试_20260908.html">方案A测试</a><a href="方案B并发压测_20260908.html">方案B并发压测</a><a href="RAGFlow原生局限与mentor方案结论_20260908.html">结论报告</a><a href="批量导入规模验证_20260907.html">千份baseline</a><a href="万份稳定性压测_20260911.html" class="active">万份压测</a></div><div class='wrap'><h1>mentor 方案 B · 1 万份稳定性压测报告</h1><p class='sub'>GCN 采购文件活化项目 · 规模验证的最后一档：100 份 → 1 万份<br>执行人：小zhu · 日期：2026-09-11 · 环境：131 服务器（RAGFlow v0.26.1，CPU bge-base，共享机） · 数据：10000 份纯真 .docx · 并发 3</p><div class='toc'><b>目录</b><br><a href='#tldr'>一、结论</a> · <a href='#kpi'>二、总览</a> · <a href='#scale'>三、规模退化</a> · <a href='#stage'>四、每阶段耗时</a> · <a href='#embed'>五、embedding 长尾</a> · <a href='#stab'>六、稳定性与失败</a></div><h2 id='tldr'>一、结论</h2><div class='panel tldr'><p>规模从 100 份 → 1 万份，吞吐 <b>0.180 → 0.046 份/s</b>（降 74%），<b>长跑下吞吐明显退化</b>。<br>1 万份长跑（59h44m13s）失败 6 份，失败率 <span class='tag ok'>0.06%</span>。<br>embedding 仍是绝对瓶颈（占比 87%），长跑下 max=555.99s、p99=74.51s，长尾不因规模放大而消失。</p></div><h2 id='kpi'>二、总览</h2><div class="grid4"><div class="stat ok"><b>9994</b><small>成功</small></div><div class="stat err"><b>6</b><small>失败</small></div><div class="stat acc"><b>0.046</b><small>吞吐(份/s)</small></div><div class="stat"><b>59h44m13s</b><small>墙钟</small></div></div><div class="panel"><table><tbody><tr><td>文档总数</td><td class='num'>10000</td></tr><tr><td>并发数</td><td class='num'>3</td></tr><tr><td>成功 / 失败 / 跳过</td><td class='num'>9994 / 6 / 0</td></tr><tr><td>失败率</td><td class='num'>0.06%</td></tr><tr><td>墙钟</td><td class='num'>59h44m13s</td></tr><tr><td>吞吐</td><td class='num'>0.046 份/s</td></tr><tr><td>每份均时</td><td class='num'>21.5s</td></tr><tr><td>peak in flight</td><td class='num'>3</td></tr><tr><td>100 份 baseline 吞吐</td><td class='num'>0.180 份/s</td></tr><tr><td>规模退化</td><td class='num'>-74%</td></tr></tbody></table></div><h2 id='scale'>三、规模退化分析</h2><div class="panel"><table><thead><tr><th>规模</th><th class="num">文档数</th><th class="num">吞吐(份/s)</th><th class="num">每份(s)</th><th class="num">墙钟</th><th class="num">失败</th></tr></thead><tbody><tr><td>100 份 baseline</td><td class='num'>50</td><td class='num'>0.180</td><td class='num'>5.6</td><td class='num'>4m38s</td><td class='num'>0</td></tr><tr><td>1 万份</td><td class='num'>10000</td><td class='num'>0.046</td><td class='num'>21.5</td><td class='num'>59h44m13s</td><td class='num'>6</td></tr></tbody></table><div class="caveat">吞吐退化超 15%。根因是 1 万份长跑下 131 共享机 CPU 争抢持续、embedding 服务（bge-base CPU）负载累积，单份 embed 耗时被拉长。<b>这正是上 GPU 的核心理由</b>：GPU embedding 既能提单份速度，也能在高并发长跑下稳住吞吐。</div></div><h2 id='stage'>四、每阶段耗时</h2><div class="panel"><table><thead><tr><th>阶段</th><th class="num">n</th><th class="num">avg</th><th class="num">p50</th><th class="num">p90</th><th class="num">p99</th><th class="num">max</th><th class="num">占比</th></tr></thead><tbody><tr><td>parse</td><td class='num'>9994</td><td class='num'>1.78s</td><td class='num'>293ms</td><td class='num'>2.44s</td><td class='num'>31.92s</td><td class='num'>79.38s</td><td class='num'>9.0%</td></tr><tr><td>chunk</td><td class='num'>9994</td><td class='num'>39ms</td><td class='num'>4ms</td><td class='num'>24ms</td><td class='num'>68ms</td><td class='num'>33.03s</td><td class='num'>0.2%</td></tr><tr><td>embed</td><td class='num'>9994</td><td class='num'>17.11s</td><td class='num'>13.35s</td><td class='num'>33.33s</td><td class='num'>74.51s</td><td class='num'>555.99s</td><td class='num'>86.7%</td></tr><tr><td>index</td><td class='num'>9994</td><td class='num'>801ms</td><td class='num'>525ms</td><td class='num'>971ms</td><td class='num'>3.12s</td><td class='num'>70.49s</td><td class='num'>4.1%</td></tr></tbody></table><h3>耗时占比</h3><div class="bar-wrap"><div class="bar parse" style="width:9.0%">parse 9.0%</div></div><div class="bar-wrap"><div class="bar chunk" style="width:0.2%">chunk 0.2%</div></div><div class="bar-wrap"><div class="bar embed" style="width:86.7%">embed 86.7%</div></div><div class="bar-wrap"><div class="bar index" style="width:4.1%">index 4.1%</div></div></div><h2 id='embed'>五、embedding 长尾分析（1 万份长跑）</h2><div class="panel"><table><thead><tr><th>阶段</th><th class="num">avg</th><th class="num">p50</th><th class="num">p90</th><th class="num">p99</th><th class="num">max</th><th class="num">max/avg</th></tr></thead><tbody><tr><td>embed</td><td class='num'>17.11s</td><td class='num'>13.35s</td><td class='num'>33.33s</td><td class='num'>74.51s</td><td class='num'>555.99s</td><td class='num'>32.5x</td></tr></tbody></table><div class="caveat">1 万份长跑下 embedding 长尾依然显著：avg 17.11s 但 max 555.99s（32.5x）。长尾来自 131 共享机 CPU 争抢 + bge-base 在 CPU 推理，<b>规模放大不消除长尾，只会让长尾累计更多</b>。提速正解仍是 GPU embedding。</div><p class="note">131 是多容器混跑的共享机，embedding 服务（bge-base）在 CPU 上推理，无 GPU。长跑下其他容器负载波动直接传导到 embedding 耗时。</p></div><h2 id='stab'>六、稳定性与失败分析</h2><div class="panel"><p><b>失败率</b>：0.06%（6/10000）<span class="tag ok">达标(<1%)</span></p><h3>失败明细（共 6 份，仅列前 30）</h3><table><thead><tr><th>文档</th><th>错误（截断 120 字）</th></tr></thead><tbody><tr><td>2012-11-22_人民检察院刑事诉讼规则（试行）.docx</td><td>HTTPConnectionPool(host='192.168.80.1', port=18001): Read timed out. (read timeout=180)</td></tr><tr><td>2014-08-12_最高人民法院、最高人民检察院关于办理走私刑事案件适用法律若干问题的解释.docx</td><td>HTTPConnectionPool(host='192.168.80.1', port=18001): Read timed out. (read timeout=180)</td></tr><tr><td>2016-12-23_最高人民法院、最高人民检察院关于办理环境污染刑事案件适用法律若干问题的解释.docx</td><td>HTTPConnectionPool(host='192.168.80.1', port=18001): Read timed out. (read timeout=180)</td></tr><tr><td>2023-09-27_石嘴山市工业遗产保护与利用条例.docx</td><td>HTTPConnectionPool(host='192.168.80.1', port=18001): Read timed out. (read timeout=180)</td></tr><tr><td>2021-11-26_陕西省社会信用条例.docx</td><td>HTTPConnectionPool(host='192.168.80.1', port=18001): Read timed out. (read timeout=180)</td></tr><tr><td>2023-11-27_新疆维吾尔自治区红十字会条例.docx</td><td>HTTPConnectionPool(host='192.168.80.1', port=18001): Read timed out. (read timeout=180)</td></tr></tbody></table><h3>失败原因聚类</h3><table><thead><tr><th>原因</th><th class='num'>次数</th></tr></thead><tbody><tr><td>HTTPConnectionPool(host='192.168.80.1', </td><td class='num'>6</td></tr></tbody></table></div><div class='footer'>生成于 2026-09-11 · mentor 方案 B InMemory · 数据 10000 份 · 并发 3 · 环境 131 服务器（RAGFlow v0.26.1，CPU bge-base，共享机）<br>报告脚本 code/ingest/bench_10k_report.py</div></div></body></html>

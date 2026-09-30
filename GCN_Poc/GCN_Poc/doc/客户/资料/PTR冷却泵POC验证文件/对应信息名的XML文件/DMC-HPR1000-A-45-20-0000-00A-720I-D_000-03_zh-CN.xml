@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="I" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>联轴器的安装</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <warning>
+        <warningAndCautionPara>安装时，请确保驱动设备电源处于断开状态。</warningAndCautionPara>
+      </warning>
+      <caution>
+        <warningAndCautionPara>安装前请仔细阅读联轴器制造商提供的说明书和图纸，而且只能在泵组对中完成后才能进行中间节（两轴端法兰盘）的连接。</warningAndCautionPara>
+      </caution>
+      <para>
+        <sequentialList>
+          <listItem>
+            <para>联轴器安装前应确保轴向距离已按1.5.6节要求进行了初步对中。</para>
+          </listItem>
+          <listItem>
+            <para>联轴器中间节、膜片、连接件等附件，单独包装固定在箱内，安装前清点好确保齐全。</para>
+          </listItem>
+          <listItem>
+            <para>轴端距离按机组图复核，联轴器法兰盘距离按联轴器说明书、图纸预留。</para>
+          </listItem>
+          <listItem>
+            <para>详细的安装要求（螺栓拧紧力矩和拧紧顺序）、安装尺寸按联轴器说明书、图纸执行。</para>
+          </listItem>
+          <listItem>
+            <para>安装前再次进行零件质量检查，并仔细核对螺栓等零件有无位置标识（如字号标记），有位置标识的必须按对应位置装配。</para>
+          </listItem>
+          <listItem>
+            <para>按下列要求完成冷态对中后，连接中间节、膜片、连接件等，完成整个联轴器的安装。</para>
+          </listItem>
+        </sequentialList>
+      </para>
+    </description>
+  </content>
+</dmodule>

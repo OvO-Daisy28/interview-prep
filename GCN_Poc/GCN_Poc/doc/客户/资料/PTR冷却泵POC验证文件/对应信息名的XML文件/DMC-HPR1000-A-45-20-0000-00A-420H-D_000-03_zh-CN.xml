@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/fault.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="420" infoCodeVariant="H" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>电机过载</techName><infoName>通用故障隔离程序</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <faultIsolation>
+      <faultIsolationProcedure>
+        <fault faultCode="E008">
+        </fault>
+        <faultDescr>
+          <descr>电机过载</descr>
+        </faultDescr>
+        <isolationProcedure>
+          <preliminaryRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+            <reqSupportEquips>
+              <noSupportEquips>
+              </noSupportEquips>
+            </reqSupportEquips>
+            <reqSupplies>
+              <noSupplies>
+              </noSupplies>
+            </reqSupplies>
+            <reqSpares>
+              <noSpares>
+              </noSpares>
+            </reqSpares>
+            <reqSafety>
+              <safetyRqmts>
+                <caution>
+                  <warningAndCautionPara>故障检查及排除时确保人员安全，必要时需要停机处理。</warningAndCautionPara>
+                </caution>
+              </safetyRqmts>
+            </reqSafety>
+          </preliminaryRqmts>
+          <isolationMainProcedure>
+            <?XEditor_SvgFile id="SVG_166c0be8-8703-4cc6-b1a3-2feb0d8c4626.svg" hotspotIDs="shape1 shape6 shape2 shape7 shape3 shape8 shape4 shape9 shape5 shape10 shape11"?>
+            <isolationStep id="IDdba81213-8751-4830-952a-3375a9609944">
+              <?XEditor_ShapeID id="shape1" ?>
+              <action>检查液体比重/粘度</action>
+              <isolationStepQuestion>是否超标</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="ide7786e01-3eab-4485-85bc-f75ca233659c">
+                    <?XEditor_PathID id="path5D1D282D-17D6-4CB6-898E-F5C5DC156D8D" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id104b1da1-4b85-4e0c-ad1d-779d77b18fe1">
+                    <?XEditor_PathID id="path1765422E-7FDE-4DCA-AA07-C2E22BD6DECB" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="ide7786e01-3eab-4485-85bc-f75ca233659c">
+              <?XEditor_ShapeID id="shape6" ?>
+              <action>检查介质参数</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id104b1da1-4b85-4e0c-ad1d-779d77b18fe1">
+              <?XEditor_ShapeID id="shape2" ?>
+              <action>检查泵流量</action>
+              <isolationStepQuestion>是否过大（压力低于额定）</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="ida9dd2950-6666-40a7-8844-494ac3d1abf8">
+                    <?XEditor_PathID id="path0C7CB360-7530-42AB-956C-0313844E48E1" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="idf6868ced-9c28-45e2-bdf5-87aac7fce319">
+                    <?XEditor_PathID id="path3BE183D0-4B2C-4692-97BC-C6ACFA3D69DF" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="ida9dd2950-6666-40a7-8844-494ac3d1abf8">
+              <?XEditor_ShapeID id="shape7" ?>
+              <action>安装节流阀，切削叶轮，检查系统</action>
+            </isolationProcedureEnd>
+            <isolationStep id="idf6868ced-9c28-45e2-bdf5-87aac7fce319">
+              <?XEditor_ShapeID id="shape3" ?>
+              <action>转动零件</action>
+              <isolationStepQuestion>是否卡住</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id1c092073-0297-4a97-a798-9ba926dfe127">
+                    <?XEditor_PathID id="path4EA50895-10FA-4A9C-8645-EA8A1CE86423" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id7c24dde2-4f79-4c11-909e-77dfe9a717b0">
+                    <?XEditor_PathID id="path2AEF3F3D-8CAC-4F0D-91AA-44F94C40BE81" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id1c092073-0297-4a97-a798-9ba926dfe127">
+              <?XEditor_ShapeID id="shape8" ?>
+              <action>拆检内部零件，确保间隙合规</action>
+            </isolationProcedureEnd>
+            <isolationStep id="id7c24dde2-4f79-4c11-909e-77dfe9a717b0">
+              <?XEditor_ShapeID id="shape4" ?>
+              <action>检查转速</action>
+              <isolationStepQuestion>是否过高</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="id7c0ffcac-d5b5-4bd6-9be2-ff0d4fd3f2c4">
+                    <?XEditor_PathID id="pathFD19A8C0-04E2-4159-8E1D-8D35C4909A01" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="idf850d77e-1fe3-44ee-91b4-cde8cf96653c">
+                    <?XEditor_PathID id="pathC249E211-34AC-4331-BE25-30A74FCC2E93" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="id7c0ffcac-d5b5-4bd6-9be2-ff0d4fd3f2c4">
+              <?XEditor_ShapeID id="shape9" ?>
+              <action>降低至额定转速</action>
+            </isolationProcedureEnd>
+            <isolationStep id="idf850d77e-1fe3-44ee-91b4-cde8cf96653c">
+              <?XEditor_ShapeID id="shape5" ?>
+              <action>检查泵和驱动器</action>
+              <isolationStepQuestion>是否对中</isolationStepQuestion>
+              <isolationStepAnswer>
+                <yesNoAnswer>
+                  <yesAnswer nextActionRefId="idc9db3123-58a8-40b4-86a8-f18e6290ee93">
+                    <?XEditor_PathID id="path4893869A-1D2B-4600-99D4-00DE91D62E14" ?>
+                  </yesAnswer>
+                  <noAnswer nextActionRefId="id9b5cfb74-9385-4cb5-a12a-b766a24b8267">
+                    <?XEditor_PathID id="path3DCD589F-F5FF-4377-8F88-465564E83AAD" ?>
+                  </noAnswer>
+                </yesNoAnswer>
+              </isolationStepAnswer>
+            </isolationStep>
+            <isolationProcedureEnd id="idc9db3123-58a8-40b4-86a8-f18e6290ee93">
+              <?XEditor_ShapeID id="shape10" ?>
+              <action>重新对中</action>
+            </isolationProcedureEnd>
+            <isolationProcedureEnd id="id9b5cfb74-9385-4cb5-a12a-b766a24b8267">
+              <?XEditor_ShapeID id="shape11" ?>
+              <action>校直/更换弯曲的轴</action>
+            </isolationProcedureEnd>
+          </isolationMainProcedure>
+          <closeRqmts>
+            <reqCondGroup>
+              <noConds>
+              </noConds>
+            </reqCondGroup>
+          </closeRqmts>
+        </isolationProcedure>
+      </faultIsolationProcedure>
+    </faultIsolation>
+  </content>
+</dmodule>

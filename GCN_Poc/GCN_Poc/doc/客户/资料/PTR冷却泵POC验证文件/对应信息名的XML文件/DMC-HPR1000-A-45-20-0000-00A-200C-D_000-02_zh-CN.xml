@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="200" infoCodeVariant="C" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="02" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>预防性维护维修</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <levelledPara>
+        <title>定期和预防性维护</title>
+        <para>以下是磨损部件检验和更新的主要判别依据，建议每次测试泵时都对这些方面进行检查。</para>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>泵性能降低，即扬程或流量降低或电动机功率持续上升。</para>
+            </listItem>
+            <listItem>
+              <para>过大的噪音或振动。</para>
+            </listItem>
+            <listItem>
+              <para>机械密封泄漏量＞5ml/h。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+      </levelledPara>
+      <levelledPara>
+        <title>维修频率计划</title>
+        <para>PTR冷却泵有下列情况之一，应进行检查与检修：</para>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>连续运行8000小时或间断运行（经常开机、关机）12000小时。</para>
+            </listItem>
+            <listItem>
+              <para>虽偶尔运行，但停机时间长，累计运行时间8000小时左右。</para>
+            </listItem>
+            <listItem>
+              <para>以上情况需检查运行有无异常：如润滑脂量，转子运行是否平稳等，若无异常可适当延长检修时间，具体视现场实际情况而定。</para>
+            </listItem>
+            <listItem>
+              <para>安装在台位上一年以上，且连续五个月以上未启动，手动盘车困难。</para>
+            </listItem>
+            <listItem>
+              <para>电机、机械密封定期预防性维修见附件3～4中相关内容。</para>
+            </listItem>
+            <listItem>
+              <para>电机绝缘性测量和泵组对中检查周期按泵组安装后三个月进行检查，后隔六个月再次检查，此后每隔一年检查一次。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

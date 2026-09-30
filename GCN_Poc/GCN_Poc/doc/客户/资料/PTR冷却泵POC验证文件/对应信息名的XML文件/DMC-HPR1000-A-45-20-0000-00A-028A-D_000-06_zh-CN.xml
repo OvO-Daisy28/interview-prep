@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00027-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00027-A-001-01.JPEG" NDATA jpeg>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00025-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00025-A-001-01.JPEG" NDATA jpeg>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00017-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00017-A-001-01.JPEG" NDATA jpeg>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00012-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00012-A-001-01.JPEG" NDATA jpeg>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="028" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="06" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>概述</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef referredFragment="pdf-bmt" xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>附件</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <levelledPara>
+        <title>关于本说明书</title>
+        <para>本运行维护手册适用于陆丰核电5、6号机组核电项目PTR乏燃料水池冷却泵（以下简称PTR冷却泵）。该手册为设备的运行和维护提供必要的信息，便于维修操作人员了解PTR冷却泵的功能、原理并进行日常维护、预防性维修。</para>
+        <para>本运行维护手册包含了重庆水泵厂有限责任公司（以下简称“重泵公司”）产品的运输、存储、安装、调试、操作、维护和维修的相关知识，涵盖了设备安全、正确、有效地操作信息。所有操作和维护人员，在进行安装、试车等工作前应仔细阅读本运行维护手册，有助于避免操作危险、减少维修成本和设备检修期，并增加设备的可靠性和使用寿命。</para>
+        <para>本运行维护手册应结合合同设备的相关资料（如<dmRef referredFragment="pdf-bmt" xlink:actuate="onRequest" xlink:title="设备剖面图" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef>、总装图、零件清单等）以及配套设备提供的说明书等技术资料，以更准确了解相关信息，指导操作使用。</para>
+        <para>本运行维护手册应妥善保管，方便查阅。</para>
+        <para>订购备件或咨询设备问题时，应提供设备标牌上的规格型号、出厂编号等相关信息。</para>
+        <para>本运行维护手册为重泵公司产权资料，未经许可不得向第三方扩散；未经重泵公司同意，禁止对设备进行逆向工程设计或更改，禁止采用非重泵公司授权或非原始提供的备品备件，否则，重泵公司不承担由此引起的相关责任。</para>
+        <para>本运行维护手册未能完全涵盖整个安装、操作和维护过程中的所有细节，若遇到运行维护手册中未描述且与设备相关的问题，请与重泵公司人员联系。</para>
+      </levelledPara>
+      <levelledPara>
+        <title>性能影响因素</title>
+        <caution>
+          <warningAndCautionPara>未经重泵公司允许不得擅自改变合同规定工况条件！</warningAndCautionPara>
+        </caution>
+        <para>设备针对合同规定的特定工况设计，其性能受输送介质类型、温度、粘度、比重、海拔高度等因素的影响，任何因素的改变均会影响到设备的性能，甚至造成破坏。</para>
+        <para>重泵公司制造的PTR冷却泵严格按照合同规定进行，正常质保范围为合同供货货物，不包含在用户现场因存储不当或安装、操作、使用不当以及工况改变对设备造成的损坏。</para>
+        <para>在质保期内，设备的任何改动必须得到重泵公司同意，否则造成设备性能改变，重泵公司不承担责任。</para>
+      </levelledPara>
+      <levelledPara>
+        <title>保证</title>
+        <para>重泵公司制造的PTR冷却泵严格按照合同规定的技术协议进行设计、生产、装配、试验、包装和运输。正常保修范围包括产品制造和零件材料缺陷，不包括在用户现场由于储存不当造成的损坏，和不正确的安装、操作和使用对泵造成的损坏。</para>
+      </levelledPara>
+      <levelledPara>
+        <title>安全</title>
+        <levelledPara>
+          <title>安全指示标志</title>
+          <caution>
+            <warningAndCautionPara>为了安全和使用方便，必须保证这些指示标志的完整、清晰。</warningAndCautionPara>
+          </caution>
+          <para>
+            <randomList>
+              <listItem>
+                <para>操作过程以防对人体或设备的损坏：<symbol infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00027-A-001-01" reproductionHeight="49pt" reproductionWidth="56pt"/></para>
+              </listItem>
+              <listItem>
+                <para>潜在的有电危险：<symbol infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00025-A-001-01" reproductionHeight="49pt" reproductionWidth="56pt"/></para>
+              </listItem>
+              <listItem>
+                <para> 起吊过程对人体的伤害：<symbol infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00017-A-001-01" reproductionHeight="54pt" reproductionWidth="62pt"/></para>
+              </listItem>
+              <listItem>
+                <para>防爆符号：<symbol infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00012-A-001-01" reproductionHeight="54pt" reproductionWidth="62pt"/></para>
+              </listItem>
+              <listItem>
+                <para>直接在设备上的指示符号，如：旋转方向箭头、泵标牌、接口说明符号等。</para>
+              </listItem>
+            </randomList>
+          </para>
+        </levelledPara>
+        <levelledPara>
+          <title>人员资格培训
+</title>
+          <para>操作、维修、检查、安装和服务人员，应具有从事相应工作的资格，其责任和权限范围应清楚明确。若无进行相关操作能力，应接受培训以具备所需能力。操作人员还应完全理解设备运行维护手册和相关资料。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>安全操作说明
+
+</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>设备从交货到寿期的全流程，应符合国家规定的环境管理体系和职业健康安全管理体系的要求。</para>
+              </listItem>
+              <listItem>
+                <para>设备应在合同约定的工作条件下运行，在任何情况下，都不应超过合同约定的极限。</para>
+              </listItem>
+              <listItem>
+                <para>应确保设备的辅助装置的正常运行，以免导致设备损坏。</para>
+              </listItem>
+              <listItem>
+                <para>若设备表面温度过高或过低，应采取安全防护措施。</para>
+              </listItem>
+              <listItem>
+                <para>运行前必须检查安全防护装置是否可靠（如联轴器护罩等）。</para>
+              </listItem>
+              <listItem>
+                <para>输送有毒、有害、易燃、易爆等危险介质时，应对泄漏或泄露的介质进行隔离或回收等妥善处理，以防对人或环境造成危害。</para>
+              </listItem>
+              <listItem>
+                <para>配线时先仔细阅读设备使用说明书，并按要求正确的将配线与其他电气设备连接，禁止无电气资质人员执行配线工作。</para>
+              </listItem>
+              <listItem>
+                <para>应根据当地的供电情况安全用电，设备检修时必须切断电源。确需带电操作时，应符合相应安全操作规程。</para>
+              </listItem>
+              <listItem>
+                <para>对设备的检修工作应在设备完全停止、切断动力源、排净或隔离输送介质后进行。</para>
+              </listItem>
+              <listItem>
+                <para>进入操作现场人员应达到安全防护要求。</para>
+              </listItem>
+              <listItem>
+                <para>应密切关注设备运行状态及性能变化，必要时更换易损零件。</para>
+              </listItem>
+              <listItem>
+                <para>设备拆装应有可靠的安全防护措施。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </levelledPara>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

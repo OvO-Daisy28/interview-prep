@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00038-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00038-A-001-01.HTM" NDATA htm>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="200" infoCodeVariant="E" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="07" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>机组部分</techName><infoName>拆除</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <procedure>
+      <preliminaryRqmts>
+        <reqCondGroup>
+          <reqCondNoRef>
+            <reqCond>关闭泵前和泵后所有控制流量的阀门。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>打开泵体排净管路阀门将泵体内残液排出。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>排出轴承体中的润滑油，具体根据当地环境保护法规将放空的油妥善安置。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有足够的可操作空间满足泵的拆装；还需备有专门拆装泵的平台。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备力矩扳手、千分表、塞尺。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场备有零部件及工具等的储存设施。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要有相应的运输工具及起吊行车，包括具备各种安装、操作资质的专业人员。</reqCond>
+          </reqCondNoRef>
+          <reqCondNoRef>
+            <reqCond>现场要具备清洁剂、润滑剂。</reqCond>
+          </reqCondNoRef>
+        </reqCondGroup>
+        <reqSupportEquips>
+          <supportEquipDescrGroup>
+            <supportEquipDescr>
+              <name>扳手</name>
+              <identNumber>
+                <manufacturerCode>M24、M16、M14</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </supportEquipDescr>
+          </supportEquipDescrGroup>
+        </reqSupportEquips>
+        <reqSupplies>
+          <supplyDescrGroup>
+            <supplyDescr>
+              <name>润滑油</name>
+              <identNumber>
+                <manufacturerCode>ISO VG46</manufacturerCode>
+              </identNumber>
+              <reqQuantity>3.4L</reqQuantity>
+            </supplyDescr>
+          </supplyDescrGroup>
+        </reqSupplies>
+        <reqSpares>
+          <spareDescrGroup>
+            <spareDescr>
+              <name>金属缠绕垫</name>
+              <identNumber>
+                <manufacturerCode>D-DN250-Class150</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </spareDescr>
+            <spareDescr>
+              <name>金属缠绕垫</name>
+              <identNumber>
+                <manufacturerCode>D-DN300-Class150</manufacturerCode>
+              </identNumber>
+              <reqQuantity>1</reqQuantity>
+            </spareDescr>
+          </spareDescrGroup>
+        </reqSpares>
+        <reqSafety>
+          <safetyRqmts>
+            <warning>
+              <warningAndCautionPara>切断电源并悬挂“设备维护中、禁止合闸”等安全警示标志，确保驱动机不会意外启动。</warningAndCautionPara>
+              <warningAndCautionPara>高温泵停机后，待泵体温度降到40℃以下才能进行排放等操作。</warningAndCautionPara>
+              <warningAndCautionPara>对输送介质有毒、易燃、易爆的危险品或容易结晶、凝固和沉淀的泵，停泵后需要防止堵塞，及时用清水或其它介质置换冲洗泵和管道，不能有任何介质残留。</warningAndCautionPara>
+            </warning>
+          </safetyRqmts>
+        </reqSafety>
+      </preliminaryRqmts>
+      <mainProcedure>
+        <proceduralStep>
+          <title>拆除</title>
+          <para>
+            <sequentialList>
+              <listItem>
+                <para>拆除泵组联轴器罩。</para>
+              </listItem>
+              <listItem>
+                <para>拆除泵同电机联接的中间节及联轴器。</para>
+              </listItem>
+              <listItem>
+                <para>拆除泵进口配对法兰接螺栓及密封垫。</para>
+              </listItem>
+              <listItem>
+                <para>拆除出口配对法兰接螺栓及密封垫。</para>
+              </listItem>
+              <listItem>
+                <para>拆除托架排污口连接螺栓及密封垫。</para>
+              </listItem>
+              <listItem>
+                <para>拆除泵体排净口配对法兰连接螺栓及密封垫。</para>
+              </listItem>
+              <listItem>
+                <para>拆除所有仪器和辅助设备及管路。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+        </proceduralStep>
+        <figure>
+          <title>拆除泵组联轴器罩</title>
+          <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00038-A-001-01" reproductionHeight="112pt" reproductionWidth="112pt" xlink:type="simple">
+          </graphic>
+        </figure>
+      </mainProcedure>
+      <closeRqmts>
+        <reqCondGroup>
+          <noConds>
+          </noConds>
+        </reqCondGroup>
+      </closeRqmts>
+    </procedure>
+  </content>
+</dmodule>

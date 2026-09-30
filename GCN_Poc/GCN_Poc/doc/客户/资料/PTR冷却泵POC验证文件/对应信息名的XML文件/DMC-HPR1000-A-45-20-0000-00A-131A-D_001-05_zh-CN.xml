@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="131" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="05" issueNumber="001"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>首次启动及检修后启动</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef changeMark="1" changeType="add" referredFragment="pdf-zylbjtz" xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A">
+          </dmCode>
+          <language countryIsoCode="CN" languageIsoCode="zh">
+          </language>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>附件</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025">
+          </issueDate>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <warning>
+        <warningAndCautionPara>防腐剂、油或油脂处理不当会造成环境污染。</warningAndCautionPara>
+        <warningAndCautionPara>污、废物处理工作只能由专业人员进行。</warningAndCautionPara>
+        <warningAndCautionPara>确保电机安全以防意外启动。</warningAndCautionPara>
+        <warningAndCautionPara>在潮湿的场合或湿手时，禁止在没有绝缘板时进行开关作业。</warningAndCautionPara>
+        <warningAndCautionPara>如泵以错误的转动方向运行，可能导致严重损坏。</warningAndCautionPara>
+        <warningAndCautionPara>未正确安装联轴器护罩不得运行泵。若泵运行时没有联轴器护罩，将发生人身伤害。</warningAndCautionPara>
+      </warning>
+      <caution>
+        <warningAndCautionPara>端子盒内各接线应做好标记！</warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title>启动前的检查事项</title>
+        <levelledPara>
+          <title>概述</title>
+          <para>除了本说明书要求内容外，在试车、启动和安装时还需要随设备提供配套技术资料，这些资料包括（但不限于）：</para>
+          <para>电动机、机械密封及辅助系统、联轴器、电气仪表控制等相关资料。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>清洁</title>
+          <para>新泵安装后，为防止施工环境的灰尘影响及设备在现场安装时表面可能粘有污物，因此须在设备运行前清除表面的油污，同时检查泵座、轴承体等表面有无锈蚀。如有锈蚀，可用0#砂布进行除锈，注意不要形成明显的划痕。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>检查电机</title>
+          <para changeMark="1" changeType="add">
+            <sequentialList>
+              <listItem>
+                <para>检查电机旋向前，需将电机端半联轴器及附属零件脱开。</para>
+              </listItem>
+              <listItem>
+                <para>接上电源并采用点动的方法确定电机的转动方向。确定并保证电机转动方向与泵上转向牌的指示一致，再断开电源进行中间节的安装。</para>
+              </listItem>
+              <listItem>
+                <para>盘动联轴器，整个转子部件应能轻松均匀转动，无卡阻或阻塞等现象。</para>
+              </listItem>
+              <listItem>
+                <para>上述步骤完成后，安装上所有的防护装置，以防意外接触。</para>
+              </listItem>
+            </sequentialList>
+          </para>
+          <para changeMark="1" changeType="delete">1）检查电机旋向前，需将电机端半联轴器及附属零件脱开；</para>
+          <para changeMark="1" changeType="delete">2）接上电源并采用点动的方法确定电机的转动方向。确定并保证电机转动方向与泵上转向牌的指示一致，再断开电源进行中间节的安装；</para>
+          <para changeMark="1" changeType="delete">3）盘动联轴器，整个转子部件应能轻松均匀转动，无卡阻或阻塞等现象。</para>
+          <para changeMark="1" changeType="delete">4）上述步骤完成后，安装上所有的防护装置，以防意外接触。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>仪表的性能测试和调整</title>
+          <para>检查所有的仪表，如果有需要则进行调整或更换。泵组的安全报警和停机联锁需经模拟试验，其动作应灵敏、正确和可靠，符合机组运行的要求。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>其余检查事项</title>
+          <para changeMark="1" changeType="add">
+            <sequentialList>
+              <listItem>
+                <para>检查设备相应连接。</para>
+              </listItem>
+              <listItem>
+                <para>螺栓是否存在松动。</para>
+              </listItem>
+              <listItem>
+                <para>检查泵进口过滤器（若有），可以通过进口压差保护来监控和检查是否存在异物堵塞现象，如无在线监控请拆解检查滤网并清洁。</para>
+              </listItem>
+              <listItem>
+                <para>检查满足暖泵、冷泵的基本条件。</para>
+                <para>
+                  <sequentialList>
+                    <listItem>
+                      <para>温度大于130℃或介质温度高于环境温度80℃，开泵前需进行暖泵。</para>
+                    </listItem>
+                    <listItem>
+                      <para>温度低于-20℃或介质温度低于环境温度40℃，开泵前需进行冷泵。</para>
+                    </listItem>
+                    <listItem>
+                      <para>具体要求见3.灌泵。</para>
+                    </listItem>
+                  </sequentialList>
+                </para>
+              </listItem>
+            </sequentialList>
+          </para>
+          <para changeMark="1" changeType="delete">1）检查设备相应连接</para>
+          <para changeMark="1" changeType="delete">2）螺栓是否存在松动。</para>
+          <para changeMark="1" changeType="delete">3）检查泵进口过滤器（若有），可以通过进口压差保护来监控和检查是否存在异物堵塞现象，如无在线监控请拆解检查滤网并清洁。</para>
+          <para changeMark="1" changeType="delete"> 4）检查满足暖泵、冷泵的基本条件<sequentialList><listItem><para>温度大于130℃或介质温度高于环境温度80℃，开泵前需进行暖泵。</para></listItem><listItem><para>温度低于-20℃或介质温度低于环境温度40℃，开泵前需进行冷泵。</para></listItem><listItem><para>具体要求见3.灌泵</para></listItem></sequentialList></para>
+        </levelledPara>
+      </levelledPara>
+      <levelledPara>
+        <title>首次启动前的准备事项</title>
+        <levelledPara>
+          <title>添加润滑油</title>
+          <para>初次运行前将要求的润滑油量的大部分通过轴承体上方的加油口倒入轴承体，然后通过油杯注油直到轴承体油箱里的油位达到油视镜的中心，之后将球形油杯注满油后倒扣在底座上并用螺钉锁紧。</para>
+          <para>润滑油牌号优先选用美孚46#汽轮机油，本轴承体大约加注油量为：3.4升。</para>
+          <para>加注口：轴承体顶上的放气塞孔（见<changeInline changeType="delete">LFZ45200070X4GA44DD《PTR冷却泵主要零部件图》</changeInline><dmRef changeMark="1" changeType="add" referredFragment="pdf-zylbjtz" xlink:actuate="onRequest" xlink:title="LFZ45200070X4GA44DD《PTR冷却泵主要零部件图》" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef> -托架部件图序27）。加注时旋下油水分离器，加注完后再拧上。</para>
+        </levelledPara>
+        <levelledPara>
+          <title>检查辅助系统</title>
+          <para>打开所有辅助系统，并检查所有的辅助系统（如冷却保温系统等）确保状态正常。</para>
+        </levelledPara>
+      </levelledPara>
+      <warning>
+        <warningAndCautionPara>采用倒暖方式进行冷/暖操作时必须保证泵进口阀处于开启状态，不允许憋压操作，避免损坏机械密封或泵低压壳体。</warningAndCautionPara>
+        <warningAndCautionPara>暖泵预热/冷泵预冷时温度必须均匀上升或下降，绝不允许输送介质温变高于50℃温差的操作，否则会引起零件突然变形不均匀，出现密封失效等严重后果。</warningAndCautionPara>
+      </warning>
+      <levelledPara>
+        <title>灌泵</title>
+        <para changeMark="1" changeType="add">
+          <sequentialList>
+            <listItem>
+              <para>关闭出口阀门，打开旁路阀；在无最小流量阀时应调整泵出口阀门开度为10％左右；全开入口阀门灌液。</para>
+            </listItem>
+            <listItem>
+              <para>打开吸入/排出管道上的排气阀（若有），直至排出所存的空气并确保只有液体流出后关闭排气阀。</para>
+            </listItem>
+            <listItem>
+              <para>检查冷却水（若有）温度、水压、水量，流量计流动状态，以及各阀门仪器仪表等是否正常。待整个辅助系统（若有）工作稳定后，方可进行后续步骤。</para>
+            </listItem>
+            <listItem>
+              <para>检查泵进口压力、温度数据是否在允许启动的范围内，泵进口阀、出口旁通阀处于全开状态。</para>
+            </listItem>
+            <listItem>
+              <para>按照泵的转动方向对设备进行盘车检查，确认设备转动无卡涩。</para>
+            </listItem>
+            <listItem>
+              <para>检查所有的管道，法兰，螺丝/螺钉连接以防泄露。</para>
+            </listItem>
+            <listItem>
+              <para>确保联轴器护罩安装牢固。</para>
+            </listItem>
+            <listItem>
+              <para>对设备仪器、仪表再次进行检查，保证各仪器仪表监控显示正常。待检查合格后才可正常启动运行。</para>
+            </listItem>
+            <listItem>
+              <para>停车超过3个月重新投入运行前需额外检查轴承箱内零件状况并对零件进行清洁处理，更换新润滑油。</para>
+            </listItem>
+            <listItem>
+              <para>高温泵和低温泵的启动（若需）。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+        <para changeMark="1" changeType="delete">1) 关闭出口阀门，打开旁路阀；在无最小流量阀时应调整泵出口阀门开度为10％左右；全开入口阀门灌液。</para>
+        <para changeMark="1" changeType="delete">2) 打开吸入/排出管道上的排气阀（若有），直至排出所存的空气并确保只有液体流出后关闭排气阀；</para>
+        <para changeMark="1" changeType="delete">3) 检查冷却水（若有）温度、水压、水量，流量计流动状态，以及各阀门仪器仪表等是否正常。待整个辅助系统（若有）工作稳定后，方可进行后续步骤；</para>
+        <para changeMark="1" changeType="delete">4) 检查泵进口压力、温度数据是否在允许启动的范围内，泵进口阀、出口旁通阀处于全开状态；</para>
+        <para changeMark="1" changeType="delete">5) 按照泵的转动方向对设备进行盘车检查，确认设备转动无卡涩；</para>
+        <para changeMark="1" changeType="delete">6) 检查所有的管道，法兰，螺丝/螺钉连接以防泄露。</para>
+        <para changeMark="1" changeType="delete">7) 确保联轴器护罩安装牢固。</para>
+        <para changeMark="1" changeType="delete">8) 对设备仪器、仪表再次进行检查，保证各仪器仪表监控显示正常。待检查合格后才可正常启动运行；</para>
+        <para changeMark="1" changeType="delete">9) 停车超过3个月重新投入运行前需额外检查轴承箱内零件状况并对零件进行清洁处理，更换新润滑油；</para>
+        <para changeMark="1" changeType="delete">10)高温泵和低温泵的启动（若需）</para>
+        <para changeMark="1" changeType="add">
+          <sequentialList>
+            <listItem>
+              <para>高温泵试运转时的特殊注意事项</para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>试运转前进行泵体预热，泵体表面与工作介质的进口工艺管线的温差应不大于40℃才可进行泵的启动操作。</para>
+                  </listItem>
+                  <listItem>
+                    <para>泵体预热时，温度应均匀上升，每小时温升不得大于50℃。</para>
+                  </listItem>
+                  <listItem>
+                    <para>开启入口阀门和放空阀门，排出泵内气体，预热到规定温度后，再关好放空阀门。</para>
+                  </listItem>
+                  <listItem>
+                    <para>停车后，应每隔20~30 分钟盘车半圈，直至泵体温度降到50℃为止。</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>低温泵试运转时的特殊注意事项</para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>预冷前打开旁通管路。</para>
+                  </listItem>
+                  <listItem>
+                    <para>按工艺要求对管道和泵腔进行除湿处理。</para>
+                  </listItem>
+                  <listItem>
+                    <para>进行泵体预冷，冷却到运转温度。温度应均匀下降，冷却速度每小时不大于30℃；预冷时，应全部打开放空阀门，预冷到规定温度后，再将放空阀门关闭。</para>
+                  </listItem>
+                  <listItem>
+                    <para>检查系统其它要求的参数、状态均处于正常合格范围之内，并对所有的参数做好记录。</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+          </sequentialList>
+        </para>
+        <para changeMark="1" changeType="delete">
+        </para>
+        <para changeMark="1" changeType="delete">试运转前进行泵体预热，泵体表面与工作介质的进口工艺管线的温差应不大于40℃才可进行泵的启动操作；</para>
+        <para changeMark="1" changeType="delete">泵体预热时，温度应均匀上升，每小时温升不得大于50℃；</para>
+        <para changeMark="1" changeType="delete">开启入口阀门和放空阀门，排出泵内气体，预热到规定温度后，再关好放空阀门；</para>
+        <para changeMark="1" changeType="delete">停车后，应每隔20~30 分钟盘车半圈，直至泵体温度降到50℃为止。</para>
+        <para changeMark="1" changeType="delete">
+        </para>
+        <para changeMark="1" changeType="delete">预冷前打开旁通管路；</para>
+        <para changeMark="1" changeType="delete">按工艺要求对管道和泵腔进行除湿处理；</para>
+        <para changeMark="1" changeType="delete">进行泵体预冷，冷却到运转温度。温度应均匀下降，冷却速度每小时不大于30℃；预冷时，应全部打开放空阀门，预冷到规定温度后，再将放空阀门关闭。</para>
+        <para changeMark="1" changeType="delete">检查系统其它要求的参数、状态均处于正常合格范围之内，并对所有的参数做好记录。</para>
+      </levelledPara>
+      <warning>
+        <warningAndCautionPara>如果在起动和试运行过程中发出报警信号或出现故障，请立即停机，并进行故障排除。</warningAndCautionPara>
+        <warningAndCautionPara>总是靠调节排出管线中的阀门来改变流量，切莫从吸入侧调节流量。</warningAndCautionPara>
+      </warning>
+      <levelledPara>
+        <title>启动</title>
+        <para changeMark="1" changeType="add">
+          <sequentialList>
+            <listItem>
+              <para>接通电源，打开吸入阀，关闭排出阀，打开旁通管路上的阀门，启动电机。</para>
+            </listItem>
+            <listItem>
+              <para>立即观察出口压力表。假如不是快速达到排出压力，应立即切断电源，检查并排除故障后重新灌泵启动电机。</para>
+            </listItem>
+            <listItem>
+              <para>当泵达到额定转速后，再逐渐开大吐出管路上的阀门，并关闭旁通管路上的阀门，直到调节到所需要的工况。吐出管上的阀门开启时间不宜超过1分钟。</para>
+            </listItem>
+            <listItem>
+              <para>观察泵的振动程度、轴承温度和噪声大小。若超过相关文件或标准规定的正常水平，需立即断电检查并排除故障后重新灌泵启动电机。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+        <para changeMark="1" changeType="delete">1）接通电源，打开吸入阀，关闭排出阀，打开旁通管路上的阀门，启动电机。</para>
+        <para changeMark="1" changeType="delete">2）立即观察出口压力表。假如不是快速达到排出压力，应立即切断电源，检查并排除故障后重新灌泵启动电机。</para>
+        <para changeMark="1" changeType="delete">3）当泵达到额定转速后，再逐渐开大吐出管路上的阀门，并关闭旁通管路上的阀门，直到调节到所需要的工况。吐出管上的阀门开启时间不宜超过1分钟。</para>
+        <para changeMark="1" changeType="delete">4）观察泵的振动程度、轴承温度和噪声大小。若超过相关文件或标准规定的正常水平，需立即断电检查并排除故障后重新灌泵启动电机。</para>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

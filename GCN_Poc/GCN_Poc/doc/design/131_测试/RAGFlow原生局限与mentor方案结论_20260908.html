@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>RAGFlow 原生局限与 mentor 方案结论 · 2026-09-08</title>
+<style>
+  :root {
+    --bg:#0f1115; --panel:#171a21; --line:#262a33; --text:#e6e8eb;
+    --muted:#9aa3ad; --accent:#4c8dff; --ok:#35c56a; --warn:#f5a623; --err:#ff5f56;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:14px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:32px 28px 80px; }
+  h1 { font-size:24px; font-weight:600; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:28px; }
+  h2 { font-size:17px; font-weight:600; margin:34px 0 14px;
+       padding-bottom:8px; border-bottom:1px solid var(--line); }
+  h3 { font-size:14.5px; font-weight:600; margin:20px 0 8px; color:var(--accent); }
+  .panel { background:var(--panel); border:1px solid var(--line);
+           border-radius:8px; padding:18px 20px; margin:14px 0; }
+  .panel.tldr { border-left:3px solid var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:13px; margin:8px 0; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line);
+           vertical-align:middle; }
+  th { color:var(--muted); font-weight:500; font-size:12px; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .tag { display:inline-block; padding:2px 9px; border-radius:11px;
+         font-size:11.5px; border:1px solid; }
+  .tag.ok { color:var(--ok); border-color:var(--ok); }
+  .tag.warn { color:var(--warn); border-color:var(--warn); }
+  .tag.err { color:var(--err); border-color:var(--err); }
+  .tag.acc { color:var(--accent); border-color:var(--accent); }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:14px 0; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+          padding:16px 14px; text-align:center; }
+  .stat b { display:block; font-size:26px; font-weight:600; }
+  .stat small { color:var(--muted); font-size:11.5px; }
+  .stat.warn b { color:var(--warn); }
+  .stat.err b { color:var(--err); }
+  .stat.ok b { color:var(--ok); }
+  .caveat { background:#2a2016; border-left:3px solid var(--warn); padding:12px 16px;
+            border-radius:0 6px 6px 0; font-size:13px; color:#f0d9b5; margin:14px 0; }
+  .note { background:#0d1016; border-radius:6px; padding:10px 14px; font-size:12.5px;
+          color:#93a4b8; margin:10px 0; }
+  pre { background:#0d1016; padding:10px 14px; border-radius:6px; font-size:12px;
+        color:#b9c6d8; overflow-x:auto; margin:8px 0; }
+  code { background:#0d1016; padding:1.5px 6px; border-radius:4px; font-size:12px;
+         color:#b9c6d8; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+         padding:14px 20px; margin:20px 0; }
+  .toc a { color:var(--accent); text-decoration:none; font-size:13px; }
+  .toc a:hover { text-decoration:underline; }
+  .footer { color:var(--muted); font-size:12px; margin-top:40px;
+            padding-top:16px; border-top:1px solid var(--line); }
+  .evidence { font-size:11.5px; color:var(--muted); margin-top:4px; }
+
+  #topnav { position:fixed; top:0; left:0; right:0; height:44px; z-index:9999;
+            background:#0b0d12; border-bottom:1px solid #262a33;
+            display:flex; align-items:center; padding:0 20px; gap:4px;
+            font:13px/1.4 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  #topnav a { color:#9aa3ad; text-decoration:none; padding:6px 12px; border-radius:6px;
+              white-space:nowrap; }
+  #topnav a:hover { background:#171a21; color:#e6e8eb; }
+  #topnav a.active { color:#4c8dff; background:#111620; }
+  #topnav .brand { font-weight:600; color:#e6e8eb; margin-right:12px;
+                   padding-right:12px; border-right:1px solid #262a33; }
+  body { padding-top:44px !important; }
+  body > .wrap { margin-top:20px; }
+
+</style></head><body>
+<div id="topnav"><span class="brand">批量上传测试</span><a href="批量上传测试总索引_20260908.html">总索引</a><a href="RAGFlow原生批量上传测试_20260908.html">方案A测试</a><a href="方案B并发压测_20260908.html">方案B并发压测</a><a href="RAGFlow原生局限与mentor方案结论_20260908.html" class="active">结论报告</a><a href="批量导入规模验证_20260907.html">千份baseline</a><a href="万份稳定性压测_20260911.html">万份压测</a></div>
+<div class='wrap'>
+<h1>RAGFlow 原生批量上传局限性与 mentor 方案 B 结论报告</h1>
+<p class='sub'>GCN 采购文件活化项目 · 结论性文档<br>执行人：小zhu · 日期：2026-09-08 · 环境：131 服务器 RAGFlow v0.26.1 · 证据：源码内核 + mentor 设计文档 + 2026-09-08 实测</p>
+<div class='toc'><b>目录</b><br><a href='#tldr'>一、结论</a> · <a href='#evidence'>二、证据来源</a> · <a href='#limits'>三、RAGFlow 原生六大局限</a> · <a href='#why'>四、为什么 mentor 要自建</a> · <a href='#b'>五、mentor 方案 B 解决了什么</a> · <a href='#boundary'>六、方案 B 的边界与风险</a> · <a href='#final'>七、最终结论</a></div>
+<h2 id='tldr'>一、结论</h2>
+<div class='panel tldr'><p>RAGFlow 原生批量上传接口<b>功能上能完成文档上传与解析</b>（100 份 .docx 实测：上传 3.2s、解析 1104s、100% 成功），但存在<b>六大局限</b>：进度只能猜、无暂停、无重试、性能不由己控、状态不可控、升级耦合。其中<b>取消能力实测不生效</b>（DELETE /chunks 后 0 份变 CANCEL，100 份全部正常 DONE）。<br><br>项目经理要的「可管理批量上传」（每阶段计时、随时暂停/重试、读写队列状态、提供接口），RAGFlow 原生<b>只满足 1/5</b>（提供 HTTP 接口）。mentor 方案 B 通过<b>绕过解析引擎、复用存储基础设施</b>的自建流水线，一次性解决了全部局限——这是经实测验证的、唯一能同时满足 PM 全部需求的路径。</p></div>
+<h2 id='evidence'>二、证据来源（三重交叉验证）</h2>
+<div class="panel"><table><thead><tr><th>证据层</th><th>来源</th><th>覆盖的问题</th></tr></thead><tbody><tr><td>① RAGFlow 源码内核</td><td><code>rag/svr/task_executor.py</code>、<code>task_service.py</code>、<code>db_models.py</code>、<code>redis_conn.py</code>（v0.26.1）</td><td>set_progress/has_canceled 机制、limiter 并发、Redis Stream 队列、Document/Task 字段</td></tr><tr><td>② mentor 设计文档</td><td><code>ingest-orchestration.md</code>（v1→v2 修正）、<code>progress-board.md</code>、规模验证 HTML</td><td>第一版撞墙的 4 问题、方案 B 动机、存储复用边界</td></tr><tr><td>③ 2026-09-08 实测</td><td><code>native_upload_test.py</code> 纯原生 API 跑 100 份 + 取消测试</td><td>吞吐/进度可见性/取消能力实测数据</td></tr></tbody></table><p class="note">三层证据互相印证：源码解释"为什么"，文档记录"mentor 当时发现了什么"，实测证明"今天仍然如此"。</p></div>
+<h2 id='limits'>三、RAGFlow 原生批量上传六大局限</h2>
+<div class="panel"><h3>局限 1：进度只能猜（无分阶段计时）</h3><p>RAGFlow 只给文档级<b>单浮点 progress（0.0~1.0）+ 累积文本 progress_msg</b>，不给 parse/chunk/embed/index 各阶段独立进度与计时。</p><div class="evidence">实测证据：100 份文档全流程 progress_msg 只有 4 种文本——"Task is queued..." / "256 tasks are ahead in the queue..." / "254..." / "252..."。<b>没有任何阶段关键词</b>（OCR/embedding/entity）。前 483 秒 100 份全卡 RUNNING、progress 浮点 0.0049 几乎不动。<br>源码：<code>task_executor.py:186</code> set_progress 只写单 progress+msg；<code>document_service.py:1146</code> _sync_progress 聚合取平均。<br>文档：<code>ingest-orchestration.md:82,105-110</code></div></div>
+<div class="panel"><h3>局限 2：无暂停（只有取消，且不彻底）</h3><p>task_executor <b>无 pause 状态</b>，只有 cancel（DELETE /chunks 设 Redis 标志）。且 has_canceled 是<b>阶段边界轮询非即时中断</b>。</p><div class="evidence">实测证据：跑到 30% 时发 DELETE /chunks，最终<b>0 份变 CANCEL，100 份全部正常 DONE</b>。取消在文档多的串行场景下不生效——软取消标志还没被 worker 看到，文档就跑完了。<br>源码：<code>task_service.py:610</code> has_canceled 读 Redis key；<code>task_executor.py</code> 多处阶段边界检查。<br>文档：<code>ingest-orchestration.md:88-89,132-140</code></div></div>
+<div class="panel"><h3>局限 3：无重试（失败即终态）</h3><p>Task 模型有 <code>retry_count</code> 字段，但<b>task_executor 无自动重试消费逻辑</b>。失败即 failed，重跑需重新 POST /chunks 全量入队。</p><div class="evidence">源码：<code>db_models.py:1015</code> retry_count 字段在；task_executor 主循环不消费该字段。<br>文档：<code>ingest-orchestration.md:83,89,142-146</code></div></div>
+<div class="panel"><h3>局限 4：性能不由己控（单 worker 串行）</h3><p>task_executor 默认 <code>MAX_CONCURRENT_CHUNK_BUILDERS=1</code>，embedding 阶段<b>串行</b>。批量提交不限流会 Redis 队列堆积 + OOM（131 曾被 OOM 停 Docker daemon）。</p><div class="evidence">实测证据：100 份解析 1104s，吞吐仅 <b>0.091 份/s</b>。前 483s 一份都没跑完（100 份在队列排队，串行 embedding 每份约 11s）。<br>源码：<code>task_executor_limiter.py:20-28</code> MAX_CONCURRENT_CHUNK_BUILDERS 默认 1。<br>文档：<code>ingest-orchestration.md:159-160</code></div></div>
+<div class="panel"><h3>局限 5：状态不可控（无优先级/队列操作）</h3><p>RAGFlow 原生<b>无优先级调度、无队列读写接口</b>。文档入 Redis Stream 后按队列顺序消费，无法插队、改优先级、查看具体排队位置。</p><div class="evidence">源码：Redis Stream + 消费者组（<code>redis_conn.py:415</code>），严格 FIFO。GET /documents 只能查"前面还有 N 份"的模糊信息，不能操作队列。<br>文档：<code>ingest-orchestration.md:22-32,155</code></div></div>
+<div class="panel"><h3>局限 6：升级耦合（调解析 API 绑定内部流程）</h3><p>调 RAGFlow 解析 API 就绑定了它的内部流程（Redis 队列、task_executor、progress 上报机制）。RAGFlow 升级改动这些内部实现，调用方就要跟着改。</p><div class="evidence">文档：<code>progress-board.md:39</code>——"自建流水线只依赖存储契约（MinIO/ES/MySQL），升级不受影响"。</div></div>
+<h2 id='why'>四、为什么 mentor 要自建（第一版撞墙记）</h2>
+<div class="panel"><p>mentor 第一版就是方案 A（调 RAGFlow 原生解析 API），接真实 131 服务器后<b>撞了上面 4 个问题</b>（进度只能猜、无暂停、无重试、性能不由己控），设计重写时又发现 2 个设计假设错误（共 6 处 v1→v2 修正）。</p><table><thead><tr><th>v1 错误假设</th><th>v2 修正</th></tr></thead><tbody><tr><td>7 精确 stage</td><td>5 子步骤对齐 PM 原型 + 映射自 progress</td></tr><tr><td>无 cancel endpoint，要 SSH</td><td>有 DELETE /chunks，但仍无真暂停</td></tr><tr><td>暂停=软停，硬取消运维级</td><td>默认软暂停 + force 硬停，行业惯例</td></tr><tr><td>/ingest 最灵活首选</td><td>走 /chunks（/ingest 不适配 GraphRAG）</td></tr><tr><td>状态机自造</td><td>直接对齐 RAGFlow run 5 态</td></tr><tr><td>无灵活性机制</td><td>三层抽象（接口/映射/适配层）</td></tr></tbody></table><div class="evidence">文档：<code>ingest-orchestration.md:284-293</code>；<code>批量导入规模验证_20260907.html:262-264</code>——"PM 要的可管理批量上传，只有自建编排能实现"</div></div>
+<h2 id='b'>五、mentor 方案 B 解决了什么</h2>
+<div class="panel tldr"><p>方案 B 核心：<b>自己跑 parse→chunk→embed→index 全链路，把产物写进 RAGFlow 认识的存储（MinIO/ES/MySQL），绕过解析引擎 task_executor</b>。复用基础设施，不碰解析——检索效果不打折（实测 sim=0.476 命中）。</p></div>
+<div class="panel"><table><thead><tr><th>PM 需求</th><th>RAGFlow 原生</th><th>方案 B 解决方式</th></tr></thead><tbody><tr><td>每阶段计时</td><td><span class="tag err">不支持</span> 单浮点+文本</td><td><span class="tag ok">支持</span> 每阶段 time.time() 精确计时，on_stage 回调写 duration_ms</td></tr><tr><td>随时暂停</td><td><span class="tag err">不支持</span> 实测 0/70 生效</td><td><span class="tag ok">支持</span> stage 边界检查 _cancelled 标志，软暂停+force 硬停</td></tr><tr><td>重试</td><td><span class="tag err">不支持</span> 失败即终态</td><td><span class="tag ok">支持</span> 单份从 failed→pending 重跑，删旧 chunks 重来</td></tr><tr><td>读写队列状态</td><td><span class="tag warn">弱</span> 只能查模糊排队数</td><td><span class="tag ok">支持</span> MySQL 三表（job/task/step），可查/改优先级/插队</td></tr><tr><td>提供接口</td><td><span class="tag ok">支持</span> HTTP API</td><td><span class="tag ok">支持</span> 8 个 REST endpoint + /demo 评审页</td></tr><tr><td>性能可控</td><td><span class="tag err">不受控</span> 0.091 份/s，串行</td><td><span class="tag ok">可调</span> Scheduler max_concurrent，并发 3 最优（实测 0.25 份/s）</td></tr><tr><td>升级解耦</td><td><span class="tag err">耦合</span> 绑定内部流程</td><td><span class="tag ok">解耦</span> 只依赖存储契约</td></tr></tbody></table></div>
+<div class="panel"><h3>方案 B 实测验证（2026-09-07 baseline）</h3><table><thead><tr><th>指标</th><th>方案 A 原生（本次）</th><th>方案 B 自建（job 37）</th></tr></thead><tbody><tr><td>规模</td><td>100 份</td><td>1000 份</td></tr><tr><td>墙钟</td><td class="num">1104s</td><td class="num">3192s</td></tr><tr><td>吞吐</td><td class="num">0.091 份/s</td><td class="num">0.25 份/s</td></tr><tr><td>成功率</td><td>100%（数据预筛）</td><td>79.6%（204 份 .doc 脏数据，系统零 bug）</td></tr><tr><td>每阶段计时</td><td><span class="tag err">无</span> 仅 progress_msg 4 种文本</td><td><span class="tag ok">有</span> parse/chunk/embed/index 各 duration_ms，embed 占 96%</td></tr><tr><td>失败隔离</td><td>支持</td><td>支持（204 份失败未拖累 796 份成功）</td></tr></tbody></table><p class="note">方案 B 吞吐是方案 A 的 ~2.7 倍（0.25 vs 0.091），主因是进程内并发 3 vs task_executor 串行。两者最终都调同一 bge-base embedding 服务。</p></div>
+<h2 id='boundary'>六、方案 B 的边界与风险</h2>
+<div class="caveat">方案 B 不是银弹——绕过解析引擎也放弃了 RAGFlow 的解析能力。记录以下边界，避免误判。</div>
+<div class="panel"><table><thead><tr><th>边界/风险</th><th>说明</th><th>影响</th></tr></thead><tbody><tr><td>解析质量可能不如 RAGFlow</td><td>mentor 的 docx 解析较简单（python-docx 读段落+表格），复杂版面/嵌套表格/扫描件可能不如 RAGFlow DeepDOC</td><td>纯文本法规影响小；核电手册含图复杂表格需验证</td></tr><tr><td>embedding 仍是绝对瓶颈</td><td>方案 B 也调同一 bge-base 服务，占单份耗时 96%（7.67s 均值，长尾 36.66s）。并发 6 反比并发 1 慢 58%（下游争抢）</td><td>提速正解是 GPU/独立部署，不是加并发</td></tr><tr><td>index p90 长尾</td><td>10 份里总有 1 份 14s（p50 71ms vs p90 14.1s），疑 MySQL 连接池/ES bulk/MinIO 抖动</td><td>规模化前必须查清</td></tr><tr><td>131 是共享机</td><td>34 容器混跑、load average 22、无 GPU、embedding 服务跑 36 天</td><td>性能数据受负载影响大，单次测量不可信</td></tr><tr><td>容器重建丢代码</td><td>已踩过——/ragflow/ingest/ 代码 + 依赖非持久化</td><td>生产化前要镜像化</td></tr><tr><td>队列单实例限制</td><td>当前 MySQL 表 + 2s 轮询，只能单实例调度</td><td>多实例需换 Redis 队列（有条件）</td></tr></tbody></table></div>
+<h2 id='final'>七、最终结论</h2>
+<div class="panel"><h3>1. RAGFlow 原生定位</h3><p>RAGFlow 原生批量上传接口是<b>"能用但不可管"</b>的——它适合<b>轻量、一次性、不需暂停重试</b>的文档导入场景。接口齐全（HTTP API），功能完整（上传→解析→检索），但可控性弱。</p><h3>2. 方案 B 定位</h3><p>mentor 方案 B 是<b>"可管理的批量导入服务"</b>——满足 PM 全部 5 项需求（计时/暂停/重试/队列/接口），性能更优（并发可调），解耦升级。代价是<b>放弃 RAGFlow 解析引擎、自维护全链路</b>。</p><h3>3. 选型建议</h3><table><thead><tr><th>场景</th><th>推荐</th><th>理由</th></tr></thead><tbody><tr><td>批量导入（需暂停/重试/计时）</td><td><span class="tag ok">方案 B</span></td><td>PM 核心需求，原生满足 0/5</td></tr><tr><td>单文档/少量上传</td><td><span class="tag acc">方案 A 原生</span></td><td>简单、无需自维护</td></tr><tr><td>复杂版面/扫描件解析</td><td><span class="tag warn">需评估</span></td><td>方案 B 的 docx 解析较简单，复杂场景可能仍需 RAGFlow DeepDOC</td></tr><tr><td>embedding 提速</td><td><span class="tag warn">独立二开</span></td><td>两方案都调 bge-base，提速需 GPU/独立部署，非调并发</td></tr></tbody></table><h3>4. 待验证项</h3><ul><li>轮2：方案 A 调 embed_limiter=3 对齐并发后吞吐能否追上方案 B</li><li>方案 B 复杂版面（核电手册含图表格）解析质量对比 RAGFlow DeepDOC</li><li>index p90 长尾根因（规模化前必查）</li><li>1 万份规模压测（PM 20260821 关注点）</li></ul></div>
+<div class='footer'>生成于 2026-09-08 · conclusion_report.py · 证据：源码内核 + mentor 设计文档 + 实测 (test/results/native_r1.json + test/results/native_cancel.json)</div>
+</div></body></html>

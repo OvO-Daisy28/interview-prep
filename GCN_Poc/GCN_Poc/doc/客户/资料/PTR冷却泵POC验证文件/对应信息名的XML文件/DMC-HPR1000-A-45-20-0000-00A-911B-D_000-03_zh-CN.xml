@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00042-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00042-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00043-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00043-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00044-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00044-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00045-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00045-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00046-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00046-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00047-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00047-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00048-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00048-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00049-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00049-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00050-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00050-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00051-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00051-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00052-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00052-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00053-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00053-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00054-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00054-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00055-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00055-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00056-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00056-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00057-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00057-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00058-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00058-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00059-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00059-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00060-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00060-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00061-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00061-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00062-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00062-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00063-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00063-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00064-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00064-A-001-01.PDF" NDATA pdf>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00065-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00065-A-001-01.PDF" NDATA pdf>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="911" infoCodeVariant="B" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>附件</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F">
+            </dmCode>
+            <language countryIsoCode="US" languageIsoCode="en">
+            </language>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016">
+            </issueDate>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <description>
+      <para>
+        <internalRef internalRefId="pdf-1jxmft" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件1  PTR冷却泵机械密封图" xlink:type="simple">
+        </internalRef>
+      </para>
+      <para>
+        <internalRef internalRefId="pdf-2lzqt" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件2  PTR 冷却泵联轴器图" xlink:type="simple">
+        </internalRef>
+      </para>
+      <para>
+        <internalRef internalRefId="pdf-3djyxwhsc" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件3   PTR冷却泵电机运行维护手册" xlink:type="simple">
+        </internalRef>
+      </para>
+      <para>
+        <internalRef internalRefId="pdf-4jxmfyxwhce" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件4   PTR冷却泵机械密封运行维护手册" xlink:type="simple">
+        </internalRef>
+      </para>
+      <para>
+        <internalRef internalRefId="pdf-5lzqyxwhce" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件5   PTR冷却泵联轴器运行维护手册" xlink:type="simple">
+        </internalRef>
+      </para>
+      <para>
+        <internalRef internalRefId="pdf-6ywdcgqsysms" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件6   PTR冷却泵用温度传感器使用说明书" xlink:type="simple">
+        </internalRef>
+      </para>
+      <para>
+        <internalRef internalRefId="pdf-7yzdcgqsysms" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件7   PTR冷却泵用振动传感器使用说明书" xlink:type="simple">
+        </internalRef>
+      </para>
+      <para>
+        <internalRef internalRefId="pdf-8djywdcgqsms" internalRefTargetType="irtt03" xlink:actuate="onRequest" xlink:show="replace" xlink:title="附件8   PTR冷却泵电机用温度传感器说明书" xlink:type="simple">
+        </internalRef>
+      </para>
+      <multimedia id="pdf-djqx">
+        <title>PTR 乏燃料水池冷却泵电机曲线</title>
+        <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00042-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+        </multimediaObject>
+      </multimedia>
+      <multimediaAlts>
+        <multimedia id="pdf-djsjb">
+          <title>PTR 乏燃料水池冷却泵电机数据表</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00043-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-djwxt">
+          <title>PTR 乏燃料水池冷却泵电机数外形图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00044-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-pidt">
+          <title>PTR 冷却泵泵组P&amp;ID图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00045-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-swt">
+          <title>PTR 冷却泵泵组三维图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00046-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-bzwxt">
+          <title>PTR 冷却泵泵组外形图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00047-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-bswd">
+          <title>PTR 冷却泵标识文档</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00048-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-ckwd">
+          <title>PTR 冷却泵参考文档</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00049-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-djjxt">
+          <title>PTR 冷却泵电机接线图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00050-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-jsggs">
+          <title>PTR 冷却泵技术规格书</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00051-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-bmt">
+          <title>PTR 冷却泵剖面图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00052-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-sbyxywxsc">
+          <title>PTR 冷却泵设备运行与维修手册</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00053-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-sjxnqx">
+          <title>PTR 冷却泵设计性能曲线</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00054-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-sjb">
+          <title>PTR 冷却泵数据表</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00055-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-zylbjtz">
+          <title>PTR 冷却泵主要零部件图纸</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00056-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-dzfat">
+          <title>附件2：PTR冷却泵吊装方案图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00057-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-1jxmft">
+          <title>附件1PTR 冷却泵机械密封图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00058-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-2lzqt">
+          <title>附件2  PTR 冷却泵联轴器图</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00059-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-3djyxwhsc">
+          <title>附件3   PTR冷却泵电机运行维护手册</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00060-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-4jxmfyxwhce">
+          <title>附件4   PTR冷却泵机械密封运行维护手册</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00061-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-5lzqyxwhce">
+          <title>附件5   PTR冷却泵联轴器运行维护手册</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00062-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-6ywdcgqsysms">
+          <title>附件6   PTR冷却泵用温度传感器使用说明书</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00063-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-7yzdcgqsysms">
+          <title>附件7   PTR冷却泵用振动传感器使用说明书</title>
+          <multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00064-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple">
+          </multimediaObject>
+        </multimedia>
+        <multimedia id="pdf-8djywdcgqsms">8<title>附件8   PTR冷却泵电机用温度传感器说明书</title><multimediaObject infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00065-A-001-01" multimediaObjectHeight="100" multimediaObjectWidth="100" multimediaType="3D" xlink:type="simple"/></multimedia>
+      </multimediaAlts>
+    </description>
+  </content>
+</dmodule>

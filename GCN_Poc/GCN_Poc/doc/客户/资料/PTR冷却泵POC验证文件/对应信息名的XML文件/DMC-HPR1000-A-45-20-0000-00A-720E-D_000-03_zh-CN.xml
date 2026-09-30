@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dmodule[
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00033-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00033-A-001-01.PNG" NDATA png>
+<!ENTITY ICN-HPR1000-A-45200000-A-CNPEC-00018-A-001-01 SYSTEM "ICN-HPR1000-A-45200000-A-CNPEC-00018-A-001-01.PNG" NDATA png>
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+  <identAndStatusSection>
+    
+    
+  <dmAddress><dmIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="E" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/><issueInfo inWork="03" issueNumber="000"/></dmIdent><dmAddressItems><issueDate day="10" month="01" year="2026"/> <dmTitle><techName>PTR冷却泵</techName><infoName>设备安装</infoName></dmTitle></dmAddressItems></dmAddress><dmStatus issueType="new">
+      <security securityClassification="01">
+      </security>
+      <responsiblePartnerCompany enterpriseCode="CNPEC">
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="CNPEC">
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>
+          </simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef xlink:actuate="onRequest" xlink:show="replace" xlink:type="simple">
+          <dmRefIdent>
+            <dmCode assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D" modelIdentCode="S1000D" subSubSystemCode="0" subSystemCode="1" systemCode="04" systemDiffCode="F"/>
+            <language countryIsoCode="US" languageIsoCode="en"/>
+          </dmRefIdent>
+          <dmRefAddressItems>
+            <dmTitle>
+              <techName>S1000D</techName>
+              <infoName>Default business rules exchange data module</infoName>
+            </dmTitle>
+            <issueDate day="31" month="12" year="2016"/>
+          </dmRefAddressItems>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified>
+        </unverified>
+      </qualityAssurance>
+    </dmStatus></identAndStatusSection>
+  <content>
+    <refs>
+      <dmRef xlink:actuate="onRequest" xlink:title="-" xlink:type="simple">
+        <dmRefIdent>
+          <dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="F" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/>
+          <language countryIsoCode="CN" languageIsoCode="zh"/>
+        </dmRefIdent>
+        <dmRefAddressItems>
+          <dmTitle>
+            <techName>PTR冷却泵</techName>
+            <infoName>初步对中</infoName>
+          </dmTitle>
+          <issueDate day="22" month="12" year="2025"/>
+        </dmRefAddressItems>
+      </dmRef>
+    </refs>
+    <description>
+      <levelledPara>
+        <title>公用底座安装</title>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>检查公共底座的加工表面是否有损伤或毛刺等缺陷，并修整平整。以底座中心和泵进出口中心定位进行泵组试安装并与外围联接的相对位置调正底座，在此过程中确保地脚螺栓自由地悬挂在它们的底座螺栓孔的中心，确定座浆垫板位置和标高，所有座浆垫板的标高误差不大于0.5mm。</para>
+            </listItem>
+            <listItem>
+              <para>将地脚螺栓下端锚板与螺母点焊牢固，一同放入预留螺栓孔内。</para>
+            </listItem>
+            <listItem>
+              <para>将泵底板吊起慢慢放在基础面上，并将地脚螺栓穿过底座的螺栓孔，带上垫圈和螺母，慢慢放在临时垫铁上；以底座中心和泵进出口中心线、基础标高等为基准进行初步调平，用激光投线仪、精密水准仪、水平尺和框式水平仪初步校正，确保水平度≤0.50mm/m，检测加工平面位置。</para>
+            </listItem>
+            <listItem>
+              <para>在预留螺栓孔内浇入流动灌浆料（微膨水泥浆）进行一次灌浆，做好灌浆料的养护工作，按规定的凝固时间等待凝固完成才进行下一步施工，灌浆需小心进行以避免灌浆层出现气穴现象。</para>
+            </listItem>
+            <listItem>
+              <para>待水泥凝固后，在座浆垫板上面垫成对斜铁，此时上侧的斜铁比下侧的斜铁向外伸出25～30mm。用精密水准仪、水平尺和框式水平仪配合精校底板。拧紧地脚螺栓的螺母，检查底板的水平度是否达到规定值（0.05mm/m）。若未达到规定值，则松开地脚螺栓的螺母，调整成对斜铁，拧紧地脚螺栓的螺母，再次检查底座的水平度，周而复始直到水平度达到规定值。</para>
+            </listItem>
+            <listItem>
+              <para>检查泵和电机的初步对中。初步检查联轴器端面张口应当小于0.05mm，径向偏差应当小于0.05mm。松开泵、电机的连接螺栓，初步检查泵、电机的软支撑，应当小于0.05 mm。详见<dmRef xlink:actuate="onRequest" xlink:title="初步对中" xlink:type="simple"><dmRefIdent><dmCode assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="720" infoCodeVariant="F" itemLocationCode="D" modelIdentCode="HPR1000" subSubSystemCode="0" subSystemCode="2" systemCode="45" systemDiffCode="A"/><language countryIsoCode="CN" languageIsoCode="zh"/></dmRefIdent><dmRefAddressItems><dmTitle><techName>PTR冷却泵</techName><infoName>初步对中</infoName></dmTitle><issueDate day="22" month="12" year="2025"/></dmRefAddressItems></dmRef>章节。</para>
+            </listItem>
+            <listItem>
+              <para>底座水平度调整好后，点焊成对斜铁接合处，防止成对斜铁松动。</para>
+            </listItem>
+            <listItem>
+              <para>设置外围，对底座下部和斜铁进行灌浆，待凝固后灌满底座空腔。</para>
+            </listItem>
+            <listItem>
+              <para>水泥浆凝固后再次拧紧地脚螺栓的螺母，复查底座的水平度在规定的范围内，并拧紧防松薄螺母。</para>
+            </listItem>
+            <listItem>
+              <para>检查并修复各底座加工表面上的损伤、划痕、毛刺等缺陷。</para>
+            </listItem>
+            <listItem>
+              <para>在底座上安装与设备联接的双头螺柱。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+        <figure>
+          <title>座浆垫板3</title>
+          <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00033-A-001-01" reproductionHeight="35pt" reproductionWidth="112pt" xlink:type="simple">
+          </graphic>
+        </figure>
+      </levelledPara>
+      <caution>
+        <warningAndCautionPara>上述施工内容为基础修整及底座水平度调整阶段，其施工质量必须经泵制造厂参与现场指导安装调试人员及现场施工监理检测确认和同意后，才能进入下一阶段的安装施工。</warningAndCautionPara>
+      </caution>
+      <levelledPara>
+        <title> 泵组安装</title>
+        <para>
+          <sequentialList>
+            <listItem>
+              <para>依次吊装泵、电机，慢慢地放在底座相应的位置上，在起吊时，应清洁、平整设备（用锉刀或砂轮）与底座的接合面。将各设备与底座的连接螺柱带上垫圈和螺母后轻微紧固。</para>
+            </listItem>
+            <listItem>
+              <para>初步确定各设备相对位置。用0.05mm塞尺检测泵、电机与公共底座脚板下的间隙是否均匀，如间隙不均匀需查明原因并予以消除,保证在同一端面处从两侧塞入的长度总和，不应超过连接面总宽度的1/3。</para>
+            </listItem>
+            <listItem>
+              <para>用水平仪检查泵进出口法兰的纵向水平度是否达如下值：纵向为0.05mm/m、横向为0.05mm/m。若未达到规定值，则通过在泵脚板下安装调整垫片进行调节，不允许采用松紧螺母的方法来调整。调整水平后方可拧紧螺母，然后再次检查纵向水平度，如果未达到规定值，应松开螺栓重新调整，直到水平度达到要求值。</para>
+            </listItem>
+          </sequentialList>
+        </para>
+      </levelledPara>
+      <figure>
+        <title>水平仪检查图</title>
+        <graphic infoEntityIdent="ICN-HPR1000-A-45200000-A-CNPEC-00018-A-001-01" reproductionHeight="101pt" reproductionWidth="112pt" xlink:type="simple">
+        </graphic>
+      </figure>
+    </description>
+  </content>
+</dmodule>

@@ -1,0 +1,17 @@
+[Unit]
+Description=GCN ingest orchestration service (supervises the process inside docker-ragflow-cpu-1)
+After=docker.service
+Wants=docker.service
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/gcn-ingest.env
+ExecStart=/opt/gcn/keepalive.sh
+# Best-effort: stopping the unit should stop the service it supervises,
+# but a failure here must not leave the unit stuck.
+ExecStop=-/usr/bin/docker exec docker-ragflow-cpu-1 pkill -f ingest.service
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

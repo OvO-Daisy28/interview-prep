@@ -1,0 +1,7 @@
+name=/docker-ragflow-cpu-1 image=infiniflow/ragflow:v0.26.1 image_id=sha256:98c7aaf2d107f3cec125fdff3a353f7208d6cd725add58a951c039ac312da0c5 created=2026-07-22T05:50:11.846009127Z started=2026-08-04T08:10:46.215413667Z
+Python 3.13.11
+b7cd37620d05a367e395ec719ec7742e2b63d00bef3d6b71aed112f34fc0b09d  /ragflow/rag/graphrag/general/community_report_prompt.py
+8b14fc8c3f894cf61b263f14bd6bc9f094306c9d7e76f5da06cc202b2fdadde5  /ragflow/rag/graphrag/general/community_reports_extractor.py
+3e32de67ec8ac4859fb6a98edc931c2e2149ee1f6a3098a5bb7e8b06130acc08  /ragflow/rag/graphrag/general/index.py
+f4cba671227f7a1a12463daece5061db755fc83fa47d7d4b960f7872e2ee3cc2  /ragflow/rag/svr/task_executor.py
+e1f7733077b268ad23cf4efab87c034e1531af47133f061e7bd2608f842d8274  /ragflow/api/db/services/dialog_service.py
