@@ -125,7 +125,7 @@ BGE-M3 进一步优化了 batching 策略（见后文）。
 | 属性 | 值 |
 |---|---|
 | 基础架构 | XLM-RoBERTa (large) |
-| 参数量 | ~560M |
+| 参数量 | ~568M（567,754,752） |
 | 最大输入长度 | **8192 token**（从原始 512 扩展） |
 | 预训练数据 | 1.84 亿文本样本，Pile/Wudao/mC4，覆盖 105 种语言 |
 
@@ -283,7 +283,7 @@ BGE-M3 的训练工程突破：处理 8192 token 长文本时 batch size 提升 
 | 池化方式 | [CLS] token 输出 | **[EOS] token 隐藏状态** |
 | 微调方式 | 全量微调 | **LoRA 微调**（保留基础模型能力） |
 | 最大输入 | BGE-base 512 / BGE-M3 8192 | **32K** |
-| 参数量 | 24M~560M | 600M~8B |
+| 参数量 | 24M~568M | 600M~8B |
 
 **LoRA 微调的意义**：不全量训练，只训练低秩适配矩阵——保留 Qwen3 基础模型预训练时学到的文本理解能力，只在上面"轻调"适配 embedding 任务。这与 BGE 的"从头训练 BERT Encoder"是完全不同的路线。
 
@@ -335,7 +335,7 @@ BGE-M3 的训练工程突破：处理 8192 token 长文本时 batch size 提升 
 |---|---|---|---|---|---|---|---|
 | BGE-base-zh-v1.5 | BERT Encoder | 102M | 768 | 512 | 69.53 | ❌ 中文 | 性价比最优 |
 | BGE-large-zh-v1.5 | BERT Encoder | 326M | 1024 | 512 | 71.53 | ❌ 中文 | BGE 系列最高 |
-| **BGE-M3** | XLM-RoBERTa large | ~560M | 1024 | **8192** | — | ✅ 100+ | **dense+sparse+multi-vector 三合一** |
+| **BGE-M3** | XLM-RoBERTa large | ~568M | 1024 | **8192** | — | ✅ 100+ | **dense+sparse+multi-vector 三合一** |
 | OpenAI-Ada-002 | 未知 | 未知 | 1536 | 8191 | 52.00 | ✅ | 公有云 API |
 | Qwen3-Embedding-0.6B | **Qwen3 LLM** | 600M | 1024 | **32K** | **71.02** | ✅ 100+ | LoRA 微调、MRL、指令感知 |
 | Qwen3-Embedding-4B | Qwen3 LLM | 4B | 2560 | 32K | — | ✅ 100+ | 更大规模 |
@@ -348,7 +348,7 @@ BGE-M3 的训练工程突破：处理 8192 token 长文本时 batch size 提升 
 | 三种检索 | ✅ dense+sparse+multi-vector | ❌ 仅 dense（需配 reranker） |
 | 输入长度 | 8192 | 32K |
 | 架构 | BERT（Encoder-only，推理快） | LLM（Decoder-only，推理更重） |
-| 参数量 | ~560M | 600M |
+| 参数量 | ~568M（567,754,752） | 600M |
 | 训练方法 | 自知识蒸馏（三路互教） | 多任务自适应提示 + LoRA |
 | 中文检索 | — | 71.02 |
 | 多语言检索(MIRACL) | 69.2（dense）/ 71.5（all） | 64.64（MMTEB-R） |
@@ -528,7 +528,7 @@ LLM（GPT/Qwen 系列）做的是**因果语言建模（Causal LM）**：每个 
 **但代价是**：
 - Decoder-only 架构的注意力是单向的，中间 token 的表示不如 BERT 丰富（中间 token 看不到后面的 token）
 - 只有 [EOS] 位置有完整信息，其他位置信息不完整
-- 参数量通常更大（Qwen3-Embedding 0.6B vs BGE-M3 560M），推理更重
+- 参数量通常更大（Qwen3-Embedding 0.6B vs BGE-M3 568M），推理更重
 - 优势是 LLM 预训练数据量远大于 BERT，文本理解能力更强，LoRA 微调保留了基础模型的泛化能力
 
 #### 两种架构对比
@@ -541,7 +541,7 @@ LLM（GPT/Qwen 系列）做的是**因果语言建模（Causal LM）**：每个 
 | 训练目标 | 掩码语言建模（MLM）：猜被遮住的词 | 因果语言建模（CLM）：预测下一个词 |
 | 适合任务 | 理解型（分类、检索、embedding） | 生成型（对话、续写） |
 | 做 Embedding 的方式 | [CLS] token 输出 / mean pooling | **[EOS] token 隐藏状态** |
-| 参数量 | 小（102M~560M） | 大（600M~8B） |
+| 参数量 | 小（102M~568M） | 大（600M~8B） |
 | 推理速度 | 快（一次前向） | 慢（模型更大） |
 | 文本理解能力 | 强（但受限于预训练数据量） | 更强（LLM 预训练数据量远大） |
 | 代表模型 | BGE 系列、BERT、RoBERTa | Qwen3-Embedding、GPT、LLaMA |

@@ -1,7 +1,7 @@
-# RAGFlow 源码全链路调研（v0.26.4）
+# RAGFlow 源码全链路调研（部署版 v0.26.1 / 上游参考 v0.26.4）
 
 > 目标：逐环节把全链路读到函数级，支撑面试深挖。一次填一个环节，不零碎。
-> 源码：`f:\byh\ragflow-main`（GitHub v0.26.4）。**注意：实习服务器是 v0.26.1，个别行为有差异（文中标注）**，引用行号以本地 v0.26.4 为准。
+> 源码：`f:\byh\ragflow-main`（GitHub v0.26.4，上游参考版）。**部署版是 v0.26.1 + 5 处本地补丁**，引用行号以本地 v0.26.4 为准，部署版 v0.26.1 行号有 10-30 行漂移（关键补丁行号已标注部署版实际值）。面试讲行号时统一口径："部署版 v0.26.1 的行号"。
 > 方法：每环节 = 入口路由 → 调用链（文件:行号）→ 核心机制 → 数据结构 → 挂接我项目的实测数字 → 面试深挖预测。
 
 ## 环节地图（九环节）
@@ -85,10 +85,10 @@ POST /datasets/{kb}/documents/parse  (body: document_ids)
    - Excel 按行拆（3000 行/task）
    - 普通文档单 task
    - **任务复用优化**：`reuse_prev_task_chunks`（:552）按 digest 对比复用历史 task 的 chunks（避免重复解析）
-2. **队列命名**（v0.26.4）：`te.{priority}.{suffix}`，suffix 按任务类型分 common/graphrag/raptor/mindmap。**版本差异警告**：131 服务器 v0.26.1 当时把后缀写死 `.common` 导致重任务互抢（假死根因①）；v0.26.4 上游已按 suffix 分类——131 那个问题的定性（版本行为 vs 部署配置）未考证，面试别说死。
+2. **队列命名**（部署版 v0.26.1 + 本地补丁）：`te.{priority}.{suffix}`，suffix 按任务类型分 common/graphrag/raptor/mindmap。**版本差异说明**：131 服务器部署版 v0.26.1 通过本地补丁（settings.py:136 `SPECIAL_TASK_QUEUE_SUFFIXES` + :139 `get_svr_queue_name` 按 suffix 分流）解决了重任务互抢问题（假死根因①）。补丁打在部署版 v0.26.1 上，未贡献上游，vanilla v0.26.4 是否已修复未考证。面试口径："补丁打在部署的 v0.26.1 上，未贡献上游"。
 3. **消费侧**（task_executor.py）：
    - `collect()`（:220）：**优先恢复自己上次未 ACK 的消息**（`get_unacked_iterator`，:228-231）→ 再按队列顺序取新消息 → 空消息直接 ack → **collect 阶段就查 `has_canceled`**（:264，取消检查点之一，但只对"任务还没开始跑"有效）
-   - `handle_task()`（:1737）主循环：无任务 sleep(5)；执行有三种模式（`TE_RUN_MODE`：0=重构版 `TaskManager.run_refactored_task`、1=dry-run 新旧对比、else 原版 `do_handle_task`）——**v0.26.4 存在重构版执行器**（`task_executor_refactor/`，实习记录提到过 task_handler.py）
+   - `handle_task()`（:1737）主循环：无任务 sleep(5)；执行有三种模式（`TE_RUN_MODE`：0=重构版 `TaskManager.run_refactored_task`、1=dry-run 新旧对比、else 原版 `do_handle_task`）——代码里有三种执行模式的开关，我们用的是默认的原版。面试时不主动提"重构版执行器"，除非被追问 `TE_RUN_MODE`。
    - 异常路径：`set_progress(prog=-1)` 标记失败（:1784）
    - **`redis_msg.ack()` 在 finally 末尾（:1802）——ACK 只在整个任务（含所有异常处理）完成后执行。这就是假死根因③的源码位置：worker 中途僵死 → 消息永远未 ACK → 别人无法接管（v0.26.4 依然如此，接管要靠心跳过期 claim，即 redis_conn 的 pending 接管逻辑）**
 
@@ -312,6 +312,8 @@ graphrag 任务 → general/index.py __call__
 ## 环节⑧ 在线检索（retriever）——面试最热
 
 **一句话**：普通 RAG 走 Dealer——向量+BM25 混合检索融合打分；KG 检索走 KGSearch——query 改写找实体 → 实体/关系/N-hop/社区报告四路召回 → 按相似度×PageRank 排序 → 拼成虚拟 chunk 进 prompt。两条路可共存。
+
+**检索 API 端点**：`POST /api/v1/retrieval`，body 传 `dataset_ids: [kb_id]` + `question` + `use_kg: true/false`。注意不是 `POST /api/v1/datasets/{id}/retrieve`（返回 code:100, chunks:0）。
 
 **普通 RAG 检索链**（nlp/search.py:39 Dealer）：
 ```

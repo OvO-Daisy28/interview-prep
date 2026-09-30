@@ -446,6 +446,153 @@ def has_canceled(task_id):
 
 RAGFlow 用 Redis Stream 做任务队列，消费者组 `rag_flow_svr_task_broker` 里多个 worker 抢消息：worker 启动时注册到 TASKEXE 集合、每 30 秒往自己的 ZSET 打心跳，120 秒没心跳判死。worker 取消息优先恢复自己 pending 的、再取新的，整个任务处理完才 ACK。vanilla 设计把所有任务放 .common 队列、ACK 在任务完成后才执行、无 watchdog 自愈——轻负载没问题，重任务场景下会出现"假死"（进程活、心跳停、消息卡 pending）。团队在部署版本上打了本地补丁：重任务队列隔离、watchdog 自愈、pending 自动接管、动态超时——补丁未贡献上游。
 
+---
+
+# 附录 A：进度区间对照表
+
+> 来源：合并自原《RAGFlow队列排查知识库.md》独有内容。
+
+| progress | 含义 | 函数位置 |
+|---|---|---|
+| 0.0 | 入队 | — |
+| 0.1 | 开始解析 | `build_chunks` task_executor.py:298 |
+| 0.1~0.6 | OCR/布局 | naive.py:1049 / pdf_parser.py:1608 |
+| 0.63 | 布局完成 | pdf_parser.py:877 |
+| 0.65 | 表格完成 | pdf_parser.py:470 |
+| 0.7~0.9 | Embedding | task_executor.py:709 |
+| 0.8~0.9 | 写 ES | task_executor.py:1289 |
+| 1.0 | 完成 | — |
+| -1 | 失败/取消 | — |
+
+---
+
+# 附录 B：重试机制实测
+
+- 第一层：Redis PEL，worker 未 ACK 自动重投（task_executor.py:228）。
+- 第二层：`get_task()` 里 `retry_count+1`，`>=3` 放弃标记 -1（task_service.py:221）。
+- 实测：45 页 PDF 有 3 个页段 retry_count=2，其中 25~37 段第一轮卡 Table analysis 崩溃、重投后完成；13~25 段第一轮已 Task done 仍被重投（ACK 丢失）。
+
+---
+
+# 附录 C：实测耗时画像
+
+**docx（无 OCR）**：总 6.36s，embedding 占 55%。
+
+**PDF（45 页）**：
+
+| 页段 | OCR | 布局 | 表格 | Embedding | 写ES | 总 | retry |
+|---|---|---|---|---|---|---|---|
+| 1~13 | 6.19 | 7.13 | 7.57 | 41.86 | 3.38 | 72.42 | 1 |
+| 13~25轮2 | 6.60 | 8.48 | 0.00 | 57.66 | 4.42 | 83.19 | 2 |
+| 25~37轮2 | 14.03 | 31.19 | 31.07 | 46.90 | 8.11 | 157.37 | 2 |
+| 37~45轮2 | 4.13 | 4.83 | 5.24 | 4.51 | 3.15 | 27.71 | 2 |
+
+洞察：embedding 同 17 chunks 波动 6.40s↔57.66s（9 倍）；表格有无差异 0↔31s。
+
+---
+
+# 附录 D：问题→方案→收益对照表
+
+> 来源：合并自原《RAGFlow队列问题处置方案.md》。
+> 配套《RAGFlow 文档解析卡死排查报告_2026-09-03.md》使用。对应"发现的问题"逐条给解法、收益、成本。
+
+## 总览（按投入产出比排序）
+
+| # | 问题 | 解决方案 | 收益 | 成本 | 优先级 |
+|---|---|---|---|---|---|
+| 1 | worker 只有 1 个 | 加 `--workers` | 批量卡死直接缓解 | 改配置重启 | ⭐⭐⭐⭐⭐ |
+| 2 | 僵尸工单堆积 43 天 | 清理 task 表 progress=0 老工单 | 队列干净、不占坑 | SQL 删除 | ⭐⭐⭐⭐⭐ |
+| 3 | 僵尸消费者 recovery2 | `XGROUP DELCONSUMER` | 消费者组干净 | 一条命令 | ⭐⭐⭐⭐ |
+| 4 | 已完成消息不 ACK | 手动 ACK 拋留 pending | 停止重跑、省算力 | Redis 命令 | ⭐⭐⭐⭐ |
+| 5 | Redis 不 XTRIM | 定时清理 / 设 maxlen | 防内存满 | 脚本或定时 | ⭐⭐⭐ |
+| 6 | mp4 缺 image2text | 配模型或不传视频 | 视频不再失败 | 配模型 | ⭐⭐⭐ |
+| 7 | embedding 9 倍波动 | 查 embedding 服务负载 | 耗时可预测 | 排查 | ⭐⭐⭐ |
+| 8 | ACK 时序缺陷 | 改源码加幂等 | 根除重跑 | 需开发 | ⭐⭐ |
+| 9 | 缺可观测 | 开 Jaeger/OTel | 精确测耗时 | 部署配置 | ⭐⭐ |
+
+## 建议执行顺序
+
+```
+第一批（今天，零成本高收益）：
+  2 清僵尸工单 → 3 清僵尸消费者 → 4 手动ACK残留
+第二批（本周，需协调重启）：
+  1 加 worker 到 2~3 个
+第三批（持续）：
+  5 定期XTRIM、6 配image2text、9 开Jaeger
+第四批（治本，提issue）：
+  7 查embedding服务、8 报ACK缺陷给官方
+```
+
+---
+
+# 附录 E：排查命令速查
+
+> 来源：合并自原《RAGFlow队列排查知识库.md》。
+
+## Redis（队列视角）
+
+```bash
+# 队列积压
+docker exec docker-redis-1 redis-cli -a infini_rag_flow -n 1 XINFO GROUPS te.0.common
+# 消费者健康
+docker exec docker-redis-1 redis-cli -a infini_rag_flow -n 1 XINFO CONSUMERS te.0.common rag_flow_svr_task_broker
+# pending 详情
+docker exec docker-redis-1 redis-cli -a infini_rag_flow -n 1 XPENDING te.0.common rag_flow_svr_task_broker
+# Stream 概览（含首尾消息内容）
+docker exec docker-redis-1 redis-cli -a infini_rag_flow -n 1 XINFO STREAM te.0.common
+```
+
+## MySQL（业务视角）
+
+```sql
+-- 找卡住的工单
+SELECT id,doc_id,progress,LEFT(progress_msg,300) AS msg,begin_at,
+       TIMESTAMPDIFF(SECOND,begin_at,NOW()) AS elapsed_sec
+FROM task WHERE progress<1 AND progress>=0 AND begin_at IS NOT NULL
+ORDER BY begin_at DESC;
+
+-- 找失败工单
+SELECT id,doc_id,progress_msg,begin_at FROM task
+WHERE progress=-1 ORDER BY begin_at DESC LIMIT 20;
+
+-- 看某文档所有 task + 重试次数
+SELECT id,from_page,to_page,retry_count,progress,begin_at
+FROM task WHERE doc_id='xxx' ORDER BY from_page;
+
+-- 找积压多久的工单
+SELECT doc_id,begin_at,TIMESTAMPDIFF(MINUTE,begin_at,NOW()) AS age_min,progress
+FROM task WHERE progress=0 AND begin_at IS NOT NULL ORDER BY begin_at ASC;
+```
+
+## 进程视角
+
+```bash
+# 看 worker 进程数
+docker exec docker-ragflow-cpu-1 bash -c "ps aux | grep task_executor | grep -v grep"
+# 当天日志找异常
+docker exec docker-ragflow-cpu-1 bash -c "grep '2026-09-03' /ragflow/logs/*.log | grep -iE 'exception|error|ack|timeout' | head -30"
+```
+
+## embedding 服务连通性
+
+```bash
+docker exec docker-ragflow-cpu-1 curl -s -X POST http://172.24.0.1:18001/v1/embeddings \
+  -H "Authorization: Bearer sk-empty" -H "Content-Type: application/json" \
+  -d '{"model":"bge-base","input":"hello"}' | head -c 200
+```
+
+## 排查流程（遇到卡死照此走）
+
+1. `XINFO GROUPS` 看 lag——判断是"没人取"还是"取了没完成"。
+2. `XINFO CONSUMERS` + `ps` 看 worker 健不健康——找僵尸。
+3. MySQL `task` 表看 progress 停在哪步——定位卡点。
+4. `progress_msg` 时间戳算各步耗时。
+5. `retry_count` 看是否反复重试——找坏任务。
+6. 失败的看 `progress=-1` 的 msg 找根因。
+7. 日志找对应时间点的异常——闭环崩溃点。
+
+---
+
 ## 来源
 
 - settings.py:139-162（队列命名，vanilla v0.26.4 硬编码 .common；部署版 v0.26.1 已打补丁加 SPECIAL_TASK_QUEUE_SUFFIXES）
@@ -453,3 +600,4 @@ RAGFlow 用 Redis Stream 做任务队列，消费者组 `rag_flow_svr_task_broke
 - task_executor.py:1816-1894（report_status 心跳）、:1737-1779（handle_task + ACK）、:220-291（collect）、:167（executor_watchdog，补丁）
 - task_service.py:610-616（has_canceled 软取消）
 - 注：行号以 vanilla v0.26.4 本地源码为准，部署版 v0.26.1（含补丁）行号略有漂移（差 10-30 行）
+- 附录 A~E 合并自原《RAGFlow队列排查知识库.md》和《RAGFlow队列问题处置方案.md》（已删除，内容并入本文件）

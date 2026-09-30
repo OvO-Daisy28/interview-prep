@@ -276,9 +276,9 @@ if current_graph and doc_id in current_graph.graph.get("source_id", []):
 
 ## 来源
 
-- [更完整的实习记录.md §15](../../docs/实习记录文档/更完整的实习记录.md)（GraphRAG 数据流）
-- [解决后端问题0902-0905.md §2.4](../../docs/实习记录文档/解决后端问题0902-0905.md)（空图模型对比）
-- [T1_全局GraphRAG检索对比报告.md](../../GCN_Poc/GCN_Poc/doc/design/4090_测试/T1_全局GraphRAG检索对比报告.md)
-- [T3_文档更新删除图谱行为报告.md](../../GCN_Poc/GCN_Poc/doc/design/4090_测试/T3_文档更新删除图谱行为报告.md)
-- [4090_PTR端到端验证_延迟基准.md](../docs/4090_PTR端到端验证_延迟基准.md)
+- [更完整的实习记录.md §15](../../实习记录/更完整的实习记录.md)（GraphRAG 数据流）
+- [解决后端问题0902-0905.md §2.4](../../实习记录/解决后端问题0902-0905.md)（空图模型对比）
+- [T1_全局GraphRAG检索对比报告.md](../../测试报告/T1_全局GraphRAG检索对比报告.md)
+- [T3_文档更新删除图谱行为报告.md](../../测试报告/T3_文档更新删除图谱行为报告.md)
+- [4090_PTR端到端验证_延迟基准.md](../../测试报告/4090_PTR端到端验证_延迟基准.md)
 - 源码：`ragflow-main/rag/graphrag/`（extractor.py / index.py / utils.py / search.py）

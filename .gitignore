@@ -6,3 +6,5 @@ Thumbs.db
 *.log
 node_modules/
 .env
+gitee-recovery-codes.txt
+*.tar.gz
